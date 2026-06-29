@@ -11,8 +11,8 @@
   "chips": ["Brazil", "Japan", "Vinicius Jr", "Cunha", "Ueda"],
   "date": "29 Jun 2026",
   "readTime": 9,
-  "predicted": "Predicted BRA 2-1 JPN",
-  "correct": null
+  "predicted": "Predicted BRA 2-1 JPN ✓",
+  "correct": true
 },
      {
   "file": "posts/algeria-vs-austria.html",
