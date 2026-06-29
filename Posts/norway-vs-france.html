@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Norway vs France - The Final Third</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --border:#2a2f37;
+    --green:#22c55e; --green-dim:rgba(34,197,94,0.12);
+    --red:#ef4444; --red-dim:rgba(239,68,68,0.12);
+    --amber:#f59e0b; --amber-dim:rgba(245,158,11,0.12);
+    --text:#e6edf3; --muted:#8b949e;
+  }
+  html[data-theme="light"]{
+    --bg:#f3f4f1; --card:#ffffff; --border:#d8dbd6;
+    --green:#15803d; --green-dim:rgba(21,128,61,0.1);
+    --red:#b91c1c; --red-dim:rgba(185,28,28,0.1);
+    --amber:#b45309; --amber-dim:rgba(180,83,9,0.1);
+    --text:#14171a; --muted:#5a5f56;
+  }
+  html[data-theme="light"] .stat-card,
+  html[data-theme="light"] .callout{ box-shadow:0 1px 2px rgba(0,0,0,0.04), 0 4px 14px rgba(0,0,0,0.05); }
+  html[data-theme="light"] .theme-toggle{ box-shadow:0 1px 2px rgba(0,0,0,0.05); }
+  body{transition:background .15s, color .15s;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px 60px;}
+  header{padding:24px 0;}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;text-decoration:none;color:var(--muted);}
+  .logo .icon{width:24px;height:24px;background:var(--green);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:12px;}
+  .title-block{margin-bottom:24px;}
+  .comp-tag{color:var(--green);font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.4px;margin-bottom:10px;}
+  h1{font-size:34px;margin-bottom:8px;}
+  .venue{color:var(--muted);font-size:14px;margin-bottom:14px;}
+  .ft-badge{display:inline-flex;align-items:center;gap:6px;background:var(--amber-dim);color:var(--amber);font-weight:700;font-size:13px;padding:6px 12px;border-radius:6px;}
+  .callout{background:var(--green-dim);border:1px solid rgba(34,197,94,0.3);border-radius:8px;padding:12px 16px;font-size:13.5px;color:#86efac;margin-bottom:30px;}
+  .section{margin-bottom:34px;}
+  .section-head{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--green);margin-bottom:14px;border-bottom:1px solid var(--border);padding-bottom:8px;}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media (max-width:600px){.twocol{grid-template-columns:1fr;}}
+  img{max-width:100%;display:block;margin:0 auto 8px;border-radius:6px;}
+  .stat-cards{display:flex;gap:10px;margin-bottom:6px;flex-wrap:wrap;}
+  .stat-card{flex:1;min-width:120px;background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px 10px;text-align:center;}
+  .stat-card .label{font-size:11px;color:var(--muted);}
+  .stat-card .value{font-size:16px;font-weight:800;color:var(--green);margin-top:4px;}
+  p.body{font-size:15px;margin-bottom:12px;color:#cdd5dd;}
+  p.note{font-size:13px;font-style:italic;color:var(--muted);}
+  ul.watch li{font-size:14.5px;margin-bottom:9px;margin-left:18px;color:#cdd5dd;}
+  footer{text-align:center;padding:30px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--border);margin-top:30px;}
+  .theme-toggle{background:var(--card);border:1px solid var(--border);color:var(--text);font-size:12.5px;font-weight:600;padding:6px 11px;border-radius:7px;cursor:pointer;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header style="display:flex;justify-content:space-between;align-items:center;">
+    <a class="logo" href="../index.html"><span class="icon">⚽</span> The Final Third</a>
+    <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">☀️ Light</button>
+  </header>
+
+  <div class="title-block">
+    <div class="comp-tag">FIFA World Cup 2026 · Group I · Matchday 3</div>
+    <h1>Norway vs France</h1>
+    <div class="venue">Boston Stadium, Boston - Fri 26 June 2026</div>
+    <span class="ft-badge">FULL TIME - Norway 1-4 France</span>
+  </div>
+
+  <div class="callout">The hyped Haaland-vs-Mbappe showdown never materialized - Haaland was rested on the bench - but Ousmane Dembele stole the show entirely with the second-fastest hat-trick in World Cup history.</div>
+
+  <div class="section">
+    <div class="section-head">📋 Result Summary</div>
+    <div class="stat-cards">
+      <div class="stat-card"><div class="label">Final score</div><div class="value">NOR 1-4 FRA</div></div>
+      <div class="stat-card"><div class="label">Scorers</div><div class="value">Dembele x3, Doue / Aasgaard</div></div>
+      <div class="stat-card"><div class="label">Milestone</div><div class="value">2nd-fastest WC hat-trick ever</div></div>
+    </div>
+    <p class="body">With both sides already through to the knockouts regardless of the result, Stale Solbakken rotated heavily for Norway - resting both Haaland and Odegaard - while France went close to full strength chasing top spot. Dembele made the decision for them, scoring three times inside the first half-hour to complete the second-fastest hat-trick in tournament history. Aasgaard's response briefly threatened a Norwegian comeback, and a missed Strand Larsen penalty proved a costly turning point before Doue added a late fourth.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🧩 Confirmed Formations</div>
+    <div class="twocol">
+      <div class="col"><img src="../images/franor_formation.png" alt="France formation"></div>
+      <div class="col"><img src="../images/norfra_formation.png" alt="Norway formation"></div>
+    </div>
+    <p class="note">France (4-2-3-1): Maignan; Kounde, Upamecano, Lacroix, T. Hernandez; Kone, Tchouameni; Dembele, Olise, Doue; Mbappe. Norway (4-3-3, much-changed): Selvik; Aursnes, Ostigard, Thorstvedt, Bjorkan; Berg, Sorloth, Aasgaard; Nusa, Strand Larsen, Bobb.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🔍 Tactical Review</div>
+    <p class="body">With nothing material at stake beyond group seeding, this had the feel of a dress rehearsal rather than a genuine title-race decider - Norway's heavy rotation (resting their two biggest stars) signaled they were prioritizing freshness over a result they didn't strictly need. France took the opposite approach, fielding close to full strength to secure top spot and the easier-looking knockout path that comes with it.</p>
+    <p class="body">Dembele's evening was built on exactly the kind of sharp, direct movement that's defined his recent club form - all three goals came from different types of service, showing a player completely in rhythm rather than relying on one specific pattern. Norway's much-changed side competed admirably in patches, but the gulf in continuity and personnel quality told over 90 minutes.</p>
+    <p class="body" style="font-weight:700;">The key moment was Norway's missed second-half penalty. At 1-3, a successful conversion would have made the closing stages genuinely tense; instead, Maignan's save effectively ended any realistic hope of a comeback.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Goal: Dembele opens his hat-trick (1-0, 7')</div>
+    <img src="../images/franor_goal1.png" alt="Dembele first goal">
+    <p class="body">A sharp, clinical finish to set the tone early - exactly the kind of confident start that put Norway's rotated side on the back foot from the opening minutes.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Goal: Dembele's second (2-0, 20')</div>
+    <img src="../images/franor_goal2.png" alt="Dembele second goal">
+    <p class="body">Mbappe's feed was the assist, but Dembele's movement to get in behind and finish cleanly was the real quality - two goals, two different types of service, showing genuine versatility in how he was finding the net.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Goal: Aasgaard keeps Norway alive (2-1, 21')</div>
+    <img src="../images/franor_goal3.png" alt="Aasgaard goal">
+    <p class="body">A swift response that briefly suggested Norway's much-changed side wouldn't simply roll over - real credit to Aasgaard for finding a way through just a minute after France had doubled their lead.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Goal: Dembele's hat-trick (3-1, 32')</div>
+    <img src="../images/franor_goal4.png" alt="Dembele hat-trick goal">
+    <p class="body">Cutting inside from the right and curling home left-footed - a genuinely special finish that completed the second-fastest hat-trick in World Cup history and earned a perfect Sofascore rating of 10. Four goals now at this tournament, firmly inserting himself into the Golden Boot conversation alongside Messi, Mbappe, and Haaland.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🎯 Norway's missed penalty (2nd half)</div>
+    <img src="../images/franor_penmiss.png" alt="Strand Larsen penalty miss">
+    <p class="body">Norway won a clear penalty in the second half, but Jorgen Strand Larsen completely fluffed his lines - Maignan made a simple, comfortable save. Worth noting honestly: a converted penalty here would have made for a far tenser finish, and the missed opportunity is the clearest individual error of the match.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Goal: Doue completes the scoring (4-1, 90+4')</div>
+    <img src="../images/franor_goal5.png" alt="Doue goal">
+    <p class="body">A composed finishing touch right at the death, rounding off a dominant French performance and ensuring they finish the group stage with a perfect record for just the second time in their history.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">📊 Actual Match Stats</div>
+    <img src="../images/franor_stats.png" alt="Match stats chart">
+    <p class="note">Interestingly, France's actual xG (1.31) was lower than Norway's (1.69) largely because of the missed penalty - a reminder that underlying numbers don't always tell the full story of a match's flow.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🔥 MOTM Spotlight: Ousmane Dembele</div>
+    <div class="stat-cards">
+      <div class="stat-card"><div class="label">Goals</div><div class="value">3</div></div>
+      <div class="stat-card"><div class="label">Sofascore rating</div><div class="value">10.0 (perfect)</div></div>
+      <div class="stat-card"><div class="label">Tournament goals</div><div class="value">4</div></div>
+      <div class="stat-card"><div class="label">Hat-trick speed</div><div class="value">2nd-fastest in WC history</div></div>
+    </div>
+    <img src="../images/dembele_heatmap.png" alt="Dembele heatmap">
+    <img src="../images/dembele_ratingbars.png" alt="Dembele rating breakdown">
+    <img src="../images/dembele_shotmap.png" alt="Dembele shot map">
+    <p class="body">A perfect 10.0 Sofascore rating is about as rare as it gets, and entirely deserved here - three goals of genuinely varied profiles (a sharp early finish, a clinical second off a Mbappe assist, and a stunning curled effort to complete the set) inside the first half-hour. With the hyped Haaland-Mbappe billing fizzling into a non-event due to rotation, Dembele simply took the spotlight for himself and made this his night entirely.</p>
+    <p class="note">Illustrative reconstruction based on known event locations, not raw GPS tracking data.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⭐ Player Ratings</div>
+    <div class="twocol">
+      <div class="col">
+        <h4>France</h4>
+        <p>Dembele - 10.0 ⭐ MOTM (hat-trick)</p>
+        <p>Mbappe - 7.0 (assist, didn't need to do much more)</p>
+        <p>Doue - 6.5 (late goal)</p>
+        <p>Maignan - 7.0 (penalty save)</p>
+      </div>
+      <div class="col">
+        <h4>Norway</h4>
+        <p>Aasgaard - 6.5 (sharp response goal)</p>
+        <p>Strand Larsen - 4.5 (missed penalty)</p>
+        <p>Selvik - 5.0 (four conceded)</p>
+        <p>Berg - 5.5 (competed honestly)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head">💡 Key Takeaways &amp; What's Next</div>
+    <ul class="watch">
+      <li>Dembele's emergence into the Golden Boot conversation alongside Messi, Mbappe, and Haaland is a genuine new storyline heading into the knockout stage.</li>
+      <li>France's perfect group-stage record (only their second ever) is a strong psychological marker heading into the Round of 32.</li>
+      <li>Norway's heavy rotation, while sensible given nothing was at stake, means questions remain about squad depth that will need answers once the games matter again.</li>
+    </ul>
+    <p class="note">Both sides progress to the Round of 32. France finish top of Group I; Norway finish second but remain unbeaten across their first two matches.</p>
+  </div>
+
+  <footer>The Final Third - built with no code, no budget, just analysis.</footer>
+</div>
+<script>
+function applyTheme(t){
+  document.documentElement.setAttribute('data-theme', t);
+  const btn = document.getElementById('themeBtn');
+  if(btn) btn.textContent = t === 'light' ? '🌙 Dark' : '☀️ Light';
+  localStorage.setItem('theme', t);
+}
+function toggleTheme(){
+  const current = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+  applyTheme(current);
+}
+(function(){
+  const saved = localStorage.getItem('theme') || 'dark';
+  applyTheme(saved);
+})();
+</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "302dd873be084af1a4f5f049ac6766bf"}'></script><!-- End Cloudflare Web Analytics -->
+
+<div style="max-width:760px;margin:0 auto;padding:0 24px 40px;">
+  <div style="border-top:1px solid #2a2f37;padding-top:30px;margin-top:10px;">
+    <p style="font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#8b949e;margin-bottom:16px;">💬 Reactions &amp; Comments</p>
+    <script src="https://giscus.app/client.js"
+      data-repo="futsalfrenzy19-crypto/final-third"
+      data-repo-id="R_kgDOTEYoRg"
+      data-category="Announcements"
+      data-category-id="DIC_kwDOTEYoRs4C_5pZ"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="bottom"
+      data-theme="transparent_dark"
+      data-lang="en"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </div>
+</div>
+</body>
+</html>

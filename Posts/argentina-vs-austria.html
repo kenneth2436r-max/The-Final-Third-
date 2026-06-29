@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Argentina vs Austria - The Final Third</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --border:#2a2f37;
+    --green:#22c55e; --green-dim:rgba(34,197,94,0.12);
+    --red:#ef4444; --red-dim:rgba(239,68,68,0.12);
+    --amber:#f59e0b; --amber-dim:rgba(245,158,11,0.12);
+    --gold:#FFD700; --gold-dim:rgba(255,215,0,0.12);
+    --text:#e6edf3; --muted:#8b949e;
+  }
+  html[data-theme="light"]{
+    --bg:#f3f4f1; --card:#ffffff; --border:#d8dbd6;
+    --green:#15803d; --green-dim:rgba(21,128,61,0.1);
+    --red:#b91c1c; --red-dim:rgba(185,28,28,0.1);
+    --amber:#b45309; --amber-dim:rgba(180,83,9,0.1);
+    --gold:#92702c; --gold-dim:rgba(146,112,44,0.1);
+    --text:#14171a; --muted:#5a5f56;
+  }
+  html[data-theme="light"] .stat-card,
+  html[data-theme="light"] .callout{ box-shadow:0 1px 2px rgba(0,0,0,0.04), 0 4px 14px rgba(0,0,0,0.05); }
+  html[data-theme="light"] .theme-toggle{ box-shadow:0 1px 2px rgba(0,0,0,0.05); }
+  body{transition:background .15s, color .15s;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px 60px;}
+  header{padding:24px 0;}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;text-decoration:none;color:var(--muted);}
+  .logo .icon{width:24px;height:24px;background:var(--green);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:12px;}
+  .title-block{margin-bottom:24px;}
+  .comp-tag{color:var(--green);font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.4px;margin-bottom:10px;}
+  h1{font-size:34px;margin-bottom:8px;}
+  .venue{color:var(--muted);font-size:14px;margin-bottom:14px;}
+  .ft-badge{display:inline-flex;align-items:center;gap:6px;background:var(--amber-dim);color:var(--amber);font-weight:700;font-size:13px;padding:6px 12px;border-radius:6px;}
+  .callout{background:var(--gold-dim);border:1px solid rgba(255,215,0,0.3);border-radius:8px;padding:12px 16px;font-size:13.5px;color:var(--gold);margin-bottom:30px;font-weight:600;}
+  .section{margin-bottom:34px;}
+  .section-head{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--green);margin-bottom:14px;border-bottom:1px solid var(--border);padding-bottom:8px;}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media (max-width:600px){.twocol{grid-template-columns:1fr;}}
+  img{max-width:100%;display:block;margin:0 auto 8px;border-radius:6px;}
+  .stat-cards{display:flex;gap:10px;margin-bottom:6px;flex-wrap:wrap;}
+  .stat-card{flex:1;min-width:120px;background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px 10px;text-align:center;}
+  .stat-card .label{font-size:11px;color:var(--muted);}
+  .stat-card .value{font-size:16px;font-weight:800;color:var(--green);margin-top:4px;}
+  p.body{font-size:15px;margin-bottom:12px;color:#cdd5dd;}
+  p.note{font-size:13px;font-style:italic;color:var(--muted);}
+  ul.watch li{font-size:14.5px;margin-bottom:9px;margin-left:18px;color:#cdd5dd;}
+  footer{text-align:center;padding:30px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--border);margin-top:30px;}
+  .theme-toggle{background:var(--card);border:1px solid var(--border);color:var(--text);font-size:12.5px;font-weight:600;padding:6px 11px;border-radius:7px;cursor:pointer;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header style="display:flex;justify-content:space-between;align-items:center;">
+    <a class="logo" href="../index.html"><span class="icon">⚽</span> The Final Third</a>
+    <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">☀️ Light</button>
+  </header>
+
+  <div class="title-block">
+    <div class="comp-tag">FIFA World Cup 2026 · Group J · Matchday 3</div>
+    <h1>Argentina vs Austria</h1>
+    <div class="venue">AT&amp;T Stadium, Arlington (Dallas) - Mon 22 June 2026</div>
+    <span class="ft-badge">FULL TIME - Argentina 2-0 Austria</span>
+  </div>
+
+  <div class="callout">🐐 Lionel Messi is now the outright all-time leading goalscorer in World Cup history. Eighteen goals. Surpassing Miroslav Klose. On the 40th anniversary of Maradona's wonder goal against England, with poetic timing that only seems to follow this man around.</div>
+
+  <div class="section">
+    <div class="section-head">📋 Result Summary</div>
+    <div class="stat-cards">
+      <div class="stat-card"><div class="label">Final score</div><div class="value">ARG 2-0 AUT</div></div>
+      <div class="stat-card"><div class="label">Scorers</div><div class="value">Messi x2 (38', 90+5')</div></div>
+      <div class="stat-card"><div class="label">Milestone</div><div class="value">18 WC goals - outright record</div></div>
+    </div>
+    <p class="body">Argentina secured qualification to the Round of 32 with a hard-fought win over a well-organized Austria side, but the result is almost secondary to the history made. Messi missed an early penalty, then responded with the goal that took him level with and past Klose's all-time World Cup scoring record, before sealing the outright mark with a second deep into stoppage time. He now joins Just Fontaine and Jairzinho as just the third player ever to score in six consecutive World Cup matches.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🧩 Confirmed Formations</div>
+    <div class="twocol">
+      <div class="col"><img src="../images/argaut_formation.png" alt="Argentina formation"></div>
+      <div class="col"><img src="../images/aut_formation.png" alt="Austria formation"></div>
+    </div>
+    <p class="note">Argentina (4-3-1-2): E. Martinez; Molina, Romero, L. Martinez, Medina; De Paul, Mac Allister, E. Fernandez; Almada; Lautaro, Messi. Austria (3-5-2): A. Schlager; Posch, Danso, Alaba; Laimer, Seiwald, X. Schlager, Sabitzer, Schmid; Wanner, Gregoritsch.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🔍 Tactical Review</div>
+    <p class="body">Austria's switch to a back three with Laimer and Schmid as wing-backs was a smart defensive setup that genuinely worked for long stretches - Austria controlled large portions of the game territorially and limited Argentina to just one shot on target across most of the first half. Kevin Danso in particular stepped up repeatedly to deny clear chances.</p>
+    <p class="body">Argentina's issue was balance, not effort - without the early penalty going in, this had the makings of a genuinely frustrating night against a side defending in numbers. The difference, as it has been in seven of Argentina's last nine World Cup games, was one individual player conjuring something from very little.</p>
+    <p class="body" style="font-weight:700;">The key tactical moment was less about either team's shape and entirely about Messi's individual response to the missed penalty - rather than letting the miss affect his game, he immediately created the space for Almada's cutback that led directly to the record-equaling goal just minutes later.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🎯 Messi's missed penalty (~10')</div>
+    <img src="../images/argaut_penmiss.png" alt="Messi penalty miss">
+    <p class="body">Worth covering honestly rather than glossing over - Lautaro Martinez was brought down in the box, VAR correctly upheld the penalty award, and Messi's spot-kick didn't find the net. Even legends miss penalties, and at 38 years old in his sixth World Cup, this is a fair, ordinary criticism: a genuinely missable big chance, missed. What matters more is what came next.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Goal: Messi makes history (1-0, 38')</div>
+    <img src="../images/argaut_goal1.png" alt="Messi record-equaling goal">
+    <p class="body">The response to the missed penalty was immediate and emphatic. Thiago Almada's cutback found Messi in space, and the first-time finish was struck with the kind of conviction that suggested the earlier miss was already forgotten. This goal took him to 17 World Cup goals - level with, then past, Miroslav Klose's longstanding all-time record. Twenty years almost to the day since his World Cup debut as a substitute, still rewriting the record books.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Goal: The outright record (2-0, 90+5')</div>
+    <img src="../images/argaut_goal2.png" alt="Messi outright record goal">
+    <p class="body">A give-and-go with Almada, finished first-time with characteristic composure under no real pressure of missing - goal number 18, making him the outright all-time leading World Cup goalscorer in the sport's history, surpassing every player who has ever taken the field at this tournament since 1930. At 38 years old, in what's been openly discussed as his final World Cup, doing this on the 40th anniversary of Maradona's most iconic Argentina moment is the kind of narrative symmetry that simply doesn't happen by accident in football this often - except, somehow, around this specific player.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">📊 Actual Match Stats</div>
+    <img src="../images/argaut_stats.png" alt="Match stats chart">
+    <p class="note">A 14-4 shot count in Argentina's favor reflects control of the game's key moments, even if Austria's disciplined back three made the overall contest tighter than the eventual scoreline suggests.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🔥 MOTM Spotlight: Lionel Messi</div>
+    <div class="stat-cards">
+      <div class="stat-card"><div class="label">Goals</div><div class="value">2</div></div>
+      <div class="stat-card"><div class="label">Penalty</div><div class="value">Missed</div></div>
+      <div class="stat-card"><div class="label">World Cup goals (career)</div><div class="value">18 (all-time record)</div></div>
+      <div class="stat-card"><div class="label">Consecutive matches scored</div><div class="value">6 (3rd player ever)</div></div>
+    </div>
+    <img src="../images/messi2_heatmap.png" alt="Messi heatmap">
+    <img src="../images/messi2_ratingbars.png" alt="Messi rating breakdown">
+    <img src="../images/messi2_shotmap.png" alt="Messi shot map">
+    <p class="body">A complete performance bookended by genuine fallibility and genuine greatness - the missed penalty is real, ordinary, human, and worth acknowledging plainly rather than excusing. But responding to that miss by becoming the outright greatest goalscorer in the 96-year history of this tournament, within the same match, against a defensively well-drilled opponent, is the kind of resilience that separates true legends from merely great players. Teammates said it best afterward: "he is a class above," "there isn't much to say." There genuinely isn't. This is the conversation now, full stop, and he's earned every word of it.</p>
+    <p class="note">Illustrative reconstruction based on known event locations, not raw GPS tracking data.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⭐ Player Ratings</div>
+    <div class="twocol">
+      <div class="col">
+        <h4>Argentina</h4>
+        <p>Messi - 9.5 ⭐ MOTM (all-time record, missed pen)</p>
+        <p>Almada - 8.0 (assist on both goals)</p>
+        <p>E. Martinez - 7.0 (crucial save vs Sabitzer)</p>
+        <p>Romero - 6.5 (solid throughout)</p>
+      </div>
+      <div class="col">
+        <h4>Austria</h4>
+        <p>Danso - 7.5 (multiple last-ditch defending)</p>
+        <p>A. Schlager - 6.0 (saved the penalty)</p>
+        <p>Sabitzer - 6.5 (100th cap, dangerous free-kick)</p>
+        <p>Alaba - 6.0 (organized the back three)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head">💡 Key Takeaways &amp; What's Next</div>
+    <ul class="watch">
+      <li>Messi's all-time record is now the defining individual storyline of this World Cup - every subsequent match he plays will be viewed through that lens.</li>
+      <li>Argentina's reliance on individual brilliance against well-organized defenses is a pattern worth tracking into the knockout stage, where opponents will be uniformly better drilled than most group-stage sides.</li>
+      <li>Austria's competitive performance, despite the defeat, keeps their own qualification hopes alive heading into their final group game.</li>
+    </ul>
+    <p class="note">Next: Argentina face Algeria's group rival Jordan's conquerors with qualification already secured. Austria face Algeria needing a result to keep their own hopes alive.</p>
+  </div>
+
+  <footer>The Final Third - built with no code, no budget, just analysis.</footer>
+</div>
+<script>
+function applyTheme(t){
+  document.documentElement.setAttribute('data-theme', t);
+  const btn = document.getElementById('themeBtn');
+  if(btn) btn.textContent = t === 'light' ? '🌙 Dark' : '☀️ Light';
+  localStorage.setItem('theme', t);
+}
+function toggleTheme(){
+  const current = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+  applyTheme(current);
+}
+(function(){
+  const saved = localStorage.getItem('theme') || 'dark';
+  applyTheme(saved);
+})();
+</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "302dd873be084af1a4f5f049ac6766bf"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

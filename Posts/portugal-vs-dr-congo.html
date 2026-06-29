@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portugal vs DR Congo - The Final Third</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --border:#2a2f37;
+    --green:#22c55e; --green-dim:rgba(34,197,94,0.12);
+    --red:#ef4444; --red-dim:rgba(239,68,68,0.12);
+    --amber:#f59e0b; --amber-dim:rgba(245,158,11,0.12);
+    --text:#e6edf3; --muted:#8b949e;
+  }
+  html[data-theme="light"]{
+    --bg:#f3f4f1; --card:#ffffff; --border:#d8dbd6;
+    --green:#15803d; --green-dim:rgba(21,128,61,0.1);
+    --red:#b91c1c; --red-dim:rgba(185,28,28,0.1);
+    --amber:#b45309; --amber-dim:rgba(180,83,9,0.1);
+    --text:#14171a; --muted:#5a5f56;
+  }
+  html[data-theme="light"] .stat-card,
+  html[data-theme="light"] .callout{ box-shadow:0 1px 2px rgba(0,0,0,0.04), 0 4px 14px rgba(0,0,0,0.05); }
+  html[data-theme="light"] .theme-toggle{ box-shadow:0 1px 2px rgba(0,0,0,0.05); }
+  body{transition:background .15s, color .15s;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px 60px;}
+  header{padding:24px 0;}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;text-decoration:none;color:var(--muted);}
+  .logo .icon{width:24px;height:24px;background:var(--green);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:12px;}
+  .title-block{margin-bottom:24px;}
+  .comp-tag{color:var(--green);font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.4px;margin-bottom:10px;}
+  h1{font-size:34px;margin-bottom:8px;}
+  .venue{color:var(--muted);font-size:14px;margin-bottom:14px;}
+  .ft-badge{display:inline-flex;align-items:center;gap:6px;background:var(--amber-dim);color:var(--amber);font-weight:700;font-size:13px;padding:6px 12px;border-radius:6px;}
+  .callout{background:var(--green-dim);border:1px solid rgba(34,197,94,0.3);border-radius:8px;padding:12px 16px;font-size:13.5px;color:#86efac;margin-bottom:30px;}
+  .section{margin-bottom:34px;}
+  .section-head{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--green);margin-bottom:14px;border-bottom:1px solid var(--border);padding-bottom:8px;}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media (max-width:600px){.twocol{grid-template-columns:1fr;}}
+  img{max-width:100%;display:block;margin:0 auto 8px;border-radius:6px;}
+  .stat-cards{display:flex;gap:10px;margin-bottom:6px;flex-wrap:wrap;}
+  .stat-card{flex:1;min-width:120px;background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px 10px;text-align:center;}
+  .stat-card .label{font-size:11px;color:var(--muted);}
+  .stat-card .value{font-size:16px;font-weight:800;color:var(--green);margin-top:4px;}
+  p.body{font-size:15px;margin-bottom:12px;color:#cdd5dd;}
+  p.note{font-size:13px;font-style:italic;color:var(--muted);}
+  ul.watch li{font-size:14.5px;margin-bottom:9px;margin-left:18px;color:#cdd5dd;}
+  footer{text-align:center;padding:30px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--border);margin-top:30px;}
+  .theme-toggle{background:var(--card);border:1px solid var(--border);color:var(--text);font-size:12.5px;font-weight:600;padding:6px 11px;border-radius:7px;cursor:pointer;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header style="display:flex;justify-content:space-between;align-items:center;">
+    <a class="logo" href="../index.html"><span class="icon">⚽</span> The Final Third</a>
+    <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">☀️ Light</button>
+  </header>
+
+  <div class="title-block">
+    <div class="comp-tag">FIFA World Cup 2026 · Group K · Matchday 1</div>
+    <h1>Portugal vs DR Congo</h1>
+    <div class="venue">Houston Stadium, Houston - Wed 17 June 2026</div>
+    <span class="ft-badge">FULL TIME - Portugal 1-1 DR Congo</span>
+  </div>
+
+  <div class="callout">A genuinely historic day for DR Congo - their first-ever World Cup goal, 52 years after their tournament debut - while Ronaldo became the oldest outfield player to ever start a World Cup match, on an afternoon he'll otherwise want to forget in front of goal.</div>
+
+  <div class="section">
+    <div class="section-head">📋 Result Summary</div>
+    <div class="stat-cards">
+      <div class="stat-card"><div class="label">Final score</div><div class="value">POR 1-1 COD</div></div>
+      <div class="stat-card"><div class="label">Scorers</div><div class="value">Neves / Wissa</div></div>
+      <div class="stat-card"><div class="label">Attendance</div><div class="value">68,777</div></div>
+    </div>
+    <p class="body">Joao Neves's early header looked set to give Portugal a routine opening win, but Yoane Wissa's stoppage-time equalizer - DR Congo's first-ever World Cup goal in their history - earned a thoroughly deserved point for the Leopards, back at the tournament for the first time since 1974. Portugal dominated possession and chances thereafter but couldn't find a winner, with Ronaldo and Bruno Fernandes both missing late opportunities.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🧩 Confirmed Formations</div>
+    <div class="twocol">
+      <div class="col"><img src="../images/por_formation.png" alt="Portugal formation"></div>
+      <div class="col"><img src="../images/cod_formation.png" alt="DR Congo formation"></div>
+    </div>
+    <p class="note">Portugal (4-2-3-1): Diogo Costa; Cancelo, Araujo, Veiga, N. Mendes; Neves, Vitinha; B. Silva, B. Fernandes, Neto; Ronaldo. DR Congo (5-3-2): Mpasi-Nzau; Wan-Bissaka, Mbemba, Tuanzebe, Kapuadi, Masuaku; Mukau, Moutoussamy, Kayembe; Bakambu, Wissa.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🔍 Tactical Review</div>
+    <p class="body">Portugal's 63% possession and 16 shots reflect total control of the ball, but DR Congo's disciplined 5-3-2 - five at the back, compact and well-organized - made clean chances genuinely hard to come by for long stretches. The Cancelo disallowed "goal" (a spectacular overhead kick, correctly ruled offside) is the closest Portugal came to a real moment of magic before their actual breakthrough.</p>
+    <p class="body">DR Congo's approach was patient and disciplined rather than purely defensive - Masuaku's delivery for the equalizer, and Bakambu's effort that struck the post earlier, both came from genuine attacking intent on the break, not just a side hoping to survive on damage limitation alone.</p>
+    <p class="body" style="font-weight:700;">The key moment was DR Congo's stoppage-time equalizer itself - scored in the final seconds of the first half, it completely changed the emotional complexion of the match and gave the Leopards belief for the second 45, even as Portugal continued to dominate territorially.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Goal: Neves heads Portugal ahead (1-0, 6')</div>
+    <img src="../images/porcod_goal1.png" alt="Neves goal">
+    <p class="body">A simple, well-executed set-piece-style move from open play - Pedro Neto's cross from the left was delivered with real quality, and Joao Neves, despite being one of the shorter players on the pitch, timed his jump perfectly to win the header. Clean technique and good delivery rather than any DR Congo defensive lapse.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Goal: Wissa makes history (1-1, 45+5')</div>
+    <img src="../images/porcod_goal2.png" alt="Wissa historic goal">
+    <p class="body">This deserves to be remembered as more than a footnote. Arthur Masuaku's cross was precise, and Wissa's header beat Portugal's defense through good movement and timing - genuine quality, not a fortunate bounce. The context elevates it further: DR Congo's first-ever World Cup goal, 52 years after their only previous appearance as Zaire in 1974, where they were outscored 14-0 across three matches. This single header closes a five-decade gap in their footballing history.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🚫 Disallowed: Cancelo's overhead kick (55')</div>
+    <img src="../images/porcod_disallowed.png" alt="Cancelo disallowed goal">
+    <p class="body">A genuinely spectacular piece of technique that didn't count. Bruno Fernandes delivered a cross from the left, Pedro Neto cleverly cushioned it with his chest inside the box, and the loose ball fell to Joao Cancelo, who produced an overhead kick that flew into the net. The assistant referee's flag went up immediately - Cancelo was marginally offside when Neto's touch played him in. Replays confirmed the call was correct; a brilliant goal, correctly chalked off, with no referee error to flag here.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⭐ Ronaldo Watch: Milestone, then frustration</div>
+    <div class="stat-cards">
+      <div class="stat-card"><div class="label">Age</div><div class="value">41y 132d</div></div>
+      <div class="stat-card"><div class="label">World Cup appearance</div><div class="value">23rd (4th all-time)</div></div>
+      <div class="stat-card"><div class="label">Big chances missed</div><div class="value">2</div></div>
+      <div class="stat-card"><div class="label">Goals</div><div class="value">0</div></div>
+    </div>
+    <img src="../images/ronaldo_heatmap.png" alt="Ronaldo heatmap">
+    <img src="../images/ronaldo_shotmap.png" alt="Ronaldo shot map">
+    <p class="body">The milestone first, because it deserves real respect: at 41 years and 132 days, Ronaldo became the oldest outfield player to ever start a World Cup match, and his 23rd World Cup appearance ties him with Paolo Maldini for fourth all-time. Six World Cups is a club of two - him and Messi - and simply being on this pitch, in this form, at his age is a genuine credit to elite-level professionalism and longevity.</p>
+    <p class="body">That said, the missed chances genuinely matter and deserve honest scrutiny, not a pass just because of who he is. Two clear half-chances went off-target in the 68th and 73rd minutes, both shown visibly shaking his head in frustration afterward, and he had a real opportunity to become the first player in history to score in six different World Cups - he didn't take it. A clever assist for Nuno Mendes earlier showed his footballing brain is still sharp, but the finishing edge that defined his career wasn't there when his team needed it most today. Both things are true at once: the longevity is remarkable, and the finishing letdown today is a fair, ordinary football criticism that shouldn't be softened just because of the name on the shirt.</p>
+    <p class="note">Illustrative reconstruction based on known event locations, not raw GPS tracking data.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">📊 Actual Match Stats</div>
+    <img src="../images/porcod_stats.png" alt="Match stats chart">
+    <p class="note">A 16-7 shot count in Portugal's favor reflects clear territorial dominance that simply didn't translate into a winning goal.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🔥 MOTM Spotlight: Yoane Wissa</div>
+    <div class="stat-cards">
+      <div class="stat-card"><div class="label">Goals</div><div class="value">1</div></div>
+      <div class="stat-card"><div class="label">xG</div><div class="value">0.4</div></div>
+      <div class="stat-card"><div class="label">Total shots</div><div class="value">2</div></div>
+      <div class="stat-card"><div class="label">Shots on target</div><div class="value">1</div></div>
+    </div>
+    <img src="../images/wissa_heatmap.png" alt="Wissa heatmap">
+    <img src="../images/wissa_ratingbars.png" alt="Wissa rating breakdown">
+    <p class="body">A single, historically significant moment is enough to earn this award over any individual Portugal performance today - Wissa's header didn't just earn a point, it gave an entire footballing nation their first-ever World Cup goal after five decades of waiting. Sometimes the magnitude of a moment outweighs the raw statistical volume of a performance, and this is exactly that case.</p>
+    <p class="note">Illustrative reconstruction based on known event locations, not raw GPS tracking data.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⭐ Player Ratings</div>
+    <div class="twocol">
+      <div class="col">
+        <h4>Portugal</h4>
+        <p>Neves - 7.5 (goal, energetic display)</p>
+        <p>Ronaldo - 5.5 (missed chances, milestone)</p>
+        <p>B. Fernandes - 6.5 (creative, late miss)</p>
+        <p>Cancelo - 6.0 (disallowed wonder-goal)</p>
+      </div>
+      <div class="col">
+        <h4>DR Congo</h4>
+        <p>Wissa - 8.0 ⭐ MOTM (historic goal)</p>
+        <p>Kapuadi - 6.5 (organized, header chance)</p>
+        <p>Masuaku - 7.0 (assist, energetic)</p>
+        <p>Mpasi-Nzau - 6.5 (kept it respectable)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head">💡 Key Takeaways &amp; What's Next</div>
+    <ul class="watch">
+      <li>DR Congo's historic goal and point give them genuine belief heading into the rest of the group - a real foundation rather than just participation.</li>
+      <li>Ronaldo's missed chances are a fair talking point heading into Portugal's next match - at 41, the margin for finishing error is naturally smaller, and Roberto Martinez may need to consider rotation or earlier substitution patterns.</li>
+      <li>Portugal's overall control (63% possession, 16 shots) suggests the underlying performance was solid even without the result to match - not a major alarm bell, but a missed opportunity for a routine opening win.</li>
+    </ul>
+    <p class="note">Next: Portugal face Uzbekistan. DR Congo face Colombia, looking to build on this historic start.</p>
+  </div>
+
+  <footer>The Final Third - built with no code, no budget, just analysis.</footer>
+</div>
+<script>
+function applyTheme(t){
+  document.documentElement.setAttribute('data-theme', t);
+  const btn = document.getElementById('themeBtn');
+  if(btn) btn.textContent = t === 'light' ? '🌙 Dark' : '☀️ Light';
+  localStorage.setItem('theme', t);
+}
+function toggleTheme(){
+  const current = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+  applyTheme(current);
+}
+(function(){
+  const saved = localStorage.getItem('theme') || 'dark';
+  applyTheme(saved);
+})();
+</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "302dd873be084af1a4f5f049ac6766bf"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

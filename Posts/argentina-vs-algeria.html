@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Argentina vs Algeria - The Final Third</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --border:#2a2f37;
+    --green:#22c55e; --green-dim:rgba(34,197,94,0.12);
+    --red:#ef4444; --red-dim:rgba(239,68,68,0.12);
+    --amber:#f59e0b; --amber-dim:rgba(245,158,11,0.12);
+    --gold:#FFD700; --gold-dim:rgba(255,215,0,0.12);
+    --text:#e6edf3; --muted:#8b949e;
+  }
+  html[data-theme="light"]{
+    --bg:#f3f4f1; --card:#ffffff; --border:#d8dbd6;
+    --green:#15803d; --green-dim:rgba(21,128,61,0.1);
+    --red:#b91c1c; --red-dim:rgba(185,28,28,0.1);
+    --amber:#b45309; --amber-dim:rgba(180,83,9,0.1);
+    --gold:#92702c; --gold-dim:rgba(146,112,44,0.1);
+    --text:#14171a; --muted:#5a5f56;
+  }
+  html[data-theme="light"] .stat-card,
+  html[data-theme="light"] .callout{ box-shadow:0 1px 2px rgba(0,0,0,0.04), 0 4px 14px rgba(0,0,0,0.05); }
+  html[data-theme="light"] .theme-toggle{ box-shadow:0 1px 2px rgba(0,0,0,0.05); }
+  body{transition:background .15s, color .15s;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px 60px;}
+  header{padding:24px 0;}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;text-decoration:none;color:var(--muted);}
+  .logo .icon{width:24px;height:24px;background:var(--green);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:12px;}
+  .title-block{margin-bottom:24px;}
+  .comp-tag{color:var(--green);font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.4px;margin-bottom:10px;}
+  h1{font-size:34px;margin-bottom:8px;}
+  .venue{color:var(--muted);font-size:14px;margin-bottom:14px;}
+  .ft-badge{display:inline-flex;align-items:center;gap:6px;background:var(--amber-dim);color:var(--amber);font-weight:700;font-size:13px;padding:6px 12px;border-radius:6px;}
+  .callout{background:var(--gold-dim);border:1px solid rgba(255,215,0,0.3);border-radius:8px;padding:12px 16px;font-size:13.5px;color:var(--gold);margin-bottom:30px;font-weight:600;}
+  .section{margin-bottom:34px;}
+  .section-head{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--green);margin-bottom:14px;border-bottom:1px solid var(--border);padding-bottom:8px;}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media (max-width:600px){.twocol{grid-template-columns:1fr;}}
+  img{max-width:100%;display:block;margin:0 auto 8px;border-radius:6px;}
+  .stat-cards{display:flex;gap:10px;margin-bottom:6px;flex-wrap:wrap;}
+  .stat-card{flex:1;min-width:120px;background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px 10px;text-align:center;}
+  .stat-card .label{font-size:11px;color:var(--muted);}
+  .stat-card .value{font-size:16px;font-weight:800;color:var(--green);margin-top:4px;}
+  p.body{font-size:15px;margin-bottom:12px;color:#cdd5dd;}
+  p.note{font-size:13px;font-style:italic;color:var(--muted);}
+  ul.watch li{font-size:14.5px;margin-bottom:9px;margin-left:18px;color:#cdd5dd;}
+  footer{text-align:center;padding:30px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--border);margin-top:30px;}
+  .theme-toggle{background:var(--card);border:1px solid var(--border);color:var(--text);font-size:12.5px;font-weight:600;padding:6px 11px;border-radius:7px;cursor:pointer;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header style="display:flex;justify-content:space-between;align-items:center;">
+    <a class="logo" href="../index.html"><span class="icon">⚽</span> The Final Third</a>
+    <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">☀️ Light</button>
+  </header>
+
+  <div class="title-block">
+    <div class="comp-tag">FIFA World Cup 2026 · Group J · Matchday 1</div>
+    <h1>Argentina vs Algeria</h1>
+    <div class="venue">Arrowhead Stadium, Kansas City - Tue 16 June 2026</div>
+    <span class="ft-badge">FULL TIME - Argentina 3-0 Algeria</span>
+  </div>
+
+  <div class="callout">🐐 History, full stop. Lionel Messi's first-ever World Cup hat-trick equals Klose's all-time scoring record, on his 200th Argentina cap, exactly 20 years to the day after his World Cup debut. There is no version of this analysis that isn't about him.</div>
+
+  <div class="section">
+    <div class="section-head">📋 Result Summary</div>
+    <div class="stat-cards">
+      <div class="stat-card"><div class="label">Final score</div><div class="value">ARG 3-0 ALG</div></div>
+      <div class="stat-card"><div class="label">Scorers</div><div class="value">Messi x3 (17', 60', 76')</div></div>
+      <div class="stat-card"><div class="label">Milestone</div><div class="value">16 WC goals - record equaled</div></div>
+    </div>
+    <p class="body">Argentina opened their title defence in the perfect manner, but the result itself is almost secondary to what happened individually. Messi opened the scoring with a trademark curling finish in the 17th minute, doubled his tally by reacting fastest to a parried Mac Allister shot in the 60th, and completed the hat-trick - his first ever at a World Cup - with a low finish in the 76th. He was substituted shortly after to a standing ovation, the job, and the history, both done.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🧩 Confirmed Formations</div>
+    <div class="twocol">
+      <div class="col"><img src="../images/arg_formation.png" alt="Argentina formation"></div>
+      <div class="col"><img src="../images/algvarg_formation.png" alt="Algeria formation"></div>
+    </div>
+    <p class="note">Argentina (4-3-3): E. Martinez; Montiel, L. Martinez, Romero, Medina; De Paul, Mac Allister, E. Fernandez; Almada, Lautaro Martinez, Messi. Algeria (4-4-2): Zidane; Ait-Nouri, Mandi (c), Belghali, Bensebaini; Chaibi, Bentaleb, Boudaoui, Maza; Gouiri, Hadj Moussa.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🔍 Tactical Review</div>
+    <p class="body">Argentina's approach barely needed to be complicated - 64% possession and 18 shots to Algeria's 5 reflects a clear gulf in quality that Scaloni's side exploited patiently rather than urgently, content to let Algeria's deep block tire across 90 minutes rather than force the issue early. Algeria's own captain summed it up best afterward: "we tried to shut him down as much as possible, but it didn't work."</p>
+    <p class="body">That's the honest tactical story here - Algeria's 4-4-2 was a reasonable defensive setup that simply had no real answer for one specific individual problem. No structural change was going to solve that on this particular day.</p>
+    <p class="body" style="font-weight:700;">The key tactical moment was less a moment than three repeated decisions: Argentina's collective willingness to keep feeding their captain in space all match, trusting him to be the difference rather than over-complicating the gameplan. It paid off three times over.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Goal 1: Messi opens the scoring (1-0, 17')</div>
+    <img src="../images/arg_goal1.png" alt="Messi first goal">
+    <p class="body">The trademark Messi move, executed with zero wasted motion - drifting into the half-space just outside the box, a half-touch to open his body, and a curling finish into the far corner that goalkeepers have been failing to read for two decades. No real Algeria error to point to here; this is simply what elite individual technique looks like when given even a sliver of space.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Goal 2: Predator's instinct (2-0, 60')</div>
+    <img src="../images/arg_goal2.png" alt="Messi second goal">
+    <p class="body">Credit to Mac Allister for the powerful initial strike that Zidane could only parry, but the goal itself is a small masterclass in anticipation - Messi was already moving toward the most likely rebound zone before the save had even happened, beating two Algeria defenders to the loose ball through positioning alone. The finish itself, calm and right-footed under pressure with bodies closing in, is the part that separates a chance from a genuinely composed finish.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Goal 3: The hat-trick, and the record (3-0, 76')</div>
+    <img src="../images/arg_goal3.png" alt="Messi hat-trick goal">
+    <p class="body">Nicolas Gonzalez did the creative work, but the finish was clinical and almost matter-of-fact - a low effort into the bottom corner that completed his first-ever World Cup hat-trick. The significance goes well beyond the three points: this goal brought him level with Miroslav Klose's all-time World Cup scoring record of 16, surpassed Pele's all-time goal contribution record (24, now his), and came almost exactly 20 years after his World Cup debut as a teenage substitute against Serbia and Montenegro in 2006. Few athletes in any sport get to write their own history with this much precision and self-awareness about the moment - and at 38 years old, in his sixth World Cup, doing it with this little visible effort is its own form of greatness. There is genuinely nothing to criticize about this performance; this is simply the best player of his generation operating at the level that's earned him that title.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🟨 Referee note: penalty appeal waved away (66')</div>
+    <p class="body">Messi went down under a challenge from Rayan Ait-Nouri in the box and referee Szymon Marciniak waved away the appeal. On the replay evidence available, this looks like a genuinely close, defensible call rather than a clear officiating error - enough contact for a claim to be reasonable, but not obviously enough to call it a missed certainty. No real criticism warranted here, unlike clearer missed calls elsewhere in the tournament.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">📊 Actual Match Stats</div>
+    <img src="../images/argalg_stats.png" alt="Match stats chart">
+    <p class="note">An 18-5 shot count and 2.6-0.3 xG gap reflects total Argentine control - Algeria's afternoon was always going to be about damage limitation against a side, and a player, performing at this level.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🔥 MOTM Spotlight: Lionel Messi</div>
+    <div class="stat-cards">
+      <div class="stat-card"><div class="label">Goals</div><div class="value">3</div></div>
+      <div class="stat-card"><div class="label">xG</div><div class="value">2.1</div></div>
+      <div class="stat-card"><div class="label">Total shots</div><div class="value">5</div></div>
+      <div class="stat-card"><div class="label">Shots on target</div><div class="value">4</div></div>
+    </div>
+    <div class="stat-cards">
+      <div class="stat-card"><div class="label">xGOT</div><div class="value">2.4</div></div>
+      <div class="stat-card"><div class="label">World Cup goals (career)</div><div class="value">16</div></div>
+      <div class="stat-card"><div class="label">Goal contributions (career)</div><div class="value">24</div></div>
+      <div class="stat-card"><div class="label">Caps</div><div class="value">200</div></div>
+    </div>
+    <img src="../images/messi_heatmap.png" alt="Messi heatmap">
+    <img src="../images/messi_ratingbars.png" alt="Messi rating breakdown">
+    <img src="../images/messi_shotmap.png" alt="Messi shot map">
+    <p class="body">An actual goal output (3) ahead of his shot quality (2.1 xG) means he finished better than even an elite chance profile suggested he should - the mark of a player still operating well above the theoretical ceiling of "good chances," converting on instinct and technique alone. The shot map shows three different finish types - a curler, a reactive rebound, a low placed effort - which says everything about why he remains so difficult to defend even at 38: there's no single way to plan against him, because he has every tool available and the experience to know exactly which one to use in each specific moment. This is what a legacy-cementing performance looks like, delivered with total calm, on the 20th anniversary of where it all started for him at this tournament.</p>
+    <p class="note">Illustrative reconstruction based on known event locations, not raw GPS tracking data.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⭐ Player Ratings</div>
+    <div class="twocol">
+      <div class="col">
+        <h4>Argentina</h4>
+        <p>Messi - 10.0 ⭐ MOTM (hat-trick, history)</p>
+        <p>Mac Allister - 7.5 (set up goal 2)</p>
+        <p>Lautaro Martinez - 6.5 (busy, unlucky)</p>
+        <p>E. Martinez - 6.0 (untroubled)</p>
+      </div>
+      <div class="col">
+        <h4>Algeria</h4>
+        <p>Zidane - 6.5 (two good saves)</p>
+        <p>Mandi - 5.5 (battled, no answer for Messi)</p>
+        <p>Bensebaini - 5.5 (solid otherwise)</p>
+        <p>Gouiri - 5.0 (isolated up top)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head">💡 Key Takeaways &amp; What's Next</div>
+    <ul class="watch">
+      <li>Messi now has a clear path to claiming the all-time World Cup scoring record outright against Austria on June 22 - a genuine must-watch storyline for the rest of the group stage.</li>
+      <li>Argentina's reliance on individual brilliance to settle a match they otherwise controlled comfortably is not really a concern at this stage - when it works this well, there's little reason to change course.</li>
+      <li>Algeria's first World Cup appearance since 2014 ended in a respectable defeat against a player playing at a historic level - no real structural lessons to draw beyond "there was no answer for Messi today," which is true for most teams on most days.</li>
+    </ul>
+    <p class="note">Next: Argentina face Austria, with the scoring record on the line. Algeria face Jordan, needing a response to stay in contention.</p>
+  </div>
+
+  <footer>The Final Third - built with no code, no budget, just analysis.</footer>
+</div>
+<script>
+function applyTheme(t){
+  document.documentElement.setAttribute('data-theme', t);
+  const btn = document.getElementById('themeBtn');
+  if(btn) btn.textContent = t === 'light' ? '🌙 Dark' : '☀️ Light';
+  localStorage.setItem('theme', t);
+}
+function toggleTheme(){
+  const current = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+  applyTheme(current);
+}
+(function(){
+  const saved = localStorage.getItem('theme') || 'dark';
+  applyTheme(saved);
+})();
+</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "302dd873be084af1a4f5f049ac6766bf"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

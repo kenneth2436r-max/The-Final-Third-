@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Algeria vs Austria - The Final Third</title>
+<script defer src="/_vercel/insights/script.js"></script>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --border:#2a2f37;
+    --green:#22c55e; --green-dim:rgba(34,197,94,0.12);
+    --red:#ef4444; --red-dim:rgba(239,68,68,0.12);
+    --amber:#f59e0b; --amber-dim:rgba(245,158,11,0.12);
+    --text:#e6edf3; --muted:#8b949e;
+  }
+  html[data-theme="light"]{
+    --bg:#f3f4f1; --card:#ffffff; --border:#d8dbd6;
+    --green:#15803d; --green-dim:rgba(21,128,61,0.1);
+    --red:#b91c1c; --red-dim:rgba(185,28,28,0.1);
+    --amber:#b45309; --amber-dim:rgba(180,83,9,0.1);
+    --text:#14171a; --muted:#5a5f56;
+  }
+  html[data-theme="light"] .stat-card,
+  html[data-theme="light"] .callout{ box-shadow:0 1px 2px rgba(0,0,0,0.04), 0 4px 14px rgba(0,0,0,0.05); }
+  html[data-theme="light"] .theme-toggle{ box-shadow:0 1px 2px rgba(0,0,0,0.05); }
+  body{transition:background .15s, color .15s;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px 60px;}
+  header{padding:24px 0;}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;text-decoration:none;color:var(--muted);}
+  .logo .icon{width:24px;height:24px;background:var(--green);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:12px;}
+  .title-block{margin-bottom:24px;}
+  .comp-tag{color:var(--green);font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.4px;margin-bottom:10px;}
+  h1{font-size:34px;margin-bottom:8px;}
+  .venue{color:var(--muted);font-size:14px;margin-bottom:14px;}
+  .ft-badge{display:inline-flex;align-items:center;gap:6px;background:var(--amber-dim);color:var(--amber);font-weight:700;font-size:13px;padding:6px 12px;border-radius:6px;}
+  .callout{background:var(--green-dim);border:1px solid rgba(34,197,94,0.3);border-radius:8px;padding:12px 16px;font-size:13.5px;color:#86efac;margin-bottom:30px;}
+  .impact-box{background:var(--red-dim);border:1px solid rgba(239,68,68,0.3);border-radius:8px;padding:14px 16px;font-size:13.5px;color:#fca5a5;margin-bottom:30px;font-weight:600;}
+  .section{margin-bottom:34px;}
+  .section-head{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--green);margin-bottom:14px;border-bottom:1px solid var(--border);padding-bottom:8px;}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media (max-width:600px){.twocol{grid-template-columns:1fr;}}
+  img{max-width:100%;display:block;margin:0 auto 8px;border-radius:6px;}
+  .stat-cards{display:flex;gap:10px;margin-bottom:6px;flex-wrap:wrap;}
+  .stat-card{flex:1;min-width:120px;background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px 10px;text-align:center;}
+  .stat-card .label{font-size:11px;color:var(--muted);}
+  .stat-card .value{font-size:16px;font-weight:800;color:var(--green);margin-top:4px;}
+  p.body{font-size:15px;margin-bottom:12px;color:#cdd5dd;}
+  p.note{font-size:13px;font-style:italic;color:var(--muted);}
+  ul.watch li{font-size:14.5px;margin-bottom:9px;margin-left:18px;color:#cdd5dd;}
+  footer{text-align:center;padding:30px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--border);margin-top:30px;}
+  .theme-toggle{background:var(--card);border:1px solid var(--border);color:var(--text);font-size:12.5px;font-weight:600;padding:6px 11px;border-radius:7px;cursor:pointer;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header style="display:flex;justify-content:space-between;align-items:center;">
+    <a class="logo" href="../index.html"><span class="icon">⚽</span> The Final Third</a>
+    <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">☀️ Light</button>
+  </header>
+
+  <div class="title-block">
+    <div class="comp-tag">FIFA World Cup 2026 · Group J · Matchday 3</div>
+    <h1>Algeria vs Austria</h1>
+    <div class="venue">Kansas City Stadium, Kansas City - Sat 27 June 2026</div>
+    <span class="ft-badge">FULL TIME - Algeria 3-3 Austria</span>
+  </div>
+
+  <div class="callout">A genuine modern World Cup classic - six goals, a stoppage-time lead, and an even later equaliser scored 61 seconds after the goalscorer had even set foot on the pitch.</div>
+
+  <div class="impact-box">⚠️ Tournament impact: this draw eliminated Iran from contention as one of the eight best third-placed teams. Iran would have advanced had either Austria or Algeria won outright - the shared points from this draw pushed both above Iran's tally instead, ending Iran's World Cup on a technicality decided in a different stadium entirely.</div>
+
+  <div class="section">
+    <div class="section-head">📋 Result Summary</div>
+    <div class="stat-cards">
+      <div class="stat-card"><div class="label">Final score</div><div class="value">ALG 3-3 AUT</div></div>
+      <div class="stat-card"><div class="label">Algeria scorers</div><div class="value">Belghali, Mahrez x2</div></div>
+      <div class="stat-card"><div class="label">Austria scorers</div><div class="value">Arnautovic, Sabitzer, Kalajdzic</div></div>
+    </div>
+    <p class="body">Both sides went through to the Round of 32 regardless of the result, but neither treated it as a dead rubber. Arnautovic gave Austria an early lead, Belghali leveled right before half-time, Sabitzer restored Austria's advantage, Mahrez equalized and then thought he'd won it with a stoppage-time strike - only for substitute Sasa Kalajdzic to snatch a stunning equalizer just 61 seconds after coming on, sending the match to a share of the spoils that, remarkably, suited both sides perfectly.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🧩 Confirmed Formations</div>
+    <div class="twocol">
+      <div class="col"><img src="../images/algaut_formation.png" alt="Algeria formation"></div>
+      <div class="col"><img src="../images/autalg_formation.png" alt="Austria formation"></div>
+    </div>
+    <p class="note">Algeria (4-2-3-1): Benbot; Hadjam, Mandi, Bensebaini, Belghali; Zerrouki, Bentaleb; Aouar, Maza, Chaibi; Mahrez. Austria (3-5-2): A. Schlager; Posch, Danso, Alaba; Mwene, Seiwald, X. Schlager, Sabitzer, Schmid; Laimer, Arnautovic.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🔍 Tactical Review</div>
+    <p class="body">Algeria's 60% possession reflects a side that controlled territory for long stretches, particularly down the left channel (24 entries into the final third, nearly triple their right-side count) - but Austria's directness in transition, twice scoring from quick vertical sequences (Arnautovic's run, Kalajdzic's header), proved repeatedly difficult to contain even while seeing less of the ball.</p>
+    <p class="body">The closing 15 minutes alone produced three goals - more than any other team has managed in a single stretch this tournament - reflecting two sides pushing for a winner rather than settling for the point that, in the end, suited both of them anyway. Petkovic's bench gave Algeria the legs to break through twice late on; Rangnick's introduction of the towering Kalajdzic for the final minutes was a calculated gamble on aerial presence that paid off in the most dramatic way possible.</p>
+    <p class="body" style="font-weight:700;">The key tactical moment was Rangnick's decision to bring on Kalajdzic with Austria already behind in stoppage time - a pure aerial-target substitution made purely to chase a goal, vindicated within a single minute of his introduction.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Goal: Arnautovic opens the scoring (0-1, 28')</div>
+    <img src="../images/algaut_goal1.png" alt="Arnautovic goal">
+    <p class="body">Real quality in the pass and the run alike - David Alaba's lofted ball over the top demanded perfect weight and timing, and Arnautovic, at 37 the oldest player to start a match this tournament, showed he still has the legs to win the race to it before slotting past Benbot. No defensive lapse to point to here; this was a well-executed move beating a defense playing a reasonably high line.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Goal: Belghali levels it (1-1, 41')</div>
+    <img src="../images/algaut_goal2.png" alt="Belghali goal">
+    <p class="body">A genuine mix of fortune and brilliance. Phillipp Mwene was caught out by a long pass that bounced toward the corner flag, and as he and Mahrez tumbled together challenging for it, the loose ball broke perfectly for Belghali. From there, it was all individual quality - Belghali drove down the right byline at pace and rolled the ball inside before finishing powerfully past Schlager at his near post. The platform was a defensive mix-up; the finish itself was pure technique, and made him the youngest player to score for Algeria at a World Cup since 1982.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Goal: Sabitzer restores the lead (1-2, 55')</div>
+    <img src="../images/algaut_goal3.png" alt="Sabitzer goal">
+    <p class="body">A trademark strike from distance - Sabitzer's ninth goal from outside the box for Austria since 2019, more than double any other Austrian player in that span. Genuine individual technique rather than a defensive error; Algeria's shape was reasonably set, but a strike of this quality from this range is difficult to defend regardless.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Goal: Mahrez equalizes (2-2, 60')</div>
+    <img src="../images/algaut_goal4.png" alt="Mahrez first goal">
+    <p class="body">Houssem Aouar provided the assist, but the bigger story was Mahrez himself - at 35 years old and in his fourth World Cup appearance across his career, this was genuinely his first-ever World Cup goal, making him the first Algerian player to score at the tournament at 32 or older. A clean finish to cap a moment two decades of international football had been building toward.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Goal: Mahrez's apparent winner (3-2, 90+3')</div>
+    <img src="../images/algaut_goal5.png" alt="Mahrez second goal">
+    <p class="body">Aouar's second assist of the night was the real architect here, slipping Mahrez into space that had opened up as Austria committed numbers forward chasing an equalizer of their own. Mahrez did the rest himself, driving the ball low and hard across the goalkeeper into the corner on his own left - his second goal of the match, making him just the second Algerian ever to score twice in a single World Cup game, after Salah Assad in 1982. For a few minutes, this looked like the goal that would send Algeria through as runners-up and eliminate Austria entirely.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Goal: Kalajdzic's sucker punch (3-3, 90+5')</div>
+    <img src="../images/algaut_goal6.png" alt="Kalajdzic goal">
+    <p class="body">An almost unthinkable response. Sasa Kalajdzic had been on the pitch for only 61 seconds - the third-fastest goal by a substitute at this entire World Cup - when Michael Gregoritsch (who'd come on at half-time) delivered a cross from the right. Kalajdzic needed just one touch, heading the ball back across goal in the same direction it arrived from, completely against the grain of where any covering defender would expect it to go. Pure aerial presence and instinct from a player introduced for exactly this kind of moment - not a defensive collapse from Algeria, simply a near-impossible source of a goal materializing from nothing.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">📈 Goal Timeline</div>
+    <img src="../images/algaut_timeline.png" alt="Goal timeline chart">
+  </div>
+
+  <div class="section">
+    <div class="section-head">📊 Actual Match Stats</div>
+    <img src="../images/algaut_stats.png" alt="Match stats chart">
+    <p class="note">Both sides outplayed their own xG (Algeria 1.62, Austria 1.44) against a combined six goals - a rare case of finishing quality from both teams genuinely exceeding what the underlying chances suggested.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🔥 MOTM Spotlight: Riyad Mahrez</div>
+    <div class="stat-cards">
+      <div class="stat-card"><div class="label">Goals</div><div class="value">2</div></div>
+      <div class="stat-card"><div class="label">Age at first WC goal</div><div class="value">35</div></div>
+      <div class="stat-card"><div class="label">Algeria goals (career)</div><div class="value">39</div></div>
+      <div class="stat-card"><div class="label">Multi-goal WC games (Algeria)</div><div class="value">2nd ever</div></div>
+    </div>
+    <img src="../images/mahrez_heatmap.png" alt="Mahrez heatmap">
+    <img src="../images/mahrez_ratingbars.png" alt="Mahrez rating breakdown">
+    <img src="../images/mahrez_shotmap.png" alt="Mahrez shot map">
+    <p class="body">A genuinely overdue World Cup moment for one of the most accomplished players never to have scored at the tournament before this match - two goals in a single game, joining Salah Assad (1982) as the only Algerians to manage that feat. The frustration of nearly seeing his stoppage-time strike define the match, only for Kalajdzic to deny him the perfect ending seconds later, doesn't take away from a genuinely brilliant individual contribution to one of the matches of the tournament.</p>
+    <p class="note">Illustrative reconstruction based on known event locations, not raw GPS tracking data.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⭐ Player Ratings</div>
+    <div class="twocol">
+      <div class="col">
+        <h4>Algeria</h4>
+        <p>Mahrez - 8.5 ⭐ MOTM (brace)</p>
+        <p>Belghali - 8.0 (goal, youngest scorer since '82)</p>
+        <p>Aouar - 7.5 (2 assists)</p>
+        <p>Benbot - 5.5 (3 conceded)</p>
+      </div>
+      <div class="col">
+        <h4>Austria</h4>
+        <p>Kalajdzic - 8.0 (61-second impact goal)</p>
+        <p>Arnautovic - 7.5 (goal, oldest starter)</p>
+        <p>Sabitzer - 7.5 (trademark strike)</p>
+        <p>Mwene - 4.5 (error led to Belghali goal)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head">💡 Key Takeaways &amp; What's Next</div>
+    <ul class="watch">
+      <li>This draw's biggest victim wasn't on the pitch at all - Iran's elimination from the best-third-place race, decided by a result hundreds of miles away, is a stark reminder of how interconnected World Cup group outcomes really are.</li>
+      <li>Both sides showed genuine character to keep pushing for a winner despite already being safely through - a credit to both managers' approach to a fixture that could easily have been treated as a formality.</li>
+      <li>Arnautovic's age-defying performance and Mahrez's long-awaited World Cup breakthrough are both worth following into the knockout stage - two senior players delivering when it mattered most.</li>
+    </ul>
+    <p class="note">Austria advance to face Spain in the Round of 32 - their first knockout-stage appearance since 1982. Algeria advance as one of the best third-placed teams to face Switzerland, managed by their own former coach Vladimir Petkovic's old side.</p>
+  </div>
+
+  <footer>The Final Third - built with no code, no budget, just analysis.</footer>
+</div>
+<script>
+function applyTheme(t){
+  document.documentElement.setAttribute('data-theme', t);
+  const btn = document.getElementById('themeBtn');
+  if(btn) btn.textContent = t === 'light' ? '🌙 Dark' : '☀️ Light';
+  localStorage.setItem('theme', t);
+}
+function toggleTheme(){
+  const current = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+  applyTheme(current);
+}
+(function(){
+  const saved = localStorage.getItem('theme') || 'dark';
+  applyTheme(saved);
+})();
+</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "302dd873be084af1a4f5f049ac6766bf"}'></script><!-- End Cloudflare Web Analytics -->
+
+<div style="max-width:760px;margin:0 auto;padding:0 24px 40px;">
+  <div style="border-top:1px solid #2a2f37;padding-top:30px;margin-top:10px;">
+    <p style="font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#8b949e;margin-bottom:16px;">💬 Reactions &amp; Comments</p>
+    <script src="https://giscus.app/client.js"
+      data-repo="futsalfrenzy19-crypto/final-third"
+      data-repo-id="R_kgDOTEYoRg"
+      data-category="Announcements"
+      data-category-id="DIC_kwDOTEYoRs4C_5pZ"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="bottom"
+      data-theme="transparent_dark"
+      data-lang="en"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </div>
+</div>
+</body>
+</html>
