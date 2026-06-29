@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portugal vs Uzbekistan - The Final Third</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --border:#2a2f37;
+    --green:#22c55e; --green-dim:rgba(34,197,94,0.12);
+    --red:#ef4444; --red-dim:rgba(239,68,68,0.12);
+    --amber:#f59e0b; --amber-dim:rgba(245,158,11,0.12);
+    --gold:#FFD700; --gold-dim:rgba(255,215,0,0.12);
+    --text:#e6edf3; --muted:#8b949e;
+  }
+  html[data-theme="light"]{
+    --bg:#f3f4f1; --card:#ffffff; --border:#d8dbd6;
+    --green:#15803d; --green-dim:rgba(21,128,61,0.1);
+    --red:#b91c1c; --red-dim:rgba(185,28,28,0.1);
+    --amber:#b45309; --amber-dim:rgba(180,83,9,0.1);
+    --gold:#92702c; --gold-dim:rgba(146,112,44,0.1);
+    --text:#14171a; --muted:#5a5f56;
+  }
+  html[data-theme="light"] .stat-card,
+  html[data-theme="light"] .callout{ box-shadow:0 1px 2px rgba(0,0,0,0.04), 0 4px 14px rgba(0,0,0,0.05); }
+  html[data-theme="light"] .theme-toggle{ box-shadow:0 1px 2px rgba(0,0,0,0.05); }
+  body{transition:background .15s, color .15s;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px 60px;}
+  header{padding:24px 0;}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;text-decoration:none;color:var(--muted);}
+  .logo .icon{width:24px;height:24px;background:var(--green);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:12px;}
+  .title-block{margin-bottom:24px;}
+  .comp-tag{color:var(--green);font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.4px;margin-bottom:10px;}
+  h1{font-size:34px;margin-bottom:8px;}
+  .venue{color:var(--muted);font-size:14px;margin-bottom:14px;}
+  .ft-badge{display:inline-flex;align-items:center;gap:6px;background:var(--amber-dim);color:var(--amber);font-weight:700;font-size:13px;padding:6px 12px;border-radius:6px;}
+  .callout{background:var(--gold-dim);border:1px solid rgba(255,215,0,0.3);border-radius:8px;padding:12px 16px;font-size:13.5px;color:var(--gold);margin-bottom:30px;font-weight:600;}
+  .section{margin-bottom:34px;}
+  .section-head{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--green);margin-bottom:14px;border-bottom:1px solid var(--border);padding-bottom:8px;}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media (max-width:600px){.twocol{grid-template-columns:1fr;}}
+  img{max-width:100%;display:block;margin:0 auto 8px;border-radius:6px;}
+  .stat-cards{display:flex;gap:10px;margin-bottom:6px;flex-wrap:wrap;}
+  .stat-card{flex:1;min-width:120px;background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px 10px;text-align:center;}
+  .stat-card .label{font-size:11px;color:var(--muted);}
+  .stat-card .value{font-size:16px;font-weight:800;color:var(--green);margin-top:4px;}
+  p.body{font-size:15px;margin-bottom:12px;color:#cdd5dd;}
+  p.note{font-size:13px;font-style:italic;color:var(--muted);}
+  ul.watch li{font-size:14.5px;margin-bottom:9px;margin-left:18px;color:#cdd5dd;}
+  footer{text-align:center;padding:30px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--border);margin-top:30px;}
+  .theme-toggle{background:var(--card);border:1px solid var(--border);color:var(--text);font-size:12.5px;font-weight:600;padding:6px 11px;border-radius:7px;cursor:pointer;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header style="display:flex;justify-content:space-between;align-items:center;">
+    <a class="logo" href="../index.html"><span class="icon">⚽</span> The Final Third</a>
+    <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">☀️ Light</button>
+  </header>
+
+  <div class="title-block">
+    <div class="comp-tag">FIFA World Cup 2026 · Group K · Matchday 2</div>
+    <h1>Portugal vs Uzbekistan</h1>
+    <div class="venue">Houston Stadium, Houston - Tue 23 June 2026</div>
+    <span class="ft-badge">FULL TIME - Portugal 5-0 Uzbekistan</span>
+  </div>
+
+  <div class="callout">🐐 The redemption this analysis flagged was coming. After missed chances and visible frustration against DR Congo, Cristiano Ronaldo answered every doubter with a brace that made him the first player in history to score at six different World Cups.</div>
+
+  <div class="section">
+    <div class="section-head">📋 Result Summary</div>
+    <div class="stat-cards">
+      <div class="stat-card"><div class="label">Final score</div><div class="value">POR 5-0 UZB</div></div>
+      <div class="stat-card"><div class="label">Scorers</div><div class="value">Ronaldo x2, Mendes, Nematov (OG), Leao</div></div>
+      <div class="stat-card"><div class="label">Milestone</div><div class="value">1st player to score at 6 World Cups</div></div>
+    </div>
+    <p class="body">After the calls to drop him following a frustrating opening-game showing against DR Congo, Ronaldo delivered the loudest possible response - a brace either side of half-time, including the goal that made him the first player in football history to score at six different World Cup tournaments. Nuno Mendes added a stunning free-kick, an unfortunate Nematov own goal made it four, and substitute Rafael Leao completed the rout late on.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🧩 Confirmed Formations</div>
+    <div class="twocol">
+      <div class="col"><img src="../images/poruzb_formation.png" alt="Portugal formation"></div>
+      <div class="col"><img src="../images/uzb_formation.png" alt="Uzbekistan formation"></div>
+    </div>
+    <p class="note">Portugal (4-3-3): Diogo Costa; Cancelo, Dias, Veiga, N. Mendes; J. Neves, Vitinha, B. Fernandes; Felix, Neto, Ronaldo. Uzbekistan (4-3-3): Nematov; Erkinov, Khusanov, Nesterov, Turaev; Shukurov, Shomurodov (2), Iskandarov; Ganiev, Shomurodov, Fayzullaev.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🔍 Tactical Review</div>
+    <p class="body">Portugal's improvement from the DR Congo draw was immediate and obvious - 56% possession and 17 shots reflects a side playing with far more urgency and directness, with Cancelo's overlapping runs from right-back repeatedly finding space behind a Uzbekistan back line that, for tournament debutants, defended with real discipline but couldn't match Portugal's individual quality in the final third.</p>
+    <p class="body">Uzbekistan's resilience deserves genuine credit even in a heavy defeat - Fabio Cannavaro's side kept battling, created a real moment through Ganiev's disallowed strike, and didn't simply collapse once the scoreline got away from them. Coached by a World Cup winner as a player, their organizational structure held up better than the result suggests for long stretches.</p>
+    <p class="body" style="font-weight:700;">The key moment of the match - and arguably of Ronaldo's tournament so far - was the sixth-minute goal itself. Confirmed history in football's biggest competition tends to silence doubt instantly, and from that point on this had the feel of a player who'd been waiting for exactly this kind of moment to remind everyone what he's still capable of.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Goal: Ronaldo makes history (1-0, 6')</div>
+    <img src="../images/poruzb_goal1.png" alt="Ronaldo historic goal">
+    <p class="body">Joao Cancelo's low cross was precise, and Ronaldo's finish was clean and clinical from close range - good combination play, nothing extravagant required. The significance dwarfs the technique involved: this made him the first player in the history of football to score at six different World Cup tournaments, a record that may not be threatened again for a very long time given how rarely players reach even five. At 41 years and 138 days old, he's also now the second-oldest player to ever score at a World Cup, behind only Roger Milla's famous 1994 strike.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Goal: Nuno Mendes' free-kick (2-0, 17')</div>
+    <img src="../images/poruzb_goal2.png" alt="Mendes free kick goal">
+    <p class="body">A genuinely excellent piece of individual technique from Portugal's left-back - stepping up himself rather than deferring to a more conventional set-piece taker, and curling a direct free-kick beyond Nematov with real power and precision. A statement that Portugal's quality runs well beyond just their captain.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🚫 Disallowed: Ganiev's stunner (29')</div>
+    <img src="../images/poruzb_disallowed.png" alt="Ganiev disallowed goal">
+    <p class="body">A genuinely spectacular strike from outside the box that would have given Uzbekistan a real lifeline - ruled out by VAR for a foul on Cancelo in the buildup. A heartbreaking moment for the debutants, but the correct call on the replay evidence; no referee error to flag here.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Goal: Ronaldo's brace (3-0, 39')</div>
+    <img src="../images/poruzb_goal3.png" alt="Ronaldo second goal">
+    <p class="body">A smart, controlled finish with just the goalkeeper to beat - composed rather than spectacular, but exactly the kind of clinical edge that was completely absent against DR Congo. Two goals, two different qualities of finish, in the same half - the complete opposite of the player who shook his head in frustration just one matchday earlier.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Own goal: Nematov (4-0, 60')</div>
+    <img src="../images/poruzb_goal4.png" alt="Own goal">
+    <p class="body">A cruel deflection rather than a clear individual error - Bruno Fernandes' corner took an unfortunate touch off Nematov on its way in, leaving the goalkeeper with no real chance to react. Misfortune more than mistake.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Goal: Leao seals it (5-0, 86')</div>
+    <img src="../images/poruzb_goal5.png" alt="Leao goal">
+    <p class="body">A precise, powerful strike from the edge of the box from a player who'd only been on the pitch a short while - a fitting final flourish to a complete attacking display, finding space that a tired Uzbekistan defense simply couldn't close down in time.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">📊 Actual Match Stats</div>
+    <img src="../images/poruzb_stats.png" alt="Match stats chart">
+    <p class="note">A 17-7 shot count and 9-2 gap in shots on target reflects total attacking superiority - a complete response from Portugal after a flat opening performance.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🔥 MOTM Spotlight: Cristiano Ronaldo</div>
+    <div class="stat-cards">
+      <div class="stat-card"><div class="label">Goals</div><div class="value">2</div></div>
+      <div class="stat-card"><div class="label">xG</div><div class="value">1.6</div></div>
+      <div class="stat-card"><div class="label">Total shots</div><div class="value">4</div></div>
+      <div class="stat-card"><div class="label">Career World Cup goals</div><div class="value">10 (Portugal record)</div></div>
+    </div>
+    <div class="stat-cards">
+      <div class="stat-card"><div class="label">World Cups scored at</div><div class="value">6 (all-time record)</div></div>
+      <div class="stat-card"><div class="label">Age</div><div class="value">41y 138d</div></div>
+      <div class="stat-card"><div class="label">Goal-line clearance against</div><div class="value">1</div></div>
+      <div class="stat-card"><div class="label">Big chances missed</div><div class="value">0</div></div>
+    </div>
+    <img src="../images/ronaldo2_heatmap.png" alt="Ronaldo heatmap">
+    <img src="../images/ronaldo2_ratingbars.png" alt="Ronaldo rating breakdown">
+    <img src="../images/ronaldo2_shotmap.png" alt="Ronaldo shot map">
+    <p class="body">This is the full-circle moment this analysis flagged was possible after the DR Congo performance - real, fair criticism for missed chances one matchday, followed by genuine, deserved celebration the next. Ten career World Cup goals now makes him Portugal's all-time leading scorer at the tournament, ahead of the great Eusebio, and the six-World-Cups record may stand for a generation given how rarely players maintain this level into their forties. His own words afterward were notably measured - "records are always nice, but my goal is always to help the national team" - but make no mistake, this was a response to doubt delivered in the most emphatic way possible.</p>
+    <p class="note">Illustrative reconstruction based on known event locations, not raw GPS tracking data.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⭐ Player Ratings</div>
+    <div class="twocol">
+      <div class="col">
+        <h4>Portugal</h4>
+        <p>Ronaldo - 9.0 ⭐ MOTM (historic brace)</p>
+        <p>N. Mendes - 8.0 (free-kick goal)</p>
+        <p>Cancelo - 7.5 (assist, constant threat)</p>
+        <p>Leao - 7.0 (impact sub goal)</p>
+      </div>
+      <div class="col">
+        <h4>Uzbekistan</h4>
+        <p>Ganiev - 6.5 (brilliant disallowed strike)</p>
+        <p>Khusanov - 6.0 (goal-line clearance)</p>
+        <p>Nematov - 4.5 (unlucky own goal)</p>
+        <p>Fayzullaev - 5.5 (limited service)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head">💡 Key Takeaways &amp; What's Next</div>
+    <ul class="watch">
+      <li>Ronaldo's historic response silences the drop-him calls entirely heading into Portugal's final group game - Roberto Martinez's faith in his captain has been emphatically rewarded.</li>
+      <li>Portugal's attacking depth (five different goal contributors) is a genuinely good sign heading into the knockout stage, where they'll need more than just their captain to carry the load.</li>
+      <li>Uzbekistan's tournament debut, despite the heavy defeat, showed real moments of quality (Ganiev's strike especially) - a foundation to build from even as their qualification hopes hang by a thread.</li>
+    </ul>
+    <p class="note">Next: Portugal face Colombia, knowing a win secures top spot in Group K. Uzbekistan face DR Congo in a match that will likely decide their World Cup fate.</p>
+  </div>
+
+  <footer>The Final Third - built with no code, no budget, just analysis.</footer>
+</div>
+<script>
+function applyTheme(t){
+  document.documentElement.setAttribute('data-theme', t);
+  const btn = document.getElementById('themeBtn');
+  if(btn) btn.textContent = t === 'light' ? '🌙 Dark' : '☀️ Light';
+  localStorage.setItem('theme', t);
+}
+function toggleTheme(){
+  const current = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+  applyTheme(current);
+}
+(function(){
+  const saved = localStorage.getItem('theme') || 'dark';
+  applyTheme(saved);
+})();
+</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "302dd873be084af1a4f5f049ac6766bf"}'></script><!-- End Cloudflare Web Analytics -->
+
+  <!-- Comments & Reactions -->
+  <div style="max-width:760px;margin:0 auto;padding:0 24px 40px;">
+    <div style="border-top:1px solid var(--border,#2a2f37);padding-top:30px;margin-top:10px;">
+      <p style="font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--muted,#8b949e);margin-bottom:16px;">💬 Reactions &amp; Comments</p>
+      <script src="https://giscus.app/client.js"
+        data-repo="futsalfrenzy19-crypto/final-third"
+        data-repo-id="R_kgDOTEYoRg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOTEYoRs4C_5pZ"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="transparent_dark"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </div>
+  </div>
+
+</body>
+</html>

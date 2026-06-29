@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mexico vs South Africa - The Final Third</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --border:#2a2f37;
+    --green:#22c55e; --green-dim:rgba(34,197,94,0.12);
+    --red:#ef4444; --red-dim:rgba(239,68,68,0.12);
+    --amber:#f59e0b; --amber-dim:rgba(245,158,11,0.12);
+    --text:#e6edf3; --muted:#8b949e;
+  }
+  html[data-theme="light"]{
+    --bg:#f3f4f1; --card:#ffffff; --border:#d8dbd6;
+    --green:#15803d; --green-dim:rgba(21,128,61,0.1);
+    --red:#b91c1c; --red-dim:rgba(185,28,28,0.1);
+    --amber:#b45309; --amber-dim:rgba(180,83,9,0.1);
+    --text:#14171a; --muted:#5a5f56;
+  }
+  html[data-theme="light"] .stat-card,
+  html[data-theme="light"] .callout{ box-shadow:0 1px 2px rgba(0,0,0,0.04), 0 4px 14px rgba(0,0,0,0.05); }
+  html[data-theme="light"] .theme-toggle{ box-shadow:0 1px 2px rgba(0,0,0,0.05); }
+  body{transition:background .15s, color .15s;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px 60px;}
+  header{padding:24px 0;}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;text-decoration:none;color:var(--muted);}
+  .logo .icon{width:24px;height:24px;background:var(--green);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:12px;}
+
+  .title-block{margin-bottom:24px;}
+  .comp-tag{color:var(--green);font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.4px;margin-bottom:10px;}
+  h1{font-size:34px;margin-bottom:8px;}
+  .venue{color:var(--muted);font-size:14px;margin-bottom:14px;}
+  .ft-badge{display:inline-flex;align-items:center;gap:6px;background:var(--amber-dim);color:var(--amber);font-weight:700;font-size:13px;padding:6px 12px;border-radius:6px;}
+
+  .callout{background:var(--green-dim);border:1px solid rgba(34,197,94,0.3);border-radius:8px;padding:12px 16px;font-size:13.5px;color:#86efac;margin-bottom:30px;}
+  .warn-callout{background:var(--red-dim);border:1px solid rgba(239,68,68,0.3);border-radius:8px;padding:12px 16px;font-size:13.5px;color:#fca5a5;margin-bottom:20px;}
+
+  .section{margin-bottom:34px;}
+  .section-head{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--green);margin-bottom:14px;border-bottom:1px solid var(--border);padding-bottom:8px;}
+
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media (max-width:600px){.twocol{grid-template-columns:1fr;}}
+
+  img{max-width:100%;display:block;margin:0 auto 8px;border-radius:6px;}
+
+  .stat-cards{display:flex;gap:10px;margin-bottom:6px;flex-wrap:wrap;}
+  .stat-card{flex:1;min-width:120px;background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px 10px;text-align:center;}
+  .stat-card .label{font-size:11px;color:var(--muted);}
+  .stat-card .value{font-size:16px;font-weight:800;color:var(--green);margin-top:4px;}
+
+  p.body{font-size:15px;margin-bottom:12px;color:#cdd5dd;}
+  p.note{font-size:13px;font-style:italic;color:var(--muted);}
+  ul.watch li{font-size:14.5px;margin-bottom:9px;margin-left:18px;color:#cdd5dd;}
+
+  footer{text-align:center;padding:30px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--border);margin-top:30px;}
+  .theme-toggle{background:var(--card);border:1px solid var(--border);color:var(--text);font-size:12.5px;font-weight:600;padding:6px 11px;border-radius:7px;cursor:pointer;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header style="display:flex;justify-content:space-between;align-items:center;">
+    <a class="logo" href="../index.html"><span class="icon">⚽</span> The Final Third</a>
+    <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">☀️ Light</button>
+  </header>
+
+  <div class="title-block">
+    <div class="comp-tag">FIFA World Cup 2026 · Group A · Matchday 1 · Tournament Opener</div>
+    <h1>Mexico vs South Africa</h1>
+    <div class="venue">Estadio Azteca, Mexico City - Thu 11 June 2026</div>
+    <span class="ft-badge">FULL TIME - Mexico 2-0 South Africa</span>
+  </div>
+
+  <div class="callout">A genuinely chaotic World Cup opener - three red cards, a 2010 rematch, and Raul Jimenez's first World Cup goal. Full breakdown below.</div>
+
+  <div class="section">
+    <div class="section-head">📋 Result Summary</div>
+    <div class="stat-cards">
+      <div class="stat-card"><div class="label">Final score</div><div class="value">MEX 2-0 RSA</div></div>
+      <div class="stat-card"><div class="label">Scorers</div><div class="value">Quinones, Jimenez</div></div>
+      <div class="stat-card"><div class="label">Red cards</div><div class="value">3 total</div></div>
+    </div>
+    <p class="body">Mexico opened the 2026 World Cup with a fitting symmetry to 2010 - back then it was a 1-1 draw in Johannesburg, this time a comfortable home win in Mexico City, sixteen years later almost to the day. Julian Quinones punished a Sphephelo Sithole error after 9 minutes, Raul Jimenez headed in his first-ever World Cup goal in the 67th, and the match descended into genuine chaos from there: three red cards across both sides turned a routine group opener into one of the most talked-about games of the tournament's first matchday.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🧩 Confirmed Formations</div>
+    <div class="twocol">
+      <div class="col"><img src="../images/mex_formation.png" alt="Mexico formation"></div>
+      <div class="col"><img src="../images/sa_formation_md1.png" alt="South Africa formation"></div>
+    </div>
+    <p class="note">Mexico (4-3-3): Rangel; Gallardo, Vasquez, Montes, Reyes; Lira, Fidalgo, Gutierrez; Quinones, Jimenez, Alvarado. South Africa (5-3-2): Williams; Modiba, Sibisi, Mbokazi, Okon, Mudau; Sithole, Mokoena, Adams; Rayners, Foster.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🔍 Tactical Review</div>
+    <p class="body">South Africa's 5-3-2 was a defensively cautious choice for an opener against the host nation - and in fairness, it mostly did its job of limiting clear sight-of-goal moments, reflected in Mexico's modest 1.41 xG across the full 90. The problem wasn't the structure itself, it was the discipline within it: Sithole's costly turnover for the opener and his red card for a last-man foul both came from individual lapses under pressure, not the back five being torn open.</p>
+    <p class="body">Mexico's 4-3-3 didn't need to be spectacular - the home crowd, South Africa's growing indiscipline, and two clean finishing moments were enough. Alvarado and Quinones both offered real width and direct running at a back five that, while compact centrally, had to defend a lot of one-on-one duels out wide as the game opened up after the dismissals.</p>
+    <p class="body" style="font-weight:700;">The key tactical moment: Sithole's red card three minutes into the second half. Going down to 10 men against the host nation, with the score already 1-0, removed any realistic path back into the game and forced South Africa into a containment mode that produced two more cards rather than a fightback.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Goal: Quinones punishes Sithole (1-0, 9')</div>
+    <img src="../images/mxsa_goal1.png" alt="Quinones goal sequence">
+    <p class="body">A clean individual error from Sithole, not a Mexico mistake created by good play. He received possession in a relatively comfortable position near the edge of his own box and attempted to bring the ball under control under modest pressure - the wrong choice was attempting to dribble out rather than playing simple, given Quinones had already cut off the easiest passing lane. Quinones read the touch, won the ball clean, and finished low into the corner from a tight angle - composed finishing under a closing angle, capitalizing fully on an unforced opposition mistake.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Goal: Jimenez's first World Cup goal (2-0, 67')</div>
+    <img src="../images/mxsa_goal2.png" alt="Jimenez goal sequence">
+    <p class="body">A goal built on a simple overload rather than individual brilliance. Alvarado got into a crossing position down the right with both South African wide defenders occupied elsewhere - a product of South Africa's back five being stretched after playing down a man for over 20 minutes by this point. Jimenez's movement to the near post was well-timed but unmarked, meaning the finish itself required composure under the occasion (his first World Cup goal at 35 years old, on home soil) more than technical difficulty - a clean header into the corner with a defender unable to recover in time.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🟥 Three red cards: a breakdown</div>
+    <p class="body"><strong>Sithole (South Africa, ~50')</strong> - a professional foul as last man, denying Gutierrez a clear run on goal. A correct, clear-cut decision; no VAR controversy here, the offence was obvious in real time.</p>
+    <p class="body"><strong>Montes (Mexico, 90+2')</strong> - clipped Mudau just outside the box as the last defender with South Africa breaking with numbers. Also correctly given - denying an obvious goalscoring opportunity, textbook red regardless of the team committing it.</p>
+    <p class="body"><strong>Zwane (South Africa, 84')</strong> - adjudged to have slapped Alvarado in the face attempting to shrug off the challenge. The most debatable of the three in terms of intent versus genuine violent conduct, but referees are bound to act on any contact to the face once review confirms it occurred, and replays did show contact.</p>
+    <p class="note">No referee or VAR controversy to flag in this one - all three dismissals were correctly identified and given, even if the Zwane decision was the closest call of the three.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">📊 Actual Match Stats</div>
+    <img src="../images/mxsa_stats.png" alt="Match stats chart">
+    <p class="note">The 1.41 to 0.07 xG gap is the real story of the 90 minutes that the 2-0 scoreline only partially captures - Mexico were dominant for long stretches even before the numerical advantage kicked in.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🔥 MOTM Spotlight: Julian Quinones</div>
+    <div class="stat-cards">
+      <div class="stat-card"><div class="label">Goals</div><div class="value">1</div></div>
+      <div class="stat-card"><div class="label">xG</div><div class="value">0.45</div></div>
+      <div class="stat-card"><div class="label">Total shots</div><div class="value">3</div></div>
+      <div class="stat-card"><div class="label">Shots on target</div><div class="value">2</div></div>
+    </div>
+    <div class="stat-cards">
+      <div class="stat-card"><div class="label">xGOT</div><div class="value">0.50</div></div>
+      <div class="stat-card"><div class="label">Big chances missed</div><div class="value">0</div></div>
+      <div class="stat-card"><div class="label">Hit woodwork</div><div class="value">1</div></div>
+      <div class="stat-card"><div class="label">Offsides</div><div class="value">0</div></div>
+    </div>
+    <img src="../images/quinones_heatmap.png" alt="Quinones heatmap">
+    <img src="../images/quinones_ratingbars.png" alt="Quinones rating breakdown">
+    <img src="../images/quinones_shotmap.png" alt="Quinones shot map">
+    <p class="body">An efficient, direct performance rather than a high-volume one - just 3 shots, but a goal and a post off the other two means he was clinical with the chances he actually had. The heatmap shows him operating almost entirely down the right channel, consistent with the shot map's cluster of attempts from the same zone - a player doing one specific job (stretching the back five's left side) and doing it very well, rather than drifting and searching for the game. The rating breakdown's strongly negative defending score is unsurprising and not really a criticism here - Mexico's gameplan, especially after South Africa went down to 10, never asked him to track back.</p>
+    <p class="note">Illustrative reconstruction based on known event locations, not raw GPS tracking data.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⭐ Player Ratings</div>
+    <div class="twocol">
+      <div class="col">
+        <h4>Mexico</h4>
+        <p>Rangel - 6.5 (untroubled)</p>
+        <p>Quinones - 8.0 ⭐ MOTM (goal, post)</p>
+        <p>Jimenez - 7.5 (historic first goal)</p>
+        <p>Montes - 5.0 (late red card)</p>
+      </div>
+      <div class="col">
+        <h4>South Africa</h4>
+        <p>Williams - 6.0 (kept it from being heavier)</p>
+        <p>Sithole - 3.5 (error plus red card)</p>
+        <p>Mbokazi - 6.0 (solid before the reds)</p>
+        <p>Zwane - 4.0 (costly red card)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head">💡 Key Takeaways &amp; What's Next</div>
+    <ul class="watch">
+      <li>South Africa's discipline, not their structure, is the real concern heading into their next match - two red cards from rash individual moments rather than the 5-3-2 itself being exposed tactically.</li>
+      <li>Mexico's home advantage and squad depth showed in their ability to capitalize fully once the numerical advantage arrived - a good early signal for a co-host side under pressure to deliver on home soil.</li>
+      <li>Jimenez's milestone goal at 35, in his third World Cup appearance era, is a feel-good story worth tracking as Mexico's tournament progresses - whether he can stay fit and productive across the group stage.</li>
+    </ul>
+    <p class="note">Next: Mexico face South Korea. South Africa face Czechia, already needing a response after this chaotic opener.</p>
+  </div>
+
+  <footer>The Final Third - built with no code, no budget, just analysis.</footer>
+</div>
+<script>
+function applyTheme(t){
+  document.documentElement.setAttribute('data-theme', t);
+  const btn = document.getElementById('themeBtn');
+  if(btn) btn.textContent = t === 'light' ? '🌙 Dark' : '☀️ Light';
+  localStorage.setItem('theme', t);
+}
+function toggleTheme(){
+  const current = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+  applyTheme(current);
+}
+(function(){
+  const saved = localStorage.getItem('theme') || 'dark';
+  applyTheme(saved);
+})();
+</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "302dd873be084af1a4f5f049ac6766bf"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

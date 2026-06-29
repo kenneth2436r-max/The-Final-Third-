@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spain vs Cape Verde - The Final Third</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --border:#2a2f37;
+    --green:#22c55e; --green-dim:rgba(34,197,94,0.12);
+    --red:#ef4444; --red-dim:rgba(239,68,68,0.12);
+    --amber:#f59e0b; --amber-dim:rgba(245,158,11,0.12);
+    --text:#e6edf3; --muted:#8b949e;
+  }
+  html[data-theme="light"]{
+    --bg:#f3f4f1; --card:#ffffff; --border:#d8dbd6;
+    --green:#15803d; --green-dim:rgba(21,128,61,0.1);
+    --red:#b91c1c; --red-dim:rgba(185,28,28,0.1);
+    --amber:#b45309; --amber-dim:rgba(180,83,9,0.1);
+    --text:#14171a; --muted:#5a5f56;
+  }
+  html[data-theme="light"] .stat-card,
+  html[data-theme="light"] .callout{ box-shadow:0 1px 2px rgba(0,0,0,0.04), 0 4px 14px rgba(0,0,0,0.05); }
+  html[data-theme="light"] .theme-toggle{ box-shadow:0 1px 2px rgba(0,0,0,0.05); }
+  body{transition:background .15s, color .15s;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px 60px;}
+  header{padding:24px 0;}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;text-decoration:none;color:var(--muted);}
+  .logo .icon{width:24px;height:24px;background:var(--green);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:12px;}
+  .title-block{margin-bottom:24px;}
+  .comp-tag{color:var(--green);font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.4px;margin-bottom:10px;}
+  h1{font-size:34px;margin-bottom:8px;}
+  .venue{color:var(--muted);font-size:14px;margin-bottom:14px;}
+  .ft-badge{display:inline-flex;align-items:center;gap:6px;background:var(--amber-dim);color:var(--amber);font-weight:700;font-size:13px;padding:6px 12px;border-radius:6px;}
+  .callout{background:var(--green-dim);border:1px solid rgba(34,197,94,0.3);border-radius:8px;padding:12px 16px;font-size:13.5px;color:#86efac;margin-bottom:30px;}
+  .section{margin-bottom:34px;}
+  .section-head{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--green);margin-bottom:14px;border-bottom:1px solid var(--border);padding-bottom:8px;}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media (max-width:600px){.twocol{grid-template-columns:1fr;}}
+  img{max-width:100%;display:block;margin:0 auto 8px;border-radius:6px;}
+  .stat-cards{display:flex;gap:10px;margin-bottom:6px;flex-wrap:wrap;}
+  .stat-card{flex:1;min-width:120px;background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px 10px;text-align:center;}
+  .stat-card .label{font-size:11px;color:var(--muted);}
+  .stat-card .value{font-size:16px;font-weight:800;color:var(--green);margin-top:4px;}
+  p.body{font-size:15px;margin-bottom:12px;color:#cdd5dd;}
+  p.note{font-size:13px;font-style:italic;color:var(--muted);}
+  ul.watch li{font-size:14.5px;margin-bottom:9px;margin-left:18px;color:#cdd5dd;}
+  footer{text-align:center;padding:30px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--border);margin-top:30px;}
+  .theme-toggle{background:var(--card);border:1px solid var(--border);color:var(--text);font-size:12.5px;font-weight:600;padding:6px 11px;border-radius:7px;cursor:pointer;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header style="display:flex;justify-content:space-between;align-items:center;">
+    <a class="logo" href="../index.html"><span class="icon">⚽</span> The Final Third</a>
+    <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">☀️ Light</button>
+  </header>
+
+  <div class="title-block">
+    <div class="comp-tag">FIFA World Cup 2026 · Group H · Matchday 1</div>
+    <h1>Spain vs Cape Verde</h1>
+    <div class="venue">Atlanta Stadium, Atlanta - Mon 15 June 2026</div>
+    <span class="ft-badge">FULL TIME - Spain 0-0 Cape Verde</span>
+  </div>
+
+  <div class="callout">One of the biggest shocks in World Cup history - reigning European champions Spain peppered Cape Verde's goal 27 times and still couldn't score, thanks to a 40-year-old goalkeeper having the game of his life.</div>
+
+  <div class="section">
+    <div class="section-head">📋 Result Summary</div>
+    <div class="stat-cards">
+      <div class="stat-card"><div class="label">Final score</div><div class="value">ESP 0-0 CPV</div></div>
+      <div class="stat-card"><div class="label">Total shots</div><div class="value">27 - 6</div></div>
+      <div class="stat-card"><div class="label">Shots on target</div><div class="value">7 - 2</div></div>
+    </div>
+    <p class="body">Spain dominated every measurable statistic and still couldn't find a way past Cape Verde - World Cup debutants making their first-ever appearance at the finals. Ferran Torres hit the crossbar from close range, Oyarzabal had a second-half effort blocked, and Vozinha produced a string of genuinely brilliant stops in between, capped by a Diney header late on that nearly snatched an even bigger shock for Cape Verde. A point against the 2010 World Cup winners will go down as the greatest result in their nation's footballing history.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🧩 Confirmed Formations</div>
+    <div class="twocol">
+      <div class="col"><img src="../images/esp_formation.png" alt="Spain formation"></div>
+      <div class="col"><img src="../images/cv_formation.png" alt="Cape Verde formation"></div>
+    </div>
+    <p class="note">Spain (4-3-3): Simon; Llorente, Cubarsi, Laporte, Cucurella; F. Ruiz, Rodri, Pedri; Torres, Oyarzabal, Gavi. Cape Verde (4-1-4-1): Vozinha; Moreira, R. Lopes, Borges, S.L. Cabral; Pina; Mendes, Duarte, Monteiro, J. Cabral; Livramento.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🔍 Tactical Review</div>
+    <p class="body">Spain's possession-heavy approach (68%) created a genuinely high volume of chances, but the profile of those chances tells a story - many were worked from similar central and left-sided positions, and Cape Verde's deep, disciplined banked shape (a single defensive midfielder in Pina screening a back four, with the wide midfielders tucking in narrow) meant Spain rarely got the clean, unguarded sight of goal that 27 shots might suggest. Quantity over quality is a fair, if slightly unusual, criticism of an elite side here.</p>
+    <p class="body">Cape Verde's gameplan was honest and disciplined - stay compact, deny space between the lines, and rely on Vozinha's individual quality as the actual difference-maker rather than expecting to create much themselves (just 6 shots, 2 on target, across 90 minutes). It worked perfectly, and Diney's late header nearly turned a famous point into an even more famous win.</p>
+    <p class="body" style="font-weight:700;">The key moment of the match wasn't tactical at all - it was Vozinha's individual brilliance, full stop. Take him out of this Cape Verde side and this is comfortably a 3 or 4-goal Spain win on the underlying numbers; he is the entire reason this result happened.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">📊 Actual Match Stats</div>
+    <img src="../images/escv_stats.png" alt="Match stats chart">
+    <p class="note">A 27-6 shot count and 68-32 possession split with an identical scoreline of 0-0 is about as stark a gap between dominance and result as exists in football - exactly why this ranks among the tournament's biggest shocks.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🔥 MOTM Spotlight: Vozinha</div>
+    <div class="stat-cards">
+      <div class="stat-card"><div class="label">Saves</div><div class="value">7</div></div>
+      <div class="stat-card"><div class="label">Shots faced</div><div class="value">7</div></div>
+      <div class="stat-card"><div class="label">Save %</div><div class="value">100%</div></div>
+      <div class="stat-card"><div class="label">Clean sheet</div><div class="value">Yes</div></div>
+    </div>
+    <img src="../images/vozinha_heatmap.png" alt="Vozinha heatmap">
+    <img src="../images/vozinha_savemap.png" alt="Vozinha save map">
+    <img src="../images/vozinha_ratingbars.png" alt="Vozinha rating breakdown">
+    <p class="body">A perfect save record against a side that managed 7 shots on target is, on its own, a career-defining World Cup performance - and at 40 years old, on the biggest stage that exists, the timing makes it more remarkable, not less. The save map shows the spread of genuine quality he had to deal with: efforts from Oyarzabal, Laporte, Torres, Gavi, and Fabian Ruiz all turned away, not just routine claims. The rating breakdown reflects exactly what you'd expect from this kind of display - elite shot-stopping and reflexes, with distribution a clear weaker area, which is a fair trade-off for a goalkeeper whose entire job today was damage limitation, executed about as well as it's possible to execute it.</p>
+    <p class="note">Illustrative reconstruction based on known event locations, not raw GPS tracking data.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⭐ Player Ratings</div>
+    <div class="twocol">
+      <div class="col">
+        <h4>Spain</h4>
+        <p>Torres - 6.5 (hit the bar, unlucky)</p>
+        <p>Oyarzabal - 6.0 (quiet by his standards)</p>
+        <p>Pedri - 6.5 (tidy, no real final ball)</p>
+        <p>Cucurella - 6.0 (steady, no real threat against)</p>
+      </div>
+      <div class="col">
+        <h4>Cape Verde</h4>
+        <p>Vozinha - 9.5 ⭐ MOTM (perfect save record)</p>
+        <p>Pina - 7.0 (screened the back four well)</p>
+        <p>Borges - 6.5 (organized, disciplined)</p>
+        <p>Diney - 6.5 (nearly the historic winner)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head">💡 Key Takeaways &amp; What's Next</div>
+    <ul class="watch">
+      <li>Spain's profligacy in front of goal here is a genuine, fair criticism heading into their next match - 27 shots for zero goals is not a sustainable pattern against better-organized opposition than Cape Verde will eventually face them with.</li>
+      <li>Vozinha's performance is the standout individual story of Matchday 1's early fixtures - a 40-year-old delivering the game of his life on the sport's biggest stage.</li>
+      <li>Cape Verde's disciplined approach (just 6 shots, but a clean sheet against the European champions) gives them a real template heading into their remaining group games against Uruguay and Saudi Arabia.</li>
+    </ul>
+    <p class="note">Next: Spain face Saudi Arabia. Cape Verde face Uruguay, looking to build on the platform of World Cup history they've already made.</p>
+  </div>
+
+  <footer>The Final Third - built with no code, no budget, just analysis.</footer>
+</div>
+<script>
+function applyTheme(t){
+  document.documentElement.setAttribute('data-theme', t);
+  const btn = document.getElementById('themeBtn');
+  if(btn) btn.textContent = t === 'light' ? '🌙 Dark' : '☀️ Light';
+  localStorage.setItem('theme', t);
+}
+function toggleTheme(){
+  const current = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+  applyTheme(current);
+}
+(function(){
+  const saved = localStorage.getItem('theme') || 'dark';
+  applyTheme(saved);
+})();
+</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "302dd873be084af1a4f5f049ac6766bf"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
