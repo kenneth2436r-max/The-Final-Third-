@@ -178,6 +178,12 @@
   .card-footer{display:flex;justify-content:space-between;align-items:center;font-size:11.5px;color:var(--muted);border-top:1px solid var(--border);padding-top:11px;margin-top:4px;}
   .card-footer .predicted{color:var(--green);font-weight:700;}
   .card-footer .predicted.wrong{color:var(--red);}
+  .card-img{width:100%;height:160px;object-fit:cover;border-radius:8px;margin-bottom:12px;display:block;}
+  .card-img-wrap{position:relative;margin-bottom:12px;}
+  .card-img-wrap img{width:100%;height:160px;object-fit:cover;border-radius:8px;display:block;}
+  .card-img-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.7));border-radius:0 0 8px 8px;padding:8px 10px;}
+  .card-img-overlay .meta-row{margin-bottom:0;}
+
   .read-more{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:700;color:var(--green);opacity:0;transform:translateY(4px);transition:all .2s;margin-top:8px;}
   .card:hover .read-more{opacity:1;transform:translateY(0);}
   @media(hover:none){.read-more{opacity:1;transform:none;}}
@@ -355,6 +361,16 @@
     <div class="stat"><div class="num" id="statCount">-</div><div class="label">Analyses published</div></div>
     <div class="stat"><div class="num" id="statAccuracy">-</div><div class="label">Prediction accuracy</div></div>
     <div class="stat"><div class="num" style="color:var(--green)">WC 2026</div><div class="label">Current focus</div></div>
+  
+  <div class="subscribe">
+    <div class="sub-text">📬 Get every analysis in your inbox.</div>
+    <form action="https://buttondown.com/api/emails/embed-subscribe/thefinalthird"
+          method="post"
+          target="popupwindow"
+          onsubmit="window.open('https://buttondown.com/thefinalthird','popupwindow');return true;">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
   </div>
 
   <!-- ── KNOCKOUT BRACKET ── -->
@@ -502,8 +518,16 @@ fetch('posts.json')
     document.getElementById('postsGrid').innerHTML=posts.map(p=>`
       <a class="card" href="${p.file}">
         <div class="card-inner">
+          ${p.image ? `
+          <div class="card-img-wrap">
+            <img src="${p.image}" alt="${p.title}" loading="lazy" onerror="this.parentElement.style.display='none'">
+            <div class="card-img-overlay">
+              <div class="meta-row"><span class="tag ${getPostTag(p)}" data-post-tag='${JSON.stringify({file:p.file,status:p.status,tag:p.tag,tagLabel:p.tagLabel})}'>${getPostTagLabel(p)}</span><span class="comp" style="color:rgba(255,255,255,0.7)">${p.comp}</span></div>
+            </div>
+          </div>
+          <h3>${p.title}</h3>` : `
           <div class="meta-row"><span class="tag ${getPostTag(p)}" data-post-tag='${JSON.stringify({file:p.file,status:p.status,tag:p.tag,tagLabel:p.tagLabel})}'>${getPostTagLabel(p)}</span><span class="comp">${p.comp}</span></div>
-          <h3>${p.title}</h3>
+          <h3>${p.title}</h3>`}
           <p>${p.summary}</p>
           <div class="chips">${p.chips.map(c=>`<span class="chip">${c}</span>`).join('')}</div>
           <div class="read-more">Read analysis →</div>
@@ -690,7 +714,7 @@ function buildPredictionCard(match){
   
   // Only show card if within the active window (not yet kicked off, or just kicked off)
   // Hide entirely if kickoff was more than 2 hours ago (match well underway)
-  if(now > new Date(kickoff.getTime()+150*60*1000)) return null;
+  if(now > new Date(kickoff.getTime()+24*60*60*1000)) return null;
   // Hide if opening window hasn't started yet
   if(now < new Date(kickoff.getTime()-24*60*60*1000)) return null;
 
