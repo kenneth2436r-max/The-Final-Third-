@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - The Final Third</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0d1b2a;
+      --bg-card: #112236;
+      --bg-card-alt: #0f1e30;
+      --green: #1a7a4a;
+      --green-light: #22a05e;
+      --green-muted: #1d9e75;
+      --green-faint: #e1f5ee;
+      --gold: #c9a84c;
+      --text: #e8f0e9;
+      --text-muted: #8fa9a0;
+      --text-dim: #5a7a72;
+      --border: rgba(255,255,255,0.08);
+      --border-green: rgba(26,122,74,0.4);
+      --radius: 10px;
+    }
+
+    html[data-theme="light"] {
+      --bg: #f3f4f1;
+      --bg-card: #ffffff;
+      --bg-card-alt: #f7f8f6;
+      --green: #15803d;
+      --green-light: #16a34a;
+      --green-muted: #15803d;
+      --gold: #92702c;
+      --text: #14171a;
+      --text-muted: #5a5f56;
+      --text-dim: #7a8077;
+      --border: rgba(0,0,0,0.1);
+      --border-green: rgba(21,128,61,0.3);
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      min-height: 100vh;
+      transition: background .15s, color .15s;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: var(--bg);
+      z-index: 10;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      color: var(--text);
+    }
+
+    .nav-logo-icon {
+      width: 30px;
+      height: 30px;
+      background: var(--green);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+    }
+
+    .nav-right { display: flex; align-items: center; gap: 14px; }
+
+    .nav-back {
+      font-size: 13px;
+      color: var(--text-muted);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      transition: color 0.15s;
+    }
+
+    .nav-back:hover { color: var(--green-light); }
+
+    .theme-toggle {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-size: 12.5px;
+      font-weight: 600;
+      padding: 6px 11px;
+      border-radius: 7px;
+      cursor: pointer;
+    }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+    }
+
+    .page-header { margin-bottom: 2.5rem; }
+
+    .page-header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.4rem;
+    }
+
+    .page-header .subtitle { font-size: 14px; color: var(--text-muted); }
+
+    .intro-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-green);
+      border-left: 3px solid var(--green);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      font-size: 15px;
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    .section { margin-bottom: 2rem; }
+
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--green-muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+    .section h2 { font-size: 1.15rem; font-weight: 600; color: var(--text); margin-bottom: 0.6rem; }
+    .section p { font-size: 15px; color: var(--text-muted); line-height: 1.75; }
+
+    .approach-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .approach-item {
+      background: var(--bg-card-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem 1.1rem;
+    }
+
+    .approach-item .icon { font-size: 18px; margin-bottom: 0.4rem; display: block; }
+    .approach-item strong { display: block; font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 0.25rem; }
+    .approach-item span { font-size: 12px; color: var(--text-muted); line-height: 1.5; }
+
+    .contact-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .contact-row:last-child { border-bottom: none; padding-bottom: 0; }
+    .contact-row:first-child { padding-top: 0; }
+
+    .contact-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 17px;
+      flex-shrink: 0;
+    }
+
+    .contact-icon.ig { background: rgba(225,48,108,0.15); }
+    .contact-icon.email { background: rgba(26,122,74,0.15); }
+
+    .contact-label {
+      font-size: 11px;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 1px;
+    }
+
+    .contact-value { font-size: 14px; font-weight: 500; color: var(--text); text-decoration: none; }
+    .contact-value:hover { color: var(--green-light); }
+
+    .cta-block {
+      margin-top: 2.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .cta-block p { font-size: 14px; color: var(--text-muted); }
+
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--green);
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 0.55rem 1.1rem;
+      border-radius: 8px;
+      transition: background 0.15s;
+    }
+
+    .cta-btn:hover { background: var(--green-light); }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 12px;
+      color: var(--text-dim);
+      border-top: 1px solid var(--border);
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <span class="nav-logo-icon">⚽</span>
+      The Final Third
+    </a>
+    <div class="nav-right">
+      <a href="index.html" class="nav-back">← Back home</a>
+      <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">☀️ Light</button>
+    </div>
+  </nav>
+
+  <main>
+
+    <div class="page-header">
+      <h1>About</h1>
+      <p class="subtitle">The person behind the analysis</p>
+    </div>
+
+    <div class="intro-card">
+      Hey - I'm Aaryan. I've been watching football obsessively for years, the kind of watching where you're tracking the left back's positioning while everyone else is just waiting for the next goal. The Final Third is where I put that to use: proper pre-match and post-match breakdowns, built on confirmed lineups and actual tactical reasoning, not vibes and stat dumps.
+      <br><br>
+      I started this during the 2026 World Cup as a side project - something that sits at the edge of a hobby and something I can point to professionally. If you care about <em>why</em> a game went the way it did rather than just what the score was, you're in the right place.
+    </div>
+
+    <div class="section">
+      <div class="section-label">The approach</div>
+      <h2>Every prediction is built on confirmed lineups, not assumed ones.</h2>
+      <p>Analysis gets updated live as the match unfolds - goals, substitutions, disallowed decisions, tactical shifts. The pre-match post and post-match review are part of the same piece, not two separate things.</p>
+      <div class="approach-grid">
+        <div class="approach-item">
+          <span class="icon">🧩</span>
+          <strong>Formations & lineups</strong>
+          <span>Confirmed XIs, not guessed ones. Shapes in and out of possession.</span>
+        </div>
+        <div class="approach-item">
+          <span class="icon">⚔️</span>
+          <strong>Tactical matchups</strong>
+          <span>The specific duel or system clash that will likely decide the game.</span>
+        </div>
+        <div class="approach-item">
+          <span class="icon">📊</span>
+          <strong>Projected stats</strong>
+          <span>xG, possession, shots - modelled from form, not pulled from thin air.</span>
+        </div>
+        <div class="approach-item">
+          <span class="icon">🔄</span>
+          <strong>Live updates</strong>
+          <span>Prediction and analysis updated in real time as the match happens.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Why this exists</div>
+      <h2>Most prediction content is either pure stats or pure opinion.</h2>
+      <p>Stats without tactical context don't explain anything. Opinion without structure is just noise. The aim here is to combine both - readable, visual, and genuinely analytical. Something that holds itself accountable by showing the pre-match prediction alongside the post-match reality every single time.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Get in touch</div>
+      <h2>Always happy to talk football.</h2>
+      <p>Whether it's a game you want covered, a disagreement with my analysis, or just a conversation about tactics - reach out.</p>
+      <div class="contact-card">
+        <div class="contact-row">
+          <div class="contact-icon ig">
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e1306c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+  </svg>
+</div>
+          <div>
+            <div class="contact-label">Instagram</div>
+            <a href="https://instagram.com/kenny_wenny19" class="contact-value" target="_blank" rel="noopener">@kenny_wenny19</a>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon email">
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+    <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.749L12 10.64l9.615-6.82h.749A1.636 1.636 0 0 1 24 5.457z" fill="#EA4335"/>
+  </svg>
+</div>
+          <div>
+            <div class="contact-label">Email</div>
+            <a href="mailto:futsalfrenzy19@gmail.com" class="contact-value">futsalfrenzy19@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-block">
+      <p>Enough about me - read the analysis.</p>
+      <a href="index.html" class="cta-btn">
+        Latest analysis →
+      </a>
+    </div>
+
+  </main>
+
+  <footer>
+    The Final Third - built with no code, no budget, just analysis.
+  </footer>
+
+  <script>
+    function applyTheme(t){
+      document.documentElement.setAttribute('data-theme', t);
+      const btn = document.getElementById('themeBtn');
+      if(btn) btn.textContent = t === 'light' ? '🌙 Dark' : '☀️ Light';
+      localStorage.setItem('theme', t);
+    }
+    function toggleTheme(){
+      const current = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      applyTheme(current);
+    }
+    (function(){
+      const saved = localStorage.getItem('theme') || 'dark';
+      applyTheme(saved);
+    })();
+  </script>
+  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "302dd873be084af1a4f5f049ac6766bf"}'></script><!-- End Cloudflare Web Analytics -->
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+{
+  "rounds": [
+    {
+      "name": "Round of 32",
+      "matches": [
+        {"match_id": "M74", "team1": "Germany", "team2": "Paraguay", "date": "Jun 30, 2026", "status": "upcoming"},
+        {"match_id": "M75", "team1": "Netherlands", "team2": "Morocco", "date": "Jun 30, 2026", "status": "upcoming"},
+        {"match_id": "M73", "team1": "South Africa", "team2": "Canada", "date": "Jun 29, 2026", "status": "upcoming"},
+        {"match_id": "M77", "team1": "France", "team2": "Sweden", "date": "Jul 1, 2026", "status": "upcoming"},
+        {"match_id": "M76", "team1": "Brazil", "team2": "Japan", "date": "Jun 29, 2026", "status": "upcoming"},
+        {"match_id": "M78", "team1": "Ivory Coast", "team2": "Norway", "date": "Jun 30, 2026", "status": "upcoming"},
+        {"match_id": "M79", "team1": "Mexico", "team2": "Ecuador", "date": "Jul 1, 2026", "status": "upcoming"},
+        {"match_id": "M80", "team1": "England", "team2": "DR Congo", "date": "Jul 1, 2026", "status": "upcoming"},
+        {"match_id": "M81", "team1": "USA", "team2": "Bosnia-Herzegovina", "date": "Jul 2, 2026", "status": "upcoming"},
+        {"match_id": "M82", "team1": "Belgium", "team2": "Senegal", "date": "Jul 2, 2026", "status": "upcoming"},
+        {"match_id": "M83", "team1": "Portugal", "team2": "Croatia", "date": "Jul 3, 2026", "status": "upcoming"},
+        {"match_id": "M84", "team1": "Spain", "team2": "Austria", "date": "Jul 3, 2026", "status": "upcoming"},
+        {"match_id": "M85", "team1": "Argentina", "team2": "Cape Verde", "date": "Jul 4, 2026", "status": "upcoming"},
+        {"match_id": "M86", "team1": "Australia", "team2": "Egypt", "date": "Jul 3, 2026", "status": "upcoming"},
+        {"match_id": "M87", "team1": "Switzerland", "team2": "Algeria", "date": "Jul 4, 2026", "status": "upcoming"},
+        {"match_id": "M88", "team1": "Colombia", "team2": "Ghana", "date": "Jul 4, 2026", "status": "upcoming"}
+      ]
+    },
+    {
+      "name": "Round of 16",
+      "matches": [
+        {"match_id": "M89", "team1": "W74", "team2": "W77", "date": "Jul 5, 2026", "status": "upcoming"},
+        {"match_id": "M90", "team1": "Canada", "team2": "W75", "date": "Jul 4, 2026", "status": "upcoming"},
+        {"match_id": "M91", "team1": "W76", "team2": "W78", "date": "Jul 6, 2026", "status": "upcoming"},
+        {"match_id": "M92", "team1": "W79", "team2": "W80", "date": "Jul 6, 2026", "status": "upcoming"},
+        {"match_id": "M93", "team1": "W83", "team2": "W84", "date": "Jul 7, 2026", "status": "upcoming"},
+        {"match_id": "M94", "team1": "W81", "team2": "W82", "date": "Jul 7, 2026", "status": "upcoming"},
+        {"match_id": "M95", "team1": "W86", "team2": "W88", "date": "Jul 7, 2026", "status": "upcoming"},
+        {"match_id": "M96", "team1": "W85", "team2": "W87", "date": "Jul 8, 2026", "status": "upcoming"}
+      ]
+    },
+    {
+      "name": "Quarter-Finals",
+      "matches": [
+        {"match_id": "M97", "team1": "W89", "team2": "W90", "date": "Jul 10, 2026", "status": "upcoming"},
+        {"match_id": "M98", "team1": "W93", "team2": "W94", "date": "Jul 11, 2026", "status": "upcoming"},
+        {"match_id": "M99", "team1": "W91", "team2": "W92", "date": "Jul 12, 2026", "status": "upcoming"},
+        {"match_id": "M100", "team1": "W95", "team2": "W96", "date": "Jul 12, 2026", "status": "upcoming"}
+      ]
+    },
+    {
+      "name": "Semi-Finals",
+      "matches": [
+        {"match_id": "M101", "team1": "W97", "team2": "W99", "date": "Jul 15, 2026", "status": "upcoming"},
+        {"match_id": "M102", "team1": "W98", "team2": "W100", "date": "Jul 16, 2026", "status": "upcoming"}
+      ]
+    },
+    {
+      "name": "3rd Place",
+      "matches": [
+        {"match_id": "M103", "team1": "RU101", "team2": "RU102", "date": "Jul 19, 2026", "venue": "TBD", "status": "upcoming"}
+      ]
+    },
+    {
+      "name": "Final",
+      "matches": [
+        {"match_id": "M104", "team1": "W101", "team2": "W102", "date": "Jul 20, 2026", "venue": "MetLife Stadium, New York/New Jersey", "status": "upcoming"}
+      ]
+    }
+  ]
+}

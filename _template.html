@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[TEAM A] vs [TEAM B] - The Final Third</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --border:#2a2f37;
+    --green:#22c55e; --green-dim:rgba(34,197,94,0.12);
+    --red:#ef4444; --red-dim:rgba(239,68,68,0.12);
+    --amber:#f59e0b; --amber-dim:rgba(245,158,11,0.12);
+    --text:#e6edf3; --muted:#8b949e;
+  }
+  html[data-theme="light"]{
+    --bg:#f3f4f1; --card:#ffffff; --border:#d8dbd6;
+    --green:#15803d; --green-dim:rgba(21,128,61,0.1);
+    --red:#b91c1c; --red-dim:rgba(185,28,28,0.1);
+    --amber:#b45309; --amber-dim:rgba(180,83,9,0.1);
+    --text:#14171a; --muted:#5a5f56;
+  }
+  html[data-theme="light"] .stat-card,
+  html[data-theme="light"] .callout{ box-shadow:0 1px 2px rgba(0,0,0,0.04), 0 4px 14px rgba(0,0,0,0.05); }
+  html[data-theme="light"] .theme-toggle{ box-shadow:0 1px 2px rgba(0,0,0,0.05); }
+  body{transition:background .15s, color .15s;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px 60px;}
+  header{padding:24px 0;}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;text-decoration:none;color:var(--muted);}
+  .logo .icon{width:24px;height:24px;background:var(--green);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:12px;}
+
+  .title-block{margin-bottom:24px;}
+  .comp-tag{color:var(--green);font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.4px;margin-bottom:10px;}
+  h1{font-size:34px;margin-bottom:8px;}
+  .venue{color:var(--muted);font-size:14px;margin-bottom:14px;}
+  .badge{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:13px;padding:6px 12px;border-radius:6px;}
+  .badge.live{background:var(--red-dim);color:var(--red);}
+  .badge.final{background:var(--amber-dim);color:var(--amber);}
+  .badge.upcoming{background:var(--green-dim);color:var(--green);}
+
+  .callout{background:var(--green-dim);border:1px solid rgba(34,197,94,0.3);border-radius:8px;padding:12px 16px;font-size:13.5px;color:#86efac;margin-bottom:30px;}
+
+  .section{margin-bottom:34px;}
+  .section-head{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--green);margin-bottom:14px;border-bottom:1px solid var(--border);padding-bottom:8px;}
+  .section-head.post{color:var(--amber);}
+
+  table.info{width:100%;border-collapse:collapse;margin-bottom:6px;}
+  table.info td{padding:8px 0;border-bottom:1px solid var(--border);font-size:14px;vertical-align:top;}
+  table.info td:first-child{color:var(--muted);width:130px;font-weight:600;}
+
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media (max-width:600px){.twocol{grid-template-columns:1fr;}}
+
+  img{max-width:100%;display:block;margin:0 auto 8px;border-radius:6px;}
+  .img-caption{text-align:center;font-size:12.5px;color:var(--muted);font-style:italic;margin-bottom:6px;}
+
+  .stat-cards{display:flex;gap:10px;margin-bottom:6px;flex-wrap:wrap;}
+  .stat-card{flex:1;min-width:120px;background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px 10px;text-align:center;}
+  .stat-card .label{font-size:11px;color:var(--muted);}
+  .stat-card .value{font-size:17px;font-weight:800;color:var(--green);margin-top:4px;}
+
+  p.body{font-size:15px;margin-bottom:12px;color:#cdd5dd;}
+  p.note{font-size:13px;font-style:italic;color:var(--muted);}
+  ul.watch li{font-size:14.5px;margin-bottom:9px;margin-left:18px;color:#cdd5dd;}
+
+  .ratings{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .ratings .col p{font-size:14px;margin-bottom:6px;}
+
+  footer{text-align:center;padding:30px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--border);margin-top:30px;}
+  .theme-toggle{background:var(--card);border:1px solid var(--border);color:var(--text);font-size:12.5px;font-weight:600;padding:6px 11px;border-radius:7px;cursor:pointer;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header style="display:flex;justify-content:space-between;align-items:center;">
+    <a class="logo" href="../index.html"><span class="icon">⚽</span> The Final Third</a>
+    <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">☀️ Light</button>
+  </header>
+
+  <!-- ================= PRE-MATCH SECTION ================= -->
+
+  <div class="title-block">
+    <div class="comp-tag">[Competition - Round/Stage]</div>
+    <h1>[Team A] vs [Team B]</h1>
+    <div class="venue">[Venue, City] - [Date], [Kickoff time local &amp; UTC]</div>
+    <span class="badge upcoming">Pre-match preview</span>
+  </div>
+
+  <div class="callout">[Optional: note on lineup confirmation status, or any other context flag]</div>
+
+  <div class="section">
+    <div class="section-head">📋 Match Context</div>
+    <table class="info">
+      <tr><td>Stakes</td><td>[What does this match mean for both sides?]</td></tr>
+      <tr><td>Group / Table</td><td>[Current standings, points, goal difference]</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚔️ Head-to-Head Record</div>
+    <p class="body">Overall record: [W-D-L, in favour of ___]</p>
+    <p class="note">Last 5 meetings: [date | result | competition] · [date | result | competition] · [date | result | competition]</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">📈 Recent Form</div>
+    <div class="twocol">
+      <div class="col"><h4>[Team A] - Last 5</h4><p class="note">[W vs ___ (x-x)] · [W vs ___ (x-x)] · [D vs ___ (x-x)] · [L vs ___ (x-x)] · [W vs ___ (x-x)]</p></div>
+      <div class="col"><h4>[Team B] - Last 5</h4><p class="note">[W vs ___ (x-x)] · [W vs ___ (x-x)] · [D vs ___ (x-x)] · [L vs ___ (x-x)] · [W vs ___ (x-x)]</p></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🧩 Expected Lineups &amp; Formations</div>
+    <div class="twocol">
+      <div class="col"><!-- <img src="../images/teamA_formation.png"> --><p class="note">[Team A] - Formation (e.g. 4-3-3): GK / DEF / MID / ATT</p></div>
+      <div class="col"><!-- <img src="../images/teamB_formation.png"> --><p class="note">[Team B] - Formation (e.g. 4-2-3-1): GK / DEF / MID / ATT</p></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🔍 Tactical Breakdown</div>
+    <p class="body">[How will Team A set up? Pressing triggers, shape in/out of possession, set-piece threat - 2-3 sentences]</p>
+    <p class="body">[How will Team B set up? Key patterns, width, central control - 2-3 sentences]</p>
+    <p class="note">Key matchup to watch: [e.g. Team A's full-backs vs Team B's wingers]</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⭐ Players to Watch</div>
+    <ul class="watch">
+      <li><strong>[Player Name] (Team A)</strong> - [Why they matter today]</li>
+      <li><strong>[Player Name] (Team A)</strong> - [Role and threat]</li>
+      <li><strong>[Player Name] (Team B)</strong> - [Key danger]</li>
+      <li><strong>[Player Name] (Team B)</strong> - [Set piece / creative hub]</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-head">📊 Projected Match Stats</div>
+    <!-- <img src="../images/projected_stats.png"> -->
+    <p class="note">Possession ___% / ___% · xG ___ / ___ · Shots ___ / ___ · Shots on target ___ / ___</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🎯 Prediction</div>
+    <div class="stat-cards">
+      <div class="stat-card"><div class="label">Predicted score</div><div class="value">[A] X – X [B]</div></div>
+      <div class="stat-card"><div class="label">[Team A] win</div><div class="value">__%</div></div>
+      <div class="stat-card"><div class="label">Draw</div><div class="value">__%</div></div>
+      <div class="stat-card"><div class="label">[Team B] win</div><div class="value">__%</div></div>
+    </div>
+    <p class="body">[Reasoning for the prediction - key factors that will decide this game]</p>
+  </div>
+
+  <!-- ================= POST-MATCH SECTION (fill in after the match) ================= -->
+  <!--
+
+  <div class="title-block">
+    <span class="badge final">Full-time</span>
+    <h1>[Team A] X – X [Team B]</h1>
+  </div>
+
+  <div class="section">
+    <div class="section-head post">📋 Result Summary</div>
+    <table class="info">
+      <tr><td>Scorers</td><td>[Player (min'), Player (min') | Player (min')]</td></tr>
+      <tr><td>Cards</td><td>[Yellows/Reds by team]</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-head post">🎯 Prediction vs Reality</div>
+    <p class="body">Predicted: [X-X]. Actual: [X-X]. [Note any surprises]</p>
+    <p class="body"><strong>Got right:</strong> [tactical call or stat projection that held up]</p>
+    <p class="body"><strong>Got wrong:</strong> [assumption that didn't hold up, and why]</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head post">🔍 Tactical Review</div>
+    <p class="body">[How did Team A actually set up? Did the shape hold? - 2-3 sentences]</p>
+    <p class="body">[How did Team B play? Key patterns - 2-3 sentences]</p>
+    <p class="note">The key tactical moment: [e.g. the substitution or shift that changed the game]</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head post">⭐ Player Ratings</div>
+    <div class="ratings">
+      <div class="col"><h4>[Team A]</h4><p>GK - Name: __/10</p><p>DF - Name: __/10</p><p>MF - Name: __/10</p><p>FW - Name: __/10 ⭐ MOTM</p></div>
+      <div class="col"><h4>[Team B]</h4><p>GK - Name: __/10</p><p>DF - Name: __/10</p><p>MF - Name: __/10</p><p>FW - Name: __/10</p></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head post">💡 Key Takeaways &amp; What's Next</div>
+    <ul class="watch">
+      <li>[Takeaway 1 - tactical, contextual, or personnel insight]</li>
+      <li>[Takeaway 2 - what it means for the tournament picture]</li>
+      <li>[Takeaway 3 - player or team trend to watch]</li>
+    </ul>
+    <p class="note">Next fixture - [Team A]: [opponent, date]. [Team B]: [opponent, date].</p>
+  </div>
+
+  -->
+
+  <footer>The Final Third - built with no code, no budget, just analysis.</footer>
+</div>
+<script>
+function applyTheme(t){
+  document.documentElement.setAttribute('data-theme', t);
+  const btn = document.getElementById('themeBtn');
+  if(btn) btn.textContent = t === 'light' ? '🌙 Dark' : '☀️ Light';
+  localStorage.setItem('theme', t);
+}
+function toggleTheme(){
+  const current = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+  applyTheme(current);
+}
+(function(){
+  const saved = localStorage.getItem('theme') || 'dark';
+  applyTheme(saved);
+})();
+</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "302dd873be084af1a4f5f049ac6766bf"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
