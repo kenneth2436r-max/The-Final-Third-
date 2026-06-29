@@ -67,13 +67,13 @@
     "flag2": "🇨🇦",
     "comp": "WC 2026 · Round of 32",
     "venue": "Los Angeles Stadium",
-    "kickoff": "2026-06-28T19:00:00Z"
-    result": {
+    "kickoff": "2026-06-28T19:00:00Z",
+    "result": {
       "s1": 0,
       "s2": 1,
       "t1": "South Africa",
       "t2": "Canada"
-  }
+    }
   },
    {
     "id": "bra-jpn-2026",
@@ -83,13 +83,13 @@
     "flag2": "🇯🇵",
     "comp": "WC 2026 · Round of 32",
     "venue": "Houston Stadium",
-    "kickoff": "2026-06-29T17:00:00Z"
-     result": {
+    "kickoff": "2026-06-29T17:00:00Z",
+    "result": {
       "s1": 2,
       "s2": 1,
       "t1": "Brazil",
       "t2": "Japan"
-   }
+    }
   },
   {
     "id": "ger-par-2026",
