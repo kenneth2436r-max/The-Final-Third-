@@ -164,6 +164,11 @@
   .card:hover::before{opacity:1;}
   html[data-theme="light"] .card:hover{box-shadow:0 8px 24px rgba(21,128,61,0.15),0 0 0 1px var(--green);}
   .card-inner{position:relative;z-index:1;}
+  /* ── CARD IMAGE ── */
+  .card-img-wrap{position:relative;border-radius:8px;overflow:hidden;margin-bottom:12px;}
+  .card-img-wrap img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;transition:transform .3s;}
+  .card:hover .card-img-wrap img{transform:scale(1.03);}
+  .card-img-tag{position:absolute;top:8px;left:8px;}
   .card .meta-row{display:flex;align-items:center;gap:8px;margin-bottom:11px;}
   .tag{font-size:10.5px;font-weight:800;letter-spacing:.4px;padding:3px 8px;border-radius:5px;text-transform:uppercase;}
   .tag.pre{background:var(--green-dim);color:var(--green);}
@@ -355,6 +360,16 @@
     <div class="stat"><div class="num" id="statCount">-</div><div class="label">Analyses published</div></div>
     <div class="stat"><div class="num" id="statAccuracy">-</div><div class="label">Prediction accuracy</div></div>
     <div class="stat"><div class="num" style="color:var(--green)">WC 2026</div><div class="label">Current focus</div></div>
+  
+  <div class="subscribe">
+    <div class="sub-text">📬 Get every analysis in your inbox.</div>
+    <form action="https://buttondown.com/api/emails/embed-subscribe/thefinalthird"
+          method="post"
+          target="popupwindow"
+          onsubmit="window.open('https://buttondown.com/thefinalthird','popupwindow');return true;">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
   </div>
 
   <!-- ── KNOCKOUT BRACKET ── -->
@@ -406,23 +421,6 @@
       <div class="sidebar-panel">
         <div class="sidebar-panel-title"><span class="panel-dot" style="background:var(--purple)"></span> ⭐ MOTM Race</div>
         <div id="motmList"><div class="sidebar-error">Loading...</div></div>
-      </div>
-      <!-- Subscribe box in sidebar -->
-      <div class="sidebar-panel" style="background:linear-gradient(135deg,var(--green-dim),transparent);border-color:rgba(34,197,94,0.25);">
-        <div class="sidebar-panel-title"><span class="panel-dot" style="background:var(--green)"></span> 📬 Get every analysis</div>
-        <p style="font-size:12.5px;color:var(--muted);margin-bottom:12px;">New post? You'll get it first.</p>
-        <form action="https://buttondown.com/api/emails/embed-subscribe/thefinalthird"
-              method="post"
-              target="popupwindow"
-              onsubmit="window.open('https://buttondown.com/thefinalthird','popupwindow');return true;"
-              style="display:flex;flex-direction:column;gap:8px;">
-          <input type="email" name="email" placeholder="your@email.com" required
-                 style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:9px 12px;color:var(--text);font-size:13px;outline:none;width:100%;">
-          <button type="submit"
-                  style="background:var(--green);color:#04210f;border:none;border-radius:8px;padding:9px;font-weight:700;font-size:13px;cursor:pointer;">
-            Subscribe
-          </button>
-        </form>
       </div>
     </div>
   </div>
@@ -519,7 +517,15 @@ fetch('posts.json')
     document.getElementById('postsGrid').innerHTML=posts.map(p=>`
       <a class="card" href="${p.file}">
         <div class="card-inner">
+          ${p.image ? `
+          <div class="card-img-wrap">
+            <img src="images/${p.image}" alt="${p.title}" loading="lazy">
+            <div class="card-img-tag"><span class="tag ${getPostTag(p)}" data-post-tag='${JSON.stringify({file:p.file,status:p.status,tag:p.tag,tagLabel:p.tagLabel})}'>${getPostTagLabel(p)}</span></div>
+          </div>
+          <div class="meta-row"><span class="comp">${p.comp}</span></div>
+          ` : `
           <div class="meta-row"><span class="tag ${getPostTag(p)}" data-post-tag='${JSON.stringify({file:p.file,status:p.status,tag:p.tag,tagLabel:p.tagLabel})}'>${getPostTagLabel(p)}</span><span class="comp">${p.comp}</span></div>
+          `}
           <h3>${p.title}</h3>
           <p>${p.summary}</p>
           <div class="chips">${p.chips.map(c=>`<span class="chip">${c}</span>`).join('')}</div>
@@ -707,7 +713,7 @@ function buildPredictionCard(match){
   
   // Only show card if within the active window (not yet kicked off, or just kicked off)
   // Hide entirely if kickoff was more than 2 hours ago (match well underway)
-  if(now > new Date(kickoff.getTime()+2*60*60*1000)) return null;
+  if(now > new Date(kickoff.getTime()+24*60*60*1000)) return null;
   // Hide if opening window hasn't started yet
   if(now < new Date(kickoff.getTime()-24*60*60*1000)) return null;
 
