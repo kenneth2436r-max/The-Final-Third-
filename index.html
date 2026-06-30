@@ -713,7 +713,7 @@ function buildPredictionCard(match){
   
   // Only show card if within the active window (not yet kicked off, or just kicked off)
   // Hide entirely if kickoff was more than 2 hours ago (match well underway)
-  if(now > new Date(kickoff.getTime()+24*60*60*1000)) return null;
+  if(now > new Date(kickoff.getTime()+2*60*60*1000)) return null;
   // Hide if opening window hasn't started yet
   if(now < new Date(kickoff.getTime()-24*60*60*1000)) return null;
 
