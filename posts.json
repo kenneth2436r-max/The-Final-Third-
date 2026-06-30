@@ -1,4 +1,20 @@
 [
+      {
+  "file": "posts/germany-vs-paraguay.html",
+  "matchId": "ger-par-2026",
+  "image": "germany-vs-paraguay.png",
+  "tag": "post",
+  "tagLabel": "Full-time",
+  "status": "post",
+  "comp": "World Cup 2026 · Round of 32",
+  "title": "Germany vs Paraguay - Post-match analysis",
+  "summary": "Paraguay advance to face the winner of France vs Sweden. Germany's 2026 World Cup ends here - their earliest exit since 2018, and arguably the most painful in their entire tournament history.",
+  "chips": ["Germany", "Paraguay", "Kai Havertz", "Undav", "Orlando Gill"],
+  "date": "30 Jun 2026",
+  "readTime": 9,
+  "predicted": "Predicted GER 2-1 PAR ✗",
+  "correct": false
+},
      {
   "file": "posts/brazil-vs-japan.html",
   "matchId": "bra-jpn-2026",
