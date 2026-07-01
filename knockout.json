@@ -25,9 +25,9 @@
       "name": "Round of 16",
       "matches": [
         {"match_id": "M89", "team1": "Paraguay", "team2": "Morocco", "date": "Jul 5, 2026", "status": "upcoming"},
-        {"match_id": "M90", "team1": "Canada", "team2": "W75", "date": "Jul 4, 2026", "status": "upcoming"},
+        {"match_id": "M90", "team1": "Canada", "team2": "France", "date": "Jul 4, 2026", "status": "upcoming"},
         {"match_id": "M91", "team1": "Brazil", "team2": "Norway", "date": "Jul 6, 2026", "status": "upcoming"},
-        {"match_id": "M92", "team1": "W79", "team2": "W80", "date": "Jul 6, 2026", "status": "upcoming"},
+        {"match_id": "M92", "team1": "Mexico", "team2": "W80", "date": "Jul 6, 2026", "status": "upcoming"},
         {"match_id": "M93", "team1": "W83", "team2": "W84", "date": "Jul 7, 2026", "status": "upcoming"},
         {"match_id": "M94", "team1": "W81", "team2": "W82", "date": "Jul 7, 2026", "status": "upcoming"},
         {"match_id": "M95", "team1": "W86", "team2": "W88", "date": "Jul 7, 2026", "status": "upcoming"},
