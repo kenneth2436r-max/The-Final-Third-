@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Netherlands vs Morocco - The Final Third</title>
+<script defer src="/_vercel/insights/script.js"></script>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --border:#2a2f37;
+    --green:#22c55e; --green-dim:rgba(34,197,94,0.12);
+    --red:#ef4444; --red-dim:rgba(239,68,68,0.12);
+    --amber:#f59e0b; --amber-dim:rgba(245,158,11,0.12);
+    --gold:#FFD700; --gold-dim:rgba(255,215,0,0.12);
+    --purple:#a78bfa; --purple-dim:rgba(167,139,250,0.12);
+    --text:#e6edf3; --muted:#8b949e;
+  }
+  html[data-theme="light"]{
+    --bg:#f3f4f1; --card:#ffffff; --border:#d8dbd6;
+    --green:#15803d; --green-dim:rgba(21,128,61,0.1);
+    --red:#b91c1c; --red-dim:rgba(185,28,28,0.1);
+    --amber:#b45309; --amber-dim:rgba(180,83,9,0.1);
+    --gold:#92702c; --gold-dim:rgba(146,112,44,0.1);
+    --purple:#6d28d9; --purple-dim:rgba(109,40,217,0.1);
+    --text:#14171a; --muted:#5a5f56;
+  }
+  html[data-theme="light"] .stat-card,
+  html[data-theme="light"] .callout{ box-shadow:0 1px 2px rgba(0,0,0,0.04), 0 4px 14px rgba(0,0,0,0.05); }
+  html[data-theme="light"] .theme-toggle{ box-shadow:0 1px 2px rgba(0,0,0,0.05); }
+  body{transition:background .15s, color .15s;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px 60px;}
+  header{padding:24px 0;}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;text-decoration:none;color:var(--muted);}
+  .logo .icon{width:24px;height:24px;background:var(--green);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:12px;}
+  .title-block{margin-bottom:24px;}
+  .comp-tag{color:var(--green);font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.4px;margin-bottom:10px;}
+  h1{font-size:34px;margin-bottom:8px;}
+  .venue{color:var(--muted);font-size:14px;margin-bottom:14px;}
+  .ft-badge{display:inline-flex;align-items:center;gap:6px;background:var(--amber-dim);color:var(--amber);font-weight:700;font-size:13px;padding:6px 12px;border-radius:6px;}
+  .pen-badge{display:inline-flex;align-items:center;gap:6px;background:var(--purple-dim);color:var(--purple);font-weight:700;font-size:12px;padding:4px 10px;border-radius:6px;margin-left:8px;}
+  .callout{background:var(--gold-dim);border:1px solid rgba(255,215,0,0.3);border-radius:8px;padding:12px 16px;font-size:13.5px;color:var(--gold);margin-bottom:30px;font-weight:600;}
+  .section{margin-bottom:34px;}
+  .section-head{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--green);margin-bottom:14px;border-bottom:1px solid var(--border);padding-bottom:8px;}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media (max-width:600px){.twocol{grid-template-columns:1fr;}}
+  img{max-width:100%;display:block;margin:0 auto 8px;border-radius:6px;}
+  .stat-cards{display:flex;gap:10px;margin-bottom:6px;flex-wrap:wrap;}
+  .stat-card{flex:1;min-width:120px;background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px 10px;text-align:center;}
+  .stat-card .label{font-size:11px;color:var(--muted);}
+  .stat-card .value{font-size:16px;font-weight:800;color:var(--green);margin-top:4px;}
+  p.body{font-size:15px;margin-bottom:12px;color:#cdd5dd;}
+  p.note{font-size:13px;font-style:italic;color:var(--muted);}
+  ul.watch li{font-size:14.5px;margin-bottom:9px;margin-left:18px;color:#cdd5dd;}
+  footer{text-align:center;padding:30px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--border);margin-top:30px;}
+  .theme-toggle{background:var(--card);border:1px solid var(--border);color:var(--text);font-size:12.5px;font-weight:600;padding:6px 11px;border-radius:7px;cursor:pointer;}
+  .shootout-grid{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0 4px;}
+  .shootout-item{flex:1;min-width:100px;background:var(--card);border:1px solid var(--border);border-radius:6px;padding:10px;text-align:center;font-size:12.5px;}
+  .shootout-item .result{font-size:18px;font-weight:800;}
+  .shootout-item .result.scored{color:var(--green);}
+  .shootout-item .result.missed{color:var(--red);}
+  .shootout-item .label{font-size:10.5px;color:var(--muted);margin-top:2px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header style="display:flex;justify-content:space-between;align-items:center;">
+    <a class="logo" href="../index.html"><span class="icon">⚽</span> The Final Third</a>
+    <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">☀️ Light</button>
+  </header>
+
+  <div class="title-block">
+    <div class="comp-tag">FIFA World Cup 2026 · Round of 32 · Match 76</div>
+    <h1>Netherlands vs Morocco</h1>
+    <div class="venue">Monterrey Stadium, Monterrey (Mexico) - Tue 30 June 2026</div>
+    <span class="ft-badge">FULL TIME - Netherlands 1-1 Morocco <span class="pen-badge">Morocco win 3-2 on pens</span></span>
+  </div>
+
+  <div class="callout">🦁 For the second time in their history, Morocco send a European heavyweight home on penalties after a stoppage-time equaliser - Cody Gakpo's emotional opener wasn't enough to prevent the Netherlands' earliest World Cup exit since 2002.</div>
+
+  <div class="section">
+    <div class="section-head">📋 Result Summary</div>
+    <div class="stat-cards">
+      <div class="stat-card"><div class="label">Full-time score</div><div class="value">NED 1-1 MOR</div></div>
+      <div class="stat-card"><div class="label">After extra time</div><div class="value">1-1</div></div>
+      <div class="stat-card"><div class="label">Penalty shootout</div><div class="value">MOR 3-2</div></div>
+      <div class="stat-card"><div class="label">Netherlands scorer</div><div class="value">Gakpo (72')</div></div>
+      <div class="stat-card"><div class="label">Morocco scorer</div><div class="value">Diop (90+1')</div></div>
+    </div>
+    <p class="body">Extra time couldn't separate the sides after Issa Diop's stoppage-time header cancelled out Cody Gakpo's emotional breakthrough. Morocco held their nerve from the spot as Ismael Saibari converted the decisive penalty, sending the Atlas Lions through and ending the Netherlands' campaign at the first knockout hurdle - their earliest World Cup exit in 24 years.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🧩 Confirmed Formations</div>
+    <div class="twocol">
+      <div class="col"><img src="../images/nedmor_formation.svg" alt="Netherlands confirmed formation"></div>
+      <div class="col"><img src="../images/morned_formation.svg" alt="Morocco confirmed formation"></div>
+    </div>
+    <p class="note">Netherlands (3-4-2-1): Verbruggen; van Hecke, van Dijk (c), Ake; van de Ven, Gravenberch, de Jong, Dumfries; Summerville, Gakpo; Brobbey. Morocco (4-2-3-1): Bono; Hakimi (c), Diop, Riad, Mazraoui; El Aynaoui, Bouaddi; Brahim Diaz, Ounahi, El Khannouss; Saibari.</p>
+    <p class="body" style="color:#006600;font-weight:600;">Both managers named their strongest available XIs. Summerville recovered from a head injury sustained against Sweden to start. Morocco made no changes from their group-stage setup, keeping faith with the XI that topped their group ahead of Brazil.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🔍 Tactical Review</div>
+    <p class="body">For 70 minutes, this was the Netherlands' game to lose - and they lost it exactly the way Morocco's tactical setup was designed to force. Koeman's 3-4-2-1 controlled the opening exchanges through De Jong and Gravenberch's ability to find space between Morocco's midfield and defensive lines, but the final ball consistently fell short against a compact Moroccan low block that never panicked. The Dutch had more of the ball without ever truly controlling the game; their 395 passes told the story of a side circulating sideways rather than breaking lines.</p>
+    <p class="body">Morocco's 4-2-3-1 sat deep and trusted their individual quality to punish any lapse. El Aynaoui and Bouaddi screened effectively in front of Diop and Riad, while Hakimi and Mazraoui pushed forward only when the moment was right - rarely caught high. The pattern felt familiar: Morocco, like in 2022, were entirely comfortable letting a European favourite hold possession while waiting for a 15-minute window to strike. Their patience was rewarded in the cruelest possible fashion for the Netherlands - Diop rising unchallenged at the near post in the 91st minute, redirecting Hakimi's floating cross past Verbruggen.</p>
+    <p class="body" style="font-weight:700;">The defining tactical call of the match belonged to Mohamed Ouahbi. Rather than chasing the equaliser with reckless abandon after Gakpo's goal, Morocco kept their shape, maintained their pressing triggers, and trusted that the chances would come. That discipline, more than any individual moment, is what took this tie to penalties. Koeman's failure to adjust - persisting with a front three that had been isolated for 70 minutes before finally introducing Weghorst and Koopmeiners - will face scrutiny as the post-mortem begins.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Goal: Gakpo breaks the deadlock (1-0, 72')</div>
+    <img src="../images/nedmor_goal1.svg" alt="Cody Gakpo goal">
+    <p class="body">This goal belonged as much to Crysencio Summerville as it did to Gakpo. A rapid transition started by De Jong on the halfway line caught Hakimi advanced, and Summerville's direct run dragged the Moroccan right-back out of position before he slipped Gakpo through. The finish was measured - low, across Bono, into the far corner - but the moment that followed is what this goal will be remembered for. Gakpo dropped to his knees in tears, two days after announcing that he and his partner Noa van der Bij had experienced the loss of their unborn son. Teammates surrounded him immediately, a moment of shared humanity in a setting that rarely allows it. This was not just a goal; it was a visibly profound personal release in front of 50,000 people.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Goal: Diop's stoppage-time equaliser (1-1, 90+1')</div>
+    <img src="../images/nedmor_goal2.svg" alt="Issa Diop equaliser">
+    <p class="body">The goal that flipped the tie. Brahim Diaz had already flashed a warning moments earlier, forcing Verbruggen into a sharp save from range, and the resulting pressure came from the same source: Morocco's willingness to commit numbers late, knowing the Dutch legs were tiring. Hakimi, who had been quiet by his standards in the first half, found space on the right - exactly where the Netherlands' narrow 3-4-2-1 leaves full-backs isolated in transition. His cross was precise rather than floated, aimed at the near-post area where Diop had peeled off van Hecke's shoulder. The header was firm, downward, beyond Verbruggen's reach. One minute of regulation time remained. Morocco's bench erupted; the Dutch side, so composed for 90 minutes, suddenly looked like a team that knew what was coming.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🧤 Save of the Tournament: Verbruggen denies Rahimi</div>
+    <img src="../images/nedmor_goal3.svg" alt="Verbruggen save vs Rahimi">
+    <p class="body">If the Netherlands had gone on to win, Bart Verbruggen's 96th-minute save would have been the defining image. Soufiane Rahimi, introduced for Ounahi at the start of extra time, found himself through on goal with only the goalkeeper to beat - a clear one-on-one that seemed destined for the back of the net. Verbruggen spread himself perfectly, getting a strong left hand to Rahimi's low drive, deflecting it wide of the post. It was the kind of save that wins knockout ties, and for a moment it felt like the Netherlands might ride that momentum through to penalties with their confidence intact. Instead, it became a footnote in a story that ended in heartbreak.</p>
+    <p class="note">Illustrative reconstruction based on known event descriptions, not raw tracking data.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">📊 Actual Match Stats</div>
+    <img src="../images/nedmor_stats.svg" alt="Match stats chart">
+    <p class="note">Morocco dominated possession (61%) and chances (11 shots, 5 on target) against a Netherlands side that managed only 6 attempts. The 891 Moroccan passes to the Netherlands' 395 reflects a side that controlled the tempo without ever forcing the issue - until the moment it mattered.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🎯 Prediction vs Reality</div>
+    <div class="stat-cards">
+      <div class="stat-card"><div class="label">Pre-match prediction</div><div class="value">3-3 a.e.t, Morocco pens</div></div>
+      <div class="stat-card"><div class="label">Actual score</div><div class="value">1-1 a.e.t</div></div>
+      <div class="stat-card"><div class="label">Shootout outcome</div><div class="value">Morocco 3-2 ✓</div></div>
+    </div>
+    <p class="body">The wider prediction of a Morocco penalty-shootout win was on the money, but nobody called the low-scoring, tight contest that preceded it. The expected goal-fest between two attack-minded sides never materialised - instead, both defences held firm, and a single moment of quality from each side was enough to force the lottery of penalties.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🚫 Penalty Shootout - Morocco win 3-2</div>
+    <p class="body" style="font-weight:700;">A chaotic shootout saw Netherlands miss three of their four spot-kicks, with Timber and Kluivert firing wide and Bounou saving Summerville's effort. Morocco missed twice themselves through Hakimi and Talbi, but Saibari kept his composure to send them through.</p>
+    <div class="shootout-grid">
+      <div class="shootout-item"><div class="label">NED - De Jong</div><div class="result scored">✓</div></div>
+      <div class="shootout-item"><div class="label">MAR - Hakimi</div><div class="result missed">✗</div></div>
+      <div class="shootout-item"><div class="label">NED - Gakpo</div><div class="result scored">✓</div></div>
+      <div class="shootout-item"><div class="label">MAR - El Aynaoui</div><div class="result scored">✓</div></div>
+      <div class="shootout-item"><div class="label">NED - Summerville</div><div class="result missed">✗ saved</div></div>
+      <div class="shootout-item"><div class="label">MAR - Talbi</div><div class="result missed">✗</div></div>
+      <div class="shootout-item"><div class="label">NED - Timber</div><div class="result missed">✗ wide</div></div>
+      <div class="shootout-item"><div class="label">MAR - Rahimi</div><div class="result scored">✓</div></div>
+      <div class="shootout-item"><div class="label">NED - Kluivert</div><div class="result missed">✗ wide</div></div>
+      <div class="shootout-item"><div class="label">MAR - Saibari</div><div class="result scored">✓ winning</div></div>
+    </div>
+    <p class="note">Yassine Bounou's save from Summerville was the decisive intervention - a low, strong left hand to deny a well-struck penalty. Saibari, who had scored in every group-stage match, stepped up with the weight of a nation and sent Verbruggen the wrong way.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🔥 Impact Sub Spotlight: Yassine Bounou</div>
+    <div class="stat-cards">
+      <div class="stat-card"><div class="label">Saves (regular time)</div><div class="value">1</div></div>
+      <div class="stat-card"><div class="label">Penalties faced</div><div class="value">4</div></div>
+      <div class="stat-card"><div class="label">Penalties saved</div><div class="value">1</div></div>
+      <div class="stat-card"><div class="label">Penalties missed against</div><div class="value">2 (wide)</div></div>
+    </div>
+    <img src="../images/bouno_heatmap.svg" alt="Bounou heatmap">
+    <p class="body">The 35-year-old has made a habit of delivering on the biggest stage, and this was his crowning moment in a Morocco shirt since the 2022 heroics. Barely tested during open play (the Netherlands managed only 2 shots on target across 120 minutes), Bounou's contribution came when it mattered most: a perfectly timed dive to deny Summerville, the kind of save that changes the narrative of a nation's tournament. At his age and with the legacy he's already carved, this may be his final World Cup statement - what a statement it was.</p>
+    <p class="note">Illustrative reconstruction based on known event locations, not raw GPS tracking data.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⭐ Player Ratings</div>
+    <div class="twocol">
+      <div class="col">
+        <h4>Netherlands</h4>
+        <p>Verbruggen - 7.5 (save of the tournament, blameless for the goal, unlucky in shootout)</p>
+        <p>van Dijk (c) - 6.5 (dominant aerially but couldn't organise the response)</p>
+        <p>De Jong - 7.0 (most progressive passer, ran the midfield segments he was allowed to)</p>
+        <p>Gakpo - 7.5 (emotional goal, faded as the game stretched into extra time)</p>
+        <p>Summerville - 7.0 (assist, direct threat, missed the penalty that turned the shootout)</p>
+        <p>Brobbey - 5.5 (isolated, no service, hooked at 70')</p>
+      </div>
+      <div class="col">
+        <h4>Morocco</h4>
+        <p>Bono - 8.0 (decisive penalty save, calm throughout, veteran presence)</p>
+        <p>Diop - 8.5 (MOTM - goal, immense defensive display, won every duel in both boxes)</p>
+        <p>Hakimi (c) - 7.0 (quiet first half, decisive assist, missed his penalty but led by example)</p>
+        <p>El Aynaoui - 7.5 (screened brilliantly, 139 passes, never panicked under pressure)</p>
+        <p>Saibari - 7.0 (quiet by his standards, but scored when it counted: the winning penalty)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head">💡 Key Takeaways &amp; What's Next</div>
+    <ul class="watch">
+      <li>Morocco become the second African nation to reach the Round of 16 in 2026, and do it in the same way that defined their 2022 run: defensive resilience, patience in possession, and a moment of quality when it mattered. This side is building a genuine tournament-winning culture.</li>
+      <li>The Netherlands' earliest World Cup exit since 2002 raises serious questions about Koeman's tactical flexibility. A team that scored freely in the group stage (10 goals in 3 games) managed just 2 shots on target across 120 minutes against a well-organised Morocco - the same problem that has haunted Dutch sides against disciplined defences for a decade.</li>
+      <li>Cody Gakpo's personal story adds a human dimension that transcends the result. Regardless of the outcome, his courage in playing so soon after such a loss - and scoring in the process - will be one of the tournament's lasting images.</li>
+    </ul>
+    <p class="note">Morocco advance to the Round of 16 to face co-hosts Canada on July 5. The Netherlands' World Cup campaign comes to an end at the first knockout stage.</p>
+  </div>
+
+  <footer>The Final Third - built with no code, no budget, just analysis.</footer>
+</div>
+<script>
+function applyTheme(t){
+  document.documentElement.setAttribute('data-theme', t);
+  const btn = document.getElementById('themeBtn');
+  if(btn) btn.textContent = t === 'light' ? '🌙 Dark' : '☀️ Light';
+  localStorage.setItem('theme', t);
+}
+function toggleTheme(){
+  const current = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+  applyTheme(current);
+}
+(function(){
+  const saved = localStorage.getItem('theme') || 'dark';
+  applyTheme(saved);
+})();
+</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "302dd873be084af1a4f5f049ac6766bf"}'></script><!-- End Cloudflare Web Analytics -->
+
+<div style="max-width:760px;margin:0 auto;padding:0 24px 40px;">
+  <div style="border-top:1px solid #2a2f37;padding-top:30px;margin-top:10px;">
+    <p style="font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#8b949e;margin-bottom:16px;">💬 Reactions &amp; Comments</p>
+    <script src="https://giscus.app/client.js"
+      data-repo="futsalfrenzy19-crypto/final-third"
+      data-repo-id="R_kgDOTEYoRg"
+      data-category="Announcements"
+      data-category-id="DIC_kwDOTEYoRs4C_5pZ"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="bottom"
+      data-theme="transparent_dark"
+      data-lang="en"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </div>
+</div>
+</body>
+</html>
