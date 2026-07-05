@@ -2,7 +2,7 @@
   {
     "file": "argentina-vs-cape-verde/argentina-vs-cape-verde.html",
     "matchId": "arg-cpv-2026",
-    "image": "argentina-vs-cape-verde.png",
+    "image": "argentina-vs-cape-verde.svg",
     "tag": "post",
     "tagLabel": "Full-time",
     "status": "post",
@@ -12,13 +12,13 @@
     "chips": ["Argentina", "Cape Verde", "Messi", "L. Martinez", "D. Duarte"],
     "date": "3 Jul 2026",
     "readTime": 10,
-    "predicted": "Predicted 3-0 Argentina, actual 3-2 AET ✗",
-    "correct": false
+    "predicted": "Predicted Argentina to win ✅",
+    "correct": true
   },
   {
     "file": "england-vs-dr-congo/england-vs-dr-congo.html",
     "matchId": "eng-cod-2026",
-    "image": "england-vs-dr-congo.png",
+    "image": "england-vs-dr-congo.svg",
     "tag": "post",
     "tagLabel": "Full-time",
     "status": "post",
@@ -28,13 +28,13 @@
     "chips": ["England", "DR Congo", "Kane", "Cipenga", "Gordon"],
     "date": "1 Jul 2026",
     "readTime": 9,
-    "predicted": "Predicted ENG 3-0, actual 2-1 ✗",
-    "correct": false
+    "predicted": "Predicted England to win ✅",
+    "correct": true
   },
   {
     "file": "france-vs-sweden/france-vs-sweden.html",
     "matchId": "fra-swe-2026",
-    "image": "france-vs-sweden.png",
+    "image": "france-vs-sweden.svg",
     "tag": "post",
     "tagLabel": "Full-time",
     "status": "post",
@@ -44,13 +44,13 @@
     "chips": ["France", "Sweden", "Mbappé", "Barcola", "Olise"],
     "date": "30 Jun 2026",
     "readTime": 9,
-    "predicted": "Predicted FRA 3-0, actual 3-0 ✓",
+    "predicted": "Predicted FRA 3-0 ✓",
     "correct": true
   },
   {
     "file": "portugal-vs-croatia/portugal-vs-croatia.html",
     "matchId": "por-cro-2026",
-    "image": "portugal-vs-croatia.png",
+    "image": "portugal-vs-croatia.svg",
     "tag": "post",
     "tagLabel": "Full-time",
     "status": "post",
@@ -60,13 +60,13 @@
     "chips": ["Portugal", "Croatia", "Ramos", "Ronaldo", "Perisic"],
     "date": "30 Jun 2026",
     "readTime": 9,
-    "predicted": "Predicted POR 2-1, actual 2-1 ✓",
+    "predicted": "Predicted POR 2-1 ✓",
     "correct": true
   },
   {
     "file": "spain-vs-austria/spain-vs-austria.html",
     "matchId": "esp-aut-2026",
-    "image": "spain-vs-austria.png",
+    "image": "spain-vs-austria.svg",
     "tag": "post",
     "tagLabel": "Full-time",
     "status": "post",
@@ -76,13 +76,13 @@
     "chips": ["Spain", "Austria", "Oyarzabal", "Cucurella", "Porro"],
     "date": "29 Jun 2026",
     "readTime": 8,
-    "predicted": "Predicted ESP 3-0, actual 3-0 ✓",
+    "predicted": "Predicted ESP 3-0 ✓",
     "correct": true
   },
   {
     "file": "belgium-vs-senegal/belgium-vs-senegal.html",
     "matchId": "bel-sen-2026",
-    "image": "belgium-vs-senegal.png",
+    "image": "belgium-vs-senegal.svg",
     "tag": "post",
     "tagLabel": "Full-time",
     "status": "post",
@@ -92,13 +92,13 @@
     "chips": ["Belgium", "Senegal", "Tielemans", "Lukaku", "Sarr"],
     "date": "29 Jun 2026",
     "readTime": 10,
-    "predicted": "Predicted BEL 2-0, actual 3-2 AET ✗",
-    "correct": false
+    "predicted": "Predicted Belgium to win ✅",
+    "correct": true
   },
   {
     "file": "posts/germany-vs-paraguay.html",
     "matchId": "ger-par-2026",
-    "image": "germany-vs-paraguay.png",
+    "image": "germany-vs-paraguay.svg",
     "tag": "post",
     "tagLabel": "Full-time",
     "status": "post",
