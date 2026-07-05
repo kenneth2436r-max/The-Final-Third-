@@ -1,6 +1,6 @@
 [
   {
-    "file": "posts/argentina-vs-cape-verde.html",
+    "file": "argentina-vs-cape-verde/argentina-vs-cape-verde.html",
     "matchId": "arg-cpv-2026",
     "image": "argentina-vs-cape-verde.png",
     "tag": "post",
@@ -16,7 +16,7 @@
     "correct": false
   },
   {
-    "file": "posts/england-vs-dr-congo.html",
+    "file": "england-vs-dr-congo/england-vs-dr-congo.html",
     "matchId": "eng-cod-2026",
     "image": "england-vs-dr-congo.png",
     "tag": "post",
@@ -32,7 +32,7 @@
     "correct": false
   },
   {
-    "file": "posts/france-vs-sweden.html",
+    "file": "france-vs-sweden/france-vs-sweden.html",
     "matchId": "fra-swe-2026",
     "image": "france-vs-sweden.png",
     "tag": "post",
@@ -48,7 +48,7 @@
     "correct": true
   },
   {
-    "file": "posts/portugal-vs-croatia.html",
+    "file": "portugal-vs-croatia/portugal-vs-croatia.html",
     "matchId": "por-cro-2026",
     "image": "portugal-vs-croatia.png",
     "tag": "post",
@@ -64,7 +64,7 @@
     "correct": true
   },
   {
-    "file": "posts/spain-vs-austria.html",
+    "file": "spain-vs-austria/spain-vs-austria.html",
     "matchId": "esp-aut-2026",
     "image": "spain-vs-austria.png",
     "tag": "post",
@@ -80,7 +80,7 @@
     "correct": true
   },
   {
-    "file": "posts/belgium-vs-senegal.html",
+    "file": "belgium-vs-senegal/belgium-vs-senegal.html",
     "matchId": "bel-sen-2026",
     "image": "belgium-vs-senegal.png",
     "tag": "post",
