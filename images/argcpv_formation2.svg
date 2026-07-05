@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#0d1117"/>
+  
+  <!-- Title -->
+  <text x="300" y="32" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="18" font-weight="bold">Cape Verde 4-3-3</text>
+  
+  <!-- Pitch -->
+  <rect x="40" y="50" width="520" height="320" fill="none" stroke="#30363d" stroke-width="2" rx="6"/>
+  <rect x="40" y="130" width="520" height="160" fill="none" stroke="#30363d" stroke-width="1" stroke-dasharray="6,4"/>
+  <circle cx="300" cy="210" r="30" fill="none" stroke="#30363d" stroke-width="1"/>
+  <line x1="300" y1="50" x2="300" y2="370" stroke="#30363d" stroke-width="1"/>
+  
+  <!-- Penalty area ARG right side -->
+  <rect x="440" y="145" width="120" height="130" fill="none" stroke="#30363d" stroke-width="1"/>
+  <rect x="470" y="175" width="90" height="70" fill="none" stroke="#30363d" stroke-width="1"/>
+  
+  <!-- Penalty area CPV left side -->
+  <rect x="40" y="145" width="120" height="130" fill="none" stroke="#30363d" stroke-width="1"/>
+  <rect x="40" y="175" width="90" height="70" fill="none" stroke="#30363d" stroke-width="1"/>
+  
+  <!-- GK: Vozinha -->
+  <circle cx="100" cy="210" r="16" fill="#22c55e" fill-opacity="0.2" stroke="#22c55e" stroke-width="2"/>
+  <text x="100" y="214" text-anchor="middle" fill="#22c55e" font-family="Arial, sans-serif" font-size="10" font-weight="bold">Vozinha</text>
+  
+  <!-- DEF: Moreira, Borges, P. Lopes, S. Lopes Cabral -->
+  <circle cx="190" cy="140" r="14" fill="#22c55e" fill-opacity="0.2" stroke="#22c55e" stroke-width="2"/>
+  <text x="190" y="144" text-anchor="middle" fill="#22c55e" font-family="Arial, sans-serif" font-size="9" font-weight="bold">Moreira</text>
+  
+  <circle cx="180" cy="210" r="14" fill="#22c55e" fill-opacity="0.2" stroke="#22c55e" stroke-width="2"/>
+  <text x="180" y="214" text-anchor="middle" fill="#22c55e" font-family="Arial, sans-serif" font-size="9" font-weight="bold">Borges</text>
+  
+  <circle cx="180" cy="270" r="14" fill="#22c55e" fill-opacity="0.2" stroke="#22c55e" stroke-width="2"/>
+  <text x="180" y="274" text-anchor="middle" fill="#22c55e" font-family="Arial, sans-serif" font-size="9" font-weight="bold">P.Lopes</text>
+  
+  <circle cx="190" cy="310" r="14" fill="#22c55e" fill-opacity="0.2" stroke="#22c55e" stroke-width="2"/>
+  <text x="190" y="314" text-anchor="middle" fill="#22c55e" font-family="Arial, sans-serif" font-size="9" font-weight="bold">Lopes Cabral</text>
+  
+  <!-- MID: Pina, D. Duarte, L. Duarte -->
+  <circle cx="290" cy="175" r="14" fill="#22c55e" fill-opacity="0.15" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="290" y="179" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="9">Pina</text>
+  
+  <circle cx="300" cy="240" r="14" fill="#22c55e" fill-opacity="0.15" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="300" y="244" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="9">D.Duarte</text>
+  
+  <circle cx="290" cy="300" r="14" fill="#22c55e" fill-opacity="0.15" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="290" y="304" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="9">L.Duarte</text>
+  
+  <!-- FWD: J. Cabral, Mendes (c), N. da Costa -->
+  <circle cx="390" cy="160" r="14" fill="#22c55e" fill-opacity="0.2" stroke="#22c55e" stroke-width="2"/>
+  <text x="390" y="164" text-anchor="middle" fill="#22c55e" font-family="Arial, sans-serif" font-size="9" font-weight="bold">J.Cabral</text>
+  
+  <circle cx="400" cy="225" r="18" fill="#22c55e" fill-opacity="0.35" stroke="#22c55e" stroke-width="2.5"/>
+  <text x="400" y="229" text-anchor="middle" fill="#22c55e" font-family="Arial, sans-serif" font-size="10" font-weight="bold">Mendes (c)</text>
+  
+  <circle cx="390" cy="290" r="14" fill="#22c55e" fill-opacity="0.2" stroke="#22c55e" stroke-width="2"/>
+  <text x="390" y="294" text-anchor="middle" fill="#22c55e" font-family="Arial, sans-serif" font-size="9" font-weight="bold">da Costa</text>
+  
+  <!-- Attacking direction indicator -->
+  <text x="540" y="90" text-anchor="end" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">ATT ▼</text>
+  
+  <style>
+    text { dominant-baseline: central; }
+  </style>
+</svg>

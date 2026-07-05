@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#0d1117"/>
+  
+  <!-- Title -->
+  <text x="300" y="25" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="16" font-weight="bold">L. Martínez 2-1 (92')</text>
+  
+  <!-- Pitch (top-down, corner kick scenario) -->
+  <rect x="30" y="45" width="540" height="310" fill="#161b22" stroke="#30363d" stroke-width="2" rx="4"/>
+  
+  <!-- Pitch markings -->
+  <rect x="30" y="105" width="540" height="195" fill="none" stroke="#30363d" stroke-width="1" stroke-dasharray="6,4"/>
+  
+  <!-- Penalty area CPV -->
+  <rect x="450" y="130" width="120" height="140" fill="none" stroke="#30363d" stroke-width="1"/>
+  <rect x="480" y="160" width="90" height="80" fill="none" stroke="#30363d" stroke-width="1"/>
+  
+  <!-- Goal CPV -->
+  <rect x="560" y="175" width="10" height="50" fill="none" stroke="#e6edf3" stroke-width="2"/>
+  
+  <!-- Corner arc -->
+  <path d="M 530 45 A 15 15 0 0 1 570 85" fill="none" stroke="#30363d" stroke-width="1"/>
+  
+  <!-- Corner kick delivery -->
+  <path d="M 560 55 Q 530 120 520 180" fill="none" stroke="#22c55e" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowGreen)"/>
+  
+  <!-- Corner taker -->
+  <circle cx="560" cy="55" r="8" fill="#22c55e" fill-opacity="0.3" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="560" y="40" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="7">Corner</text>
+  
+  <!-- Lisandro Martinez header -->
+  <circle cx="515" cy="182" r="12" fill="#22c55e" fill-opacity="0.4" stroke="#22c55e" stroke-width="2"/>
+  <text x="515" y="182" text-anchor="middle" fill="#22c55e" font-family="Arial, sans-serif" font-size="8" font-weight="bold">L.Martínez</text>
+  
+  <!-- Header trajectory -->
+  <path d="M 515 182 L 565 190" fill="none" stroke="#f85149" stroke-width="2.5" marker-end="url(#arrowRed)"/>
+  
+  <!-- Defenders -->
+  <circle cx="500" cy="160" r="8" fill="#22c55e" fill-opacity="0.15" stroke="#22c55e" stroke-width="1"/>
+  <circle cx="530" cy="165" r="8" fill="#22c55e" fill-opacity="0.15" stroke="#22c55e" stroke-width="1"/>
+  <circle cx="510" cy="200" r="8" fill="#22c55e" fill-opacity="0.15" stroke="#22c55e" stroke-width="1"/>
+  
+  <!-- GK Vozinha -->
+  <circle cx="550" cy="200" r="9" fill="#e6edf3" fill-opacity="0.15" stroke="#e6edf3" stroke-width="1.5"/>
+  
+  <!-- Goal indicator -->
+  <text x="562" y="192" fill="#f85149" font-family="Arial, sans-serif" font-size="12" font-weight="bold">⚽</text>
+  
+  <!-- Extra time label -->
+  <rect x="230" y="100" width="140" height="20" rx="4" fill="#f85149" fill-opacity="0.15" stroke="#f85149" stroke-width="1"/>
+  <text x="300" y="114" text-anchor="middle" fill="#f85149" font-family="Arial, sans-serif" font-size="11" font-weight="bold">🔄 AET</text>
+  
+  <!-- Score banner -->
+  <rect x="200" y="360" width="200" height="30" rx="4" fill="#22c55e" fill-opacity="0.15" stroke="#22c55e" stroke-width="1"/>
+  <text x="300" y="380" text-anchor="middle" fill="#22c55e" font-family="Arial, sans-serif" font-size="13" font-weight="bold">ARG 2-1 CPV | 92' (AET)</text>
+  
+  <defs>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#22c55e"/>
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f85149"/>
+    </marker>
+  </defs>
+  
+  <style>
+    text { dominant-baseline: central; }
+  </style>
+</svg>

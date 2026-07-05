@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#0d1117"/>
+  <text x="300" y="30" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="18" font-weight="bold">Spain 4-4-2</text>
+  <rect x="60" y="45" width="480" height="330" fill="none" stroke="#22c55e" stroke-width="1.5" rx="6"/>
+  <rect x="60" y="210" width="480" height="165" fill="none" stroke="#22c55e" stroke-width="1" stroke-dasharray="6,3" rx="6"/>
+  <line x1="60" y1="210" x2="540" y2="210" stroke="#22c55e" stroke-width="1"/>
+  <circle cx="300" cy="210" r="20" fill="none" stroke="#22c55e" stroke-width="1"/>
+  <circle cx="300" cy="360" r="6" fill="#22c55e" opacity="0.4"/>
+  <text x="300" y="50" text-anchor="middle" fill="#22c55e" font-family="Arial,sans-serif" font-size="12" font-weight="bold">ESP 4-4-2</text>
+  <g>
+    <circle cx="300" cy="350" r="18" fill="#22c55e" fill-opacity="0.15" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="300" y="347" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Simón</text>
+    <text x="300" y="356" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="6">1</text>
+  </g>
+  <g>
+    <circle cx="120" cy="280" r="18" fill="#22c55e" fill-opacity="0.15" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="120" y="277" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Porro</text>
+    <text x="120" y="286" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="6">2</text>
+  </g>
+  <g>
+    <circle cx="220" cy="285" r="18" fill="#22c55e" fill-opacity="0.15" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="220" y="282" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Laporte</text>
+    <text x="220" y="291" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="6">4</text>
+  </g>
+  <g>
+    <circle cx="380" cy="285" r="18" fill="#22c55e" fill-opacity="0.15" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="380" y="282" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Cubarsí</text>
+    <text x="380" y="291" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="6">5</text>
+  </g>
+  <g>
+    <circle cx="480" cy="280" r="18" fill="#22c55e" fill-opacity="0.15" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="480" y="277" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Cucurella</text>
+    <text x="480" y="286" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="6">3</text>
+  </g>
+  <g>
+    <circle cx="120" cy="190" r="18" fill="#22c55e" fill-opacity="0.15" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="120" y="187" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Olmo</text>
+    <text x="120" y="196" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="6">10</text>
+  </g>
+  <g>
+    <circle cx="210" cy="175" r="18" fill="#22c55e" fill-opacity="0.15" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="210" y="172" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Baena</text>
+    <text x="210" y="181" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="6">8</text>
+  </g>
+  <g>
+    <circle cx="390" cy="175" r="18" fill="#22c55e" fill-opacity="0.15" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="390" y="172" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Rodri</text>
+    <text x="390" y="181" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="6">16</text>
+  </g>
+  <g>
+    <circle cx="480" cy="190" r="18" fill="#22c55e" fill-opacity="0.15" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="480" y="187" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Pedri</text>
+    <text x="480" y="196" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="6">20</text>
+  </g>
+  <g>
+    <circle cx="220" cy="100" r="18" fill="#22c55e" fill-opacity="0.15" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="220" y="97" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Yamal</text>
+    <text x="220" y="106" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="6">11</text>
+  </g>
+  <g>
+    <circle cx="380" cy="100" r="18" fill="#22c55e" fill-opacity="0.15" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="380" y="97" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Oyarzabal</text>
+    <text x="380" y="106" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="6">21</text>
+  </g>
+  <line x1="138" y1="280" x2="202" y2="285" stroke="#22c55e" stroke-width="0.5" opacity="0.3"/>
+  <line x1="238" y1="285" x2="362" y2="285" stroke="#22c55e" stroke-width="0.5" opacity="0.3"/>
+  <line x1="398" y1="285" x2="462" y2="280" stroke="#22c55e" stroke-width="0.5" opacity="0.3"/>
+  <line x1="138" y1="190" x2="192" y2="175" stroke="#22c55e" stroke-width="0.5" opacity="0.3"/>
+  <line x1="228" y1="175" x2="372" y2="175" stroke="#22c55e" stroke-width="0.5" opacity="0.3"/>
+  <line x1="408" y1="175" x2="462" y2="190" stroke="#22c55e" stroke-width="0.5" opacity="0.3"/>
+  <line x1="218" y1="100" x2="362" y2="100" stroke="#22c55e" stroke-width="0.5" opacity="0.3"/>
+</svg>

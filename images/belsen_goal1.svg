@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#0d1117"/>
+  
+  <!-- Pitch from above -->
+  <rect x="40" y="40" width="520" height="320" fill="none" stroke="#30363d" stroke-width="1.5" rx="4"/>
+  <line x1="300" y1="40" x2="300" y2="360" stroke="#30363d" stroke-width="1"/>
+  <rect x="40" y="130" width="520" height="140" fill="none" stroke="#30363d" stroke-width="1"/>
+  <circle cx="300" cy="200" r="45" fill="none" stroke="#30363d" stroke-width="1"/>
+  <circle cx="300" cy="200" r="4" fill="#30363d"/>
+  
+  <!-- Goal -->
+  <rect x="40" y="165" width="25" height="70" fill="none" stroke="#e6edf3" stroke-width="2"/>
+  
+  <!-- Penalty area left -->
+  <rect x="40" y="140" width="100" height="120" fill="none" stroke="#30363d" stroke-width="1"/>
+  
+  <!-- Mané on left wing -->
+  <circle cx="100" cy="140" r="14" fill="#1a2332" stroke="#22c55e" stroke-width="2"/>
+  <text x="100" y="134" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="8" font-weight="bold">Mané</text>
+  <text x="100" y="144" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="7">cross</text>
+  
+  <!-- Cross arrow -->
+  <path d="M 110 145 Q 170 120 200 130" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="200,130 192,124 194,136" fill="#22c55e"/>
+  
+  <!-- Ball -->
+  <circle cx="200" cy="130" r="5" fill="#e6edf3"/>
+  
+  <!-- Sarr for header -->
+  <circle cx="210" cy="170" r="14" fill="#1a2332" stroke="#e6edf3" stroke-width="2"/>
+  <text x="210" y="165" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="8" font-weight="bold">Sarr</text>
+  <text x="210" y="175" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="7">header</text>
+  
+  <!-- Header arrow to post -->
+  <path d="M 215 180 Q 200 200 180 195" fill="none" stroke="#e6edf3" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="180,195 188,200 187,190" fill="#e6edf3"/>
+  
+  <!-- Post hit indication -->
+  <text x="165" y="192" text-anchor="middle" fill="#ff6b6b" font-family="Arial, sans-serif" font-size="11" font-weight="bold">POST</text>
+  
+  <!-- Diarra position -->
+  <circle cx="100" cy="185" r="14" fill="#1a2332" stroke="#22c55e" stroke-width="2"/>
+  <text x="100" y="180" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="8" font-weight="bold">Diarra</text>
+  <text x="100" y="190" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="7">tap-in</text>
+  
+  <!-- Rebound arrow -->
+  <path d="M 170 186 Q 140 188 115 186" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <polygon points="115,186 123,190 123,182" fill="#22c55e"/>
+  
+  <!-- Shot into goal -->
+  <path d="M 100 195 Q 80 200 70 200" fill="none" stroke="#22c55e" stroke-width="2"/>
+  <polygon points="70,200 78,204 78,196" fill="#22c55e"/>
+  
+  <!-- Goal icon -->
+  <rect x="40" y="165" width="25" height="70" fill="none" stroke="#ff6b6b" stroke-width="2"/>
+  <text x="52" y="203" text-anchor="middle" fill="#ff6b6b" font-family="Arial, sans-serif" font-size="16">G</text>
+  
+  <!-- Score -->
+  <text x="300" y="30" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="14" font-weight="bold">BEL 0-1 SEN</text>
+  <text x="300" y="385" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="12">25' Diarra scores from close range after Sarr hits the post</text>
+  
+  <!-- Timer -->
+  <rect x="490" y="45" width="55" height="22" rx="4" fill="#1a2332" stroke="#30363d" stroke-width="1"/>
+  <text x="517" y="60" text-anchor="middle" fill="#22c55e" font-family="Arial, sans-serif" font-size="12" font-weight="bold">25'</text>
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#0d1117"/>
+  
+  <!-- Title -->
+  <text x="300" y="25" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Messi 1-0 (29')</text>
+  
+  <!-- Pitch (top-down, attack right) -->
+  <rect x="30" y="45" width="540" height="310" fill="#161b22" stroke="#30363d" stroke-width="2" rx="4"/>
+  
+  <!-- Pitch markings -->
+  <rect x="30" y="105" width="540" height="195" fill="none" stroke="#30363d" stroke-width="1" stroke-dasharray="6,4"/>
+  <line x1="300" y1="45" x2="300" y2="355" stroke="#30363d" stroke-width="1"/>
+  <circle cx="300" cy="200" r="25" fill="none" stroke="#30363d" stroke-width="1"/>
+  
+  <!-- Penalty area -->
+  <rect x="450" y="130" width="120" height="140" fill="none" stroke="#30363d" stroke-width="1"/>
+  <rect x="480" y="160" width="90" height="80" fill="none" stroke="#30363d" stroke-width="1"/>
+  
+  <!-- Goal -->
+  <rect x="560" y="175" width="10" height="50" fill="none" stroke="#e6edf3" stroke-width="2"/>
+  
+  <!-- Defenders -->
+  <circle cx="430" cy="170" r="10" fill="#22c55e" fill-opacity="0.15" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="430" y="188" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="8">Def</text>
+  
+  <circle cx="440" cy="230" r="10" fill="#22c55e" fill-opacity="0.15" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="440" y="248" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="8">Def</text>
+  
+  <!-- Messi dribbling path -->
+  <circle cx="360" cy="200" r="12" fill="#22c55e" fill-opacity="0.4" stroke="#22c55e" stroke-width="2"/>
+  <text x="360" y="200" text-anchor="middle" fill="#22c55e" font-family="Arial, sans-serif" font-size="9" font-weight="bold">Messi</text>
+  
+  <!-- Dribble path -->
+  <path d="M 340 200 Q 380 210 410 195 Q 440 180 480 185" fill="none" stroke="#22c55e" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowGreen)"/>
+  
+  <!-- Dribble markers -->
+  <circle cx="380" cy="207" r="3" fill="#22c55e" fill-opacity="0.5"/>
+  <circle cx="410" cy="195" r="3" fill="#22c55e" fill-opacity="0.5"/>
+  
+  <!-- Shot trajectory -->
+  <path d="M 480 185 L 565 195" fill="none" stroke="#f85149" stroke-width="2.5" marker-end="url(#arrowRed)"/>
+  
+  <!-- Goal indicator -->
+  <text x="565" y="190" fill="#f85149" font-family="Arial, sans-serif" font-size="10" font-weight="bold">⚽</text>
+  
+  <!-- Score banner -->
+  <rect x="200" y="360" width="200" height="30" rx="4" fill="#22c55e" fill-opacity="0.15" stroke="#22c55e" stroke-width="1"/>
+  <text x="300" y="380" text-anchor="middle" fill="#22c55e" font-family="Arial, sans-serif" font-size="13" font-weight="bold">ARG 1-0 CPV | 29'</text>
+  
+  <defs>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#22c55e"/>
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f85149"/>
+    </marker>
+  </defs>
+  
+  <style>
+    text { dominant-baseline: central; }
+  </style>
+</svg>
