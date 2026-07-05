@@ -73,5 +73,18 @@
   {"player": "Folarin Balogun", "team": "USA", "match": "USA vs Paraguay"},
   {"player": "Ismael Kone", "team": "Canada", "match": "Canada vs Bosnia-Herzegovina"},
   {"player": "Hwang In-beom", "team": "South Korea", "match": "South Korea vs Czech Republic"},
-  {"player": "Julian Quinones", "team": "Mexico", "match": "Mexico vs South Africa"}
+  {"player": "Julian Quinones", "team": "Mexico", "match": "Mexico vs South Africa"},
+  {"player": "Luis Díaz", "team": "Colombia", "match": "Colombia vs Ghana"},
+  {"player": "Lionel Messi", "team": "Argentina", "match": "Argentina vs Cape Verde"},
+  {"player": "Mohamed Salah", "team": "Egypt", "match": "Australia vs Egypt"},
+  {"player": "Breel Embolo", "team": "Switzerland", "match": "Switzerland vs Algeria"},
+  {"player": "Cristiano Ronaldo", "team": "Portugal", "match": "Portugal vs Croatia"},
+  {"player": "Lamine Yamal", "team": "Spain", "match": "Spain vs Austria"},
+  {"player": "Malik Tillman", "team": "USA", "match": "USA vs Bosnia-Herzegovina"},
+  {"player": "Youri Tielemans", "team": "Belgium", "match": "Belgium vs Senegal"},
+  {"player": "Harry Kane", "team": "England", "match": "England vs DR Congo"},
+  {"player": "Julian Quiñones", "team": "Mexico", "match": "Mexico vs Ecuador"},
+  {"player": "Kylian Mbappé", "team": "France", "match": "France vs Sweden"},
+  {"player": "Antonio Nusa", "team": "Norway", "match": "Ivory Coast vs Norway"},
+  {"player": "Ismael Diop", "team": "Morocco", "match": "Netherlands vs Morocco"}
 ]
