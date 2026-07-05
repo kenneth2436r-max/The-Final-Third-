@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" width="400" height="520">
+  <defs>
+    <linearGradient id="pitch-m" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2a1a"/>
+      <stop offset="100%" stop-color="#0d1a0d"/>
+    </linearGradient>
+  </defs>
+  <!-- Pitch -->
+  <rect width="400" height="520" fill="url(#pitch-m)" rx="6"/>
+  <!-- Pitch markings -->
+  <rect x="20" y="20" width="360" height="480" fill="none" stroke="#22c55e" stroke-width="1" stroke-opacity="0.3" rx="3"/>
+  <line x1="20" y1="260" x2="380" y2="260" stroke="#22c55e" stroke-width="1" stroke-opacity="0.3"/>
+  <circle cx="200" cy="260" r="30" fill="none" stroke="#22c55e" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="80" y="20" width="240" height="120" fill="none" stroke="#22c55e" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="80" y="380" width="240" height="120" fill="none" stroke="#22c55e" stroke-width="1" stroke-opacity="0.3"/>
+  <!-- Header -->
+  <rect x="0" y="0" width="400" height="36" fill="#22c55e" rx="6"/>
+  <rect x="0" y="20" width="400" height="16" fill="#22c55e"/>
+  <text x="200" y="24" text-anchor="middle" fill="#04210f" font-size="13" font-weight="700" font-family="Segoe UI,Arial,sans-serif">MOROCCO — 4-2-3-1</text>
+  <!-- GK - Bono -->
+  <circle cx="200" cy="460" r="14" fill="#22c55e" stroke="#fff" stroke-width="1.5"/>
+  <text x="200" y="464" text-anchor="middle" fill="#04210f" font-size="8" font-weight="700" font-family="Segoe UI,Arial,sans-serif">1</text>
+  <text x="200" y="480" text-anchor="middle" fill="#e6edf3" font-size="9" font-weight="600" font-family="Segoe UI,Arial,sans-serif">Bono</text>
+  <!-- Back 4 -->
+  <circle cx="70" cy="380" r="14" fill="#f59e0b" stroke="#fff" stroke-width="1.5"/>
+  <text x="70" y="384" text-anchor="middle" fill="#04210f" font-size="8" font-weight="700" font-family="Segoe UI,Arial,sans-serif">2</text>
+  <text x="70" y="400" text-anchor="middle" fill="#e6edf3" font-size="9" font-weight="600" font-family="Segoe UI,Arial,sans-serif">Hakimi (C)</text>
+  <circle cx="150" cy="390" r="14" fill="#22c55e" stroke="#fff" stroke-width="1.5"/>
+  <text x="150" y="394" text-anchor="middle" fill="#04210f" font-size="8" font-weight="700" font-family="Segoe UI,Arial,sans-serif">14</text>
+  <text x="150" y="410" text-anchor="middle" fill="#e6edf3" font-size="9" font-weight="600" font-family="Segoe UI,Arial,sans-serif">Diop</text>
+  <circle cx="250" cy="390" r="14" fill="#22c55e" stroke="#fff" stroke-width="1.5"/>
+  <text x="250" y="394" text-anchor="middle" fill="#04210f" font-size="8" font-weight="700" font-family="Segoe UI,Arial,sans-serif">18</text>
+  <text x="250" y="410" text-anchor="middle" fill="#e6edf3" font-size="9" font-weight="600" font-family="Segoe UI,Arial,sans-serif">Riad</text>
+  <circle cx="330" cy="380" r="14" fill="#f59e0b" stroke="#fff" stroke-width="1.5"/>
+  <text x="330" y="384" text-anchor="middle" fill="#04210f" font-size="8" font-weight="700" font-family="Segoe UI,Arial,sans-serif">3</text>
+  <text x="330" y="400" text-anchor="middle" fill="#e6edf3" font-size="9" font-weight="600" font-family="Segoe UI,Arial,sans-serif">Mazraoui</text>
+  <!-- Double pivot -->
+  <circle cx="130" cy="300" r="14" fill="#22c55e" stroke="#fff" stroke-width="1.5"/>
+  <text x="130" y="304" text-anchor="middle" fill="#04210f" font-size="8" font-weight="700" font-family="Segoe UI,Arial,sans-serif">24</text>
+  <text x="130" y="320" text-anchor="middle" fill="#e6edf3" font-size="9" font-weight="600" font-family="Segoe UI,Arial,sans-serif">El Aynaoui</text>
+  <circle cx="270" cy="300" r="14" fill="#22c55e" stroke="#fff" stroke-width="1.5"/>
+  <text x="270" y="304" text-anchor="middle" fill="#04210f" font-size="8" font-weight="700" font-family="Segoe UI,Arial,sans-serif">6</text>
+  <text x="270" y="320" text-anchor="middle" fill="#e6edf3" font-size="9" font-weight="600" font-family="Segoe UI,Arial,sans-serif">Bouaddi</text>
+  <!-- Attacking 3 -->
+  <circle cx="80" cy="200" r="14" fill="#f59e0b" stroke="#fff" stroke-width="1.5"/>
+  <text x="80" y="204" text-anchor="middle" fill="#04210f" font-size="8" font-weight="700" font-family="Segoe UI,Arial,sans-serif">10</text>
+  <text x="80" y="220" text-anchor="middle" fill="#e6edf3" font-size="9" font-weight="600" font-family="Segoe UI,Arial,sans-serif">B. Diaz</text>
+  <circle cx="200" cy="190" r="14" fill="#22c55e" stroke="#fff" stroke-width="1.5"/>
+  <text x="200" y="194" text-anchor="middle" fill="#04210f" font-size="8" font-weight="700" font-family="Segoe UI,Arial,sans-serif">8</text>
+  <text x="200" y="210" text-anchor="middle" fill="#e6edf3" font-size="9" font-weight="600" font-family="Segoe UI,Arial,sans-serif">Ounahi</text>
+  <circle cx="320" cy="200" r="14" fill="#22c55e" stroke="#fff" stroke-width="1.5"/>
+  <text x="320" y="204" text-anchor="middle" fill="#04210f" font-size="8" font-weight="700" font-family="Segoe UI,Arial,sans-serif">23</text>
+  <text x="320" y="220" text-anchor="middle" fill="#e6edf3" font-size="9" font-weight="600" font-family="Segoe UI,Arial,sans-serif">El Khannouss</text>
+  <!-- Striker -->
+  <circle cx="200" cy="110" r="14" fill="#f59e0b" stroke="#fff" stroke-width="1.5"/>
+  <text x="200" y="114" text-anchor="middle" fill="#04210f" font-size="8" font-weight="700" font-family="Segoe UI,Arial,sans-serif">11</text>
+  <text x="200" y="130" text-anchor="middle" fill="#e6edf3" font-size="9" font-weight="600" font-family="Segoe UI,Arial,sans-serif">Saibari</text>
+  <!-- Direction arrow -->
+  <text x="200" y="70" text-anchor="middle" fill="#22c55e" font-size="10" font-family="Segoe UI,Arial,sans-serif" opacity="0.5">▲ ATTACKING DIRECTION</text>
+</svg>

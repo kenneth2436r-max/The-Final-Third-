@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 420" width="400" height="420">
+  <rect width="400" height="420" fill="#0d1117" rx="6"/>
+  <!-- Title -->
+  <text x="200" y="30" text-anchor="middle" fill="#e6edf3" font-size="15" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Match Stats: Netherlands vs Morocco</text>
+  <!-- Legend -->
+  <rect x="70" y="44" width="10" height="10" fill="#f59e0b" rx="2"/>
+  <text x="84" y="53" fill="#e6edf3" font-size="11" font-family="Segoe UI,Arial,sans-serif">Netherlands</text>
+  <rect x="220" y="44" width="10" height="10" fill="#22c55e" rx="2"/>
+  <text x="234" y="53" fill="#e6edf3" font-size="11" font-family="Segoe UI,Arial,sans-serif">Morocco</text>
+  <!-- Stats bars -->
+  <g transform="translate(0, 70)">
+    <!-- Possession -->
+    <text x="200" y="8" text-anchor="middle" fill="#8b949e" font-size="10" font-family="Segoe UI,Arial,sans-serif">POSSESSION</text>
+    <rect x="60" y="16" width="85" height="18" fill="#f59e0b" rx="3" opacity="0.85"/>
+    <text x="70" y="29" fill="#04210f" font-size="10" font-weight="700" font-family="Segoe UI,Arial,sans-serif">31%</text>
+    <rect x="145" y="16" width="165" height="18" fill="#22c55e" rx="3" opacity="0.85"/>
+    <text x="270" y="29" fill="#04210f" font-size="10" font-weight="700" font-family="Segoe UI,Arial,sans-serif">61%</text>
+    <!-- 8% in contest - thin bar -->
+    <rect x="310" y="16" width="22" height="18" fill="#8b949e" rx="3" opacity="0.4"/>
+    <text x="380" y="29" text-anchor="end" fill="#8b949e" font-size="8" font-family="Segoe UI,Arial,sans-serif">8% contest</text>
+    <line x1="40" y1="48" x2="380" y2="48" stroke="#2a2f37" stroke-width="0.5"/>
+    <!-- Total Shots -->
+    <text x="200" y="66" text-anchor="middle" fill="#8b949e" font-size="10" font-family="Segoe UI,Arial,sans-serif">TOTAL SHOTS</text>
+    <text x="60" y="88" text-anchor="middle" fill="#f59e0b" font-size="20" font-weight="800" font-family="Segoe UI,Arial,sans-serif">6</text>
+    <rect x="60" y="94" width="115" height="18" fill="#f59e0b" rx="3" opacity="0.85"/>
+    <rect x="175" y="94" width="195" height="18" fill="#22c55e" rx="3" opacity="0.85"/>
+    <text x="370" y="108" text-anchor="middle" fill="#22c55e" font-size="20" font-weight="800" font-family="Segoe UI,Arial,sans-serif">11</text>
+    <line x1="40" y1="126" x2="380" y2="126" stroke="#2a2f37" stroke-width="0.5"/>
+    <!-- Shots on Target -->
+    <text x="200" y="144" text-anchor="middle" fill="#8b949e" font-size="10" font-family="Segoe UI,Arial,sans-serif">SHOTS ON TARGET</text>
+    <text x="60" y="166" text-anchor="middle" fill="#f59e0b" font-size="20" font-weight="800" font-family="Segoe UI,Arial,sans-serif">2</text>
+    <rect x="60" y="172" width="60" height="18" fill="#f59e0b" rx="3" opacity="0.85"/>
+    <rect x="120" y="172" width="220" height="18" fill="#22c55e" rx="3" opacity="0.85"/>
+    <text x="370" y="186" text-anchor="middle" fill="#22c55e" font-size="20" font-weight="800" font-family="Segoe UI,Arial,sans-serif">5</text>
+    <line x1="40" y1="204" x2="380" y2="204" stroke="#2a2f37" stroke-width="0.5"/>
+    <!-- Passes -->
+    <text x="200" y="222" text-anchor="middle" fill="#8b949e" font-size="10" font-family="Segoe UI,Arial,sans-serif">PASSES</text>
+    <text x="60" y="244" text-anchor="middle" fill="#f59e0b" font-size="16" font-weight="800" font-family="Segoe UI,Arial,sans-serif">395</text>
+    <rect x="60" y="250" width="95" height="18" fill="#f59e0b" rx="3" opacity="0.85"/>
+    <rect x="155" y="250" width="215" height="18" fill="#22c55e" rx="3" opacity="0.85"/>
+    <text x="370" y="264" text-anchor="middle" fill="#22c55e" font-size="16" font-weight="800" font-family="Segoe UI,Arial,sans-serif">891</text>
+    <line x1="40" y1="282" x2="380" y2="282" stroke="#2a2f37" stroke-width="0.5"/>
+    <!-- Corners -->
+    <text x="200" y="300" text-anchor="middle" fill="#8b949e" font-size="10" font-family="Segoe UI,Arial,sans-serif">CORNERS</text>
+    <text x="60" y="322" text-anchor="middle" fill="#f59e0b" font-size="20" font-weight="800" font-family="Segoe UI,Arial,sans-serif">5</text>
+    <rect x="60" y="328" width="130" height="18" fill="#f59e0b" rx="3" opacity="0.85"/>
+    <rect x="190" y="328" width="170" height="18" fill="#22c55e" rx="3" opacity="0.85"/>
+    <text x="370" y="342" text-anchor="middle" fill="#22c55e" font-size="20" font-weight="800" font-family="Segoe UI,Arial,sans-serif">8</text>
+    <line x1="40" y1="360" x2="380" y2="360" stroke="#2a2f37" stroke-width="0.5"/>
+    <!-- Fouls -->
+    <text x="200" y="378" text-anchor="middle" fill="#8b949e" font-size="10" font-family="Segoe UI,Arial,sans-serif">FOULS</text>
+    <text x="60" y="400" text-anchor="middle" fill="#f59e0b" font-size="20" font-weight="800" font-family="Segoe UI,Arial,sans-serif">18</text>
+    <rect x="60" y="406" width="210" height="18" fill="#f59e0b" rx="3" opacity="0.85"/>
+    <rect x="270" y="406" width="100" height="18" fill="#22c55e" rx="3" opacity="0.85"/>
+    <text x="370" y="420" text-anchor="middle" fill="#22c55e" font-size="20" font-weight="800" font-family="Segoe UI,Arial,sans-serif">15</text>
+  </g>
+</svg>
