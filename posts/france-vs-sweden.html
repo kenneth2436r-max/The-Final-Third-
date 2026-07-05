@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>France vs Sweden - The Final Third</title>
+<script defer src="/_vercel/insights/script.js"></script>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --border:#2a2f37;
+    --green:#22c55e; --green-dim:rgba(34,197,94,0.12);
+    --red:#ef4444; --red-dim:rgba(239,68,68,0.12);
+    --amber:#f59e0b; --amber-dim:rgba(245,158,11,0.12);
+    --text:#e6edf3; --muted:#8b949e;
+  }
+  html[data-theme="light"]{
+    --bg:#f3f4f1; --card:#ffffff; --border:#d8dbd6;
+    --green:#15803d; --green-dim:rgba(21,128,61,0.1);
+    --red:#b91c1c; --red-dim:rgba(185,28,28,0.1);
+    --amber:#b45309; --amber-dim:rgba(180,83,9,0.1);
+    --text:#14171a; --muted:#5a5f56;
+  }
+  html[data-theme="light"] .stat-card,
+  html[data-theme="light"] .callout{ box-shadow:0 1px 2px rgba(0,0,0,0.04), 0 4px 14px rgba(0,0,0,0.05); }
+  html[data-theme="light"] .theme-toggle{ box-shadow:0 1px 2px rgba(0,0,0,0.05); }
+  body{transition:background .15s, color .15s;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px 60px;}
+  header{padding:24px 0;}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;text-decoration:none;color:var(--muted);}
+  .logo .icon{width:24px;height:24px;background:var(--green);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:12px;}
+  .title-block{margin-bottom:24px;}
+  .comp-tag{color:var(--green);font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.4px;margin-bottom:10px;}
+  h1{font-size:34px;margin-bottom:8px;}
+  .venue{color:var(--muted);font-size:14px;margin-bottom:14px;}
+  .ft-badge{display:inline-flex;align-items:center;gap:6px;background:var(--amber-dim);color:var(--amber);font-weight:700;font-size:13px;padding:6px 12px;border-radius:6px;}
+  .callout{background:var(--green-dim);border:1px solid rgba(34,197,94,0.3);border-radius:8px;padding:12px 16px;font-size:13.5px;color:#86efac;margin-bottom:30px;}
+  .section{margin-bottom:34px;}
+  .section-head{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--green);margin-bottom:14px;border-bottom:1px solid var(--border);padding-bottom:8px;}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media (max-width:600px){.twocol{grid-template-columns:1fr;}}
+  img{max-width:100%;display:block;margin:0 auto 8px;border-radius:6px;}
+  .stat-cards{display:flex;gap:10px;margin-bottom:6px;flex-wrap:wrap;}
+  .stat-card{flex:1;min-width:120px;background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px 10px;text-align:center;}
+  .stat-card .label{font-size:11px;color:var(--muted);}
+  .stat-card .value{font-size:16px;font-weight:800;color:var(--green);margin-top:4px;}
+  p.body{font-size:15px;margin-bottom:12px;color:#cdd5dd;}
+  p.note{font-size:13px;font-style:italic;color:var(--muted);}
+  ul.watch li{font-size:14.5px;margin-bottom:9px;margin-left:18px;color:#cdd5dd;}
+  footer{text-align:center;padding:30px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--border);margin-top:30px;}
+  .theme-toggle{background:var(--card);border:1px solid var(--border);color:var(--text);font-size:12.5px;font-weight:600;padding:6px 11px;border-radius:7px;cursor:pointer;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header style="display:flex;justify-content:space-between;align-items:center;">
+    <a class="logo" href="../index.html"><span class="icon">⚽</span> The Final Third</a>
+    <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">☀️ Light</button>
+  </header>
+
+  <div class="title-block">
+    <div class="comp-tag">FIFA World Cup 2026 · Round of 32 · Match 77</div>
+    <h1>France vs Sweden</h1>
+    <div class="venue">New York New Jersey Stadium - Tue 30 June 2026</div>
+    <span class="ft-badge">FULL TIME - France 3-0 Sweden</span>
+  </div>
+
+  <div class="callout">Kylian Mbappé moves into outright second on the all-time World Cup scoring charts (18 goals, two clear of Klose) with a ruthless brace as France sweep aside Sweden with the most complete performance of the tournament so far.</div>
+
+  <div class="section">
+    <div class="section-head">📋 Result Summary</div>
+    <div class="stat-cards">
+      <div class="stat-card"><div class="label">Final score</div><div class="value">FRA 3-0 SWE</div></div>
+      <div class="stat-card"><div class="label">Scorers</div><div class="value">Mbappé (2), Barcola</div></div>
+      <div class="stat-card"><div class="label">Record</div><div class="value">Mbappé 18 WC goals</div></div>
+    </div>
+    <p class="body">Mbappé curled in from Dembélé's short-corner assist just before half-time after having a goal disallowed earlier. Barcola doubled the lead from Olise's through ball early in the second half. Mbappé added his second from another Olise assist to seal France's place in the Round of 16.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🧩 Confirmed Formations</div>
+    <div class="twocol">
+      <div class="col"><img src="../images/fraswe_formation1.svg" alt="France formation"></div>
+      <div class="col"><img src="../images/fraswe_formation2.svg" alt="Sweden formation"></div>
+    </div>
+    <p class="note">France (4-3-3): Maignan; Koundé, Saliba, Upamecano, Digne; Rabiot, Tchouaméni, Olise; Dembélé, Barcola, Mbappé (c). Sweden (4-3-3): Zetterström; Gudmundsson, Lindelöf (c), Hien, Augustinsson; Svensson, Bergvall, Ayari; Stroud, Isak, Gyökeres.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🔍 Tactical Review</div>
+    <p class="body">France produced their most complete performance of the tournament, with Deschamps's decision to deploy Olise as a creative No. 8 rather than a wide player unlocking a fluidity that had been missing in earlier rounds. Olise drifted between the lines at will, pulling Lindelöf and Hien out of shape and creating pockets that Mbappé and Barcola exploited ruthlessly. Sweden's midfield trio of Svensson, Bergvall and Ayari were overrun from the start, unable to decide whether to press Olise or sit deep to contain Mbappé's runs — they chose neither effectively.</p>
+    <p class="body">Sweden's gameplan was clearly to stay compact and hit on the counter through Isak and Gyökeres, and for the opening 25 minutes it worked reasonably well — France had plenty of the ball but few clear chances, and Mbappé's disallowed goal (marginal offside) felt like a let-off. But once the first goal went in just before half-time, Sweden had no choice but to push forward, and France's counter-pressing tore them apart. The gap in technical quality across the pitch was simply too wide.</p>
+    <p class="body" style="font-weight:700;">The key tactical battleground was the space between Sweden's defense and midfield — Olise occupied it constantly, and neither the center-backs nor Bergvall took responsibility for tracking him. That single structural weakness was the root cause of all three French goals.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Goal: Mbappé opens the scoring (1-0, 45')</div>
+    <img src="../images/fraswe_goal1.svg" alt="Mbappé goal 1-0">
+    <p class="body">A brilliantly worked short-corner routine — Dembélé played it low into the feet of Mbappé, stationed just outside the box rather than inside it, and the captain's first touch created a slither of space before he curled a perfect left-footed finish into the far corner beyond Zetterström's despairing dive. The timing was devastating: seconds before half-time, after Sweden had defended resolutely for 44 minutes. The disallowed goal earlier in the half had only sharpened Mbappé's focus.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Goal: Barcola doubles the lead (2-0, 53')</div>
+    <img src="../images/fraswe_goal2.svg" alt="Barcola goal 2-0">
+    <p class="body">Olise's vision was the difference — picking the ball up in that pocket between the lines, he saw Barcola's diagonal run and threaded a perfectly weighted through ball that the winger collected in stride. Barcola's composure was icy: one touch to steady himself, then a low driven finish across Zetterström that nestled just inside the far post. Sweden's backline had pushed up too aggressively after the restart and paid the price for the space left in behind.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⚽ Goal: Mbappé's second seals it (3-0, 74')</div>
+    <img src="../images/fraswe_goal3.svg" alt="Mbappé goal 3-0">
+    <p class="body">Olise again the provider — another line-breaking pass, this time releasing Mbappé on the left channel of the penalty area. The finish was trademark Mbappé: a controlled side-foot beyond Zetterström, low and precise, with the outside of his right boot. The goal took his World Cup tally to 18, moving him clear of Klose (16) into outright second on the all-time list behind only Miroslav Klose's ghost — or rather, behind the 16-goal record he himself has already surpassed, needing now only a run to the final to chase down Marta's overall mark.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">📊 Actual Match Stats</div>
+    <img src="../images/fraswe_stats.svg" alt="Match stats chart">
+    <p class="note">62/38 possession split; 25-6 total shots, 12-2 on target; 3.16 xG vs 0.56 xG; 9-1 corner kicks — a procession from start to finish.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🔥 MOTM Spotlight: Kylian Mbappé</div>
+    <div class="stat-cards">
+      <div class="stat-card"><div class="label">Goals</div><div class="value">2</div></div>
+      <div class="stat-card"><div class="label">WC career goals</div><div class="value">18</div></div>
+      <div class="stat-card"><div class="label">Shots on target</div><div class="value">3</div></div>
+      <div class="stat-card"><div class="label">Record</div><div class="value">Klose record in sight (16→18)</div></div>
+    </div>
+    <img src="../images/mbappe2_heatmap.svg" alt="Mbappé heatmap">
+    <p class="body">Mbappé's performance was the complete centre-forward display — not just the two goals, but the intelligent movement that created space for others, the relentless pressing from the front, and the calm authority of a captain leading his side through a knockout tie. His first goal was technical quality of the highest order; his second was pure predatory instinct. At 27, with 18 World Cup goals already, the conversation about his place in football history is no longer hypothetical — it's happening in real time.</p>
+    <p class="note">Illustrative reconstruction based on known event locations, not raw GPS tracking data.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">🎯 Prediction vs Reality</div>
+    <div class="stat-cards">
+      <div class="stat-card"><div class="label">Predicted</div><div class="value">FRA 3-0</div></div>
+      <div class="stat-card"><div class="label">Actual</div><div class="value">FRA 3-0</div></div>
+      <div class="stat-card"><div class="label">Result call</div><div class="value">Exact score correct ✓</div></div>
+    </div>
+    <p class="body"><strong>Got right:</strong> the exact scoreline, and the pre-match conviction that France's individual quality would prove decisive even against a stubborn Swedish setup. The prediction that Sweden would frustrate France for the opening phase before eventually being overwhelmed by the sheer weight of attacking talent played out precisely as written — Czech-style compactness could only hold for so long.</p>
+    <p class="body"><strong>Got wrong:</strong> the disallowed Mbappé goal wasn't anticipated as a storyline at all, and the prediction didn't highlight Olise as the key creative force — his two assists elevated him to a level that the preview hadn't fully called. Sweden's inability to create any genuine chances (zero xG threat from open play for long stretches) was worse than even the pessimistic projection.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">⭐ Player Ratings</div>
+    <div class="twocol">
+      <div class="col">
+        <h4>France</h4>
+        <p>Mbappé - 9.0 ⭐ MOTM (brace, WC record chase)</p>
+        <p>Olise - 8.5 (two assists, creative hub)</p>
+        <p>Barcola - 7.5 (goal, constant threat)</p>
+        <p>Rabiot - 7.0 (controlled midfield)</p>
+      </div>
+      <div class="col">
+        <h4>Sweden</h4>
+        <p>Zetterström - 6.5 (nine saves, no chance on goals)</p>
+        <p>Hien - 6.0 (best of a struggling backline)</p>
+        <p>Lindelöf - 5.5 (caught out by Olise movement)</p>
+        <p>Bergvall - 5.0 (overrun in midfield)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head">💡 Key Takeaways &amp; What's Next</div>
+    <ul class="watch">
+      <li>Mbappé's World Cup scoring trajectory is now genuinely historic — 18 goals at 27, with multiple tournaments potentially still ahead, puts the all-time record (Marta, 25 in women's; Klose, 16 in men's) firmly in his sights.</li>
+      <li>Olise's deployment as a central creator unlocked a dimension France lacked in earlier matches — Deschamps may have found his best tactical formula at exactly the right moment of the tournament.</li>
+      <li>Sweden's limited ambition in the first half was understandable but ultimately self-defeating — once behind, they had no second gear to call on, and the gap in quality was exposed ruthlessly.</li>
+    </ul>
+    <p class="note">France face Paraguay in the Round of 16. Sweden exit the tournament.</p>
+  </div>
+
+  <footer>The Final Third - built with no code, no budget, just analysis.</footer>
+</div>
+<script>
+function applyTheme(t){
+  document.documentElement.setAttribute('data-theme', t);
+  const btn = document.getElementById('themeBtn');
+  if(btn) btn.textContent = t === 'light' ? '🌙 Dark' : '☀️ Light';
+  localStorage.setItem('theme', t);
+}
+function toggleTheme(){
+  const current = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+  applyTheme(current);
+}
+(function(){
+  const saved = localStorage.getItem('theme') || 'dark';
+  applyTheme(saved);
+})();
+</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "302dd873be084af1a4f5f049ac6766bf"}'></script><!-- End Cloudflare Web Analytics -->
+
+<div style="max-width:760px;margin:0 auto;padding:0 24px 40px;">
+  <div style="border-top:1px solid #2a2f37;padding-top:30px;margin-top:10px;">
+    <p style="font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#8b949e;margin-bottom:16px;">💬 Reactions &amp; Comments</p>
+    <script src="https://giscus.app/client.js"
+      data-repo="futsalfrenzy19-crypto/final-third"
+      data-repo-id="R_kgDOTEYoRg"
+      data-category="Announcements"
+      data-category-id="DIC_kwDOTEYoRs4C_5pZ"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="bottom"
+      data-theme="transparent_dark"
+      data-lang="en"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </div>
+</div>
+</body>
+</html>
