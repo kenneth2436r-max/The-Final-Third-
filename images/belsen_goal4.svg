@@ -1,53 +1,54 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
-  <rect width="600" height="400" fill="#0d1117"/>
-  
-  <!-- Pitch from above -->
-  <rect x="40" y="40" width="520" height="320" fill="none" stroke="#30363d" stroke-width="1.5" rx="4"/>
-  <line x1="300" y1="40" x2="300" y2="360" stroke="#30363d" stroke-width="1"/>
-  <rect x="40" y="130" width="520" height="140" fill="none" stroke="#30363d" stroke-width="1"/>
-  <circle cx="300" cy="200" r="45" fill="none" stroke="#30363d" stroke-width="1"/>
-  <circle cx="300" cy="200" r="4" fill="#30363d"/>
-  
-  <!-- Goal (Senegal side - right) -->
-  <rect x="535" y="165" width="25" height="70" fill="none" stroke="#e6edf3" stroke-width="2"/>
-  
-  <!-- Penalty area right -->
-  <rect x="460" y="140" width="100" height="120" fill="none" stroke="#30363d" stroke-width="1"/>
-  
-  <!-- Trossard left wing -->
-  <circle cx="400" cy="140" r="14" fill="#1a2332" stroke="#22c55e" stroke-width="2"/>
-  <text x="400" y="134" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="8" font-weight="bold">Trossard</text>
-  <text x="400" y="144" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="7">cross</text>
-  
-  <!-- Cross/set-up arrow -->
-  <path d="M 410 145 Q 460 150 500 165" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-dasharray="4,3"/>
-  <polygon points="500,165 491,162 494,172" fill="#22c55e"/>
-  
-  <!-- Ball -->
-  <circle cx="460" cy="155" r="5" fill="#e6edf3"/>
-  
-  <!-- Tielemans -->
-  <circle cx="500" cy="170" r="16" fill="#1a2332" stroke="#22c55e" stroke-width="2.5"/>
-  <text x="500" y="164" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="9" font-weight="bold">Tielemans</text>
-  <text x="500" y="175" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="7">header</text>
-  
-  <!-- Header direction into goal -->
-  <path d="M 515 175 Q 535 185 550 187" fill="none" stroke="#22c55e" stroke-width="2"/>
-  <polygon points="550,187 541,185 544,193" fill="#22c55e"/>
-  
-  <!-- Goal -->
-  <rect x="535" y="165" width="25" height="70" fill="none" stroke="#ff6b6b" stroke-width="2"/>
-  <text x="548" y="203" text-anchor="middle" fill="#ff6b6b" font-family="Arial, sans-serif" font-size="16">G</text>
-  
-  <!-- Diaw keeper -->
-  <circle cx="560" cy="200" r="12" fill="#1a2332" stroke="#e6edf3" stroke-width="1.5"/>
-  <text x="560" y="204" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="7">Diaw</text>
-  
-  <!-- Score -->
-  <text x="300" y="30" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="14" font-weight="bold">BEL 2-2 SEN</text>
-  <text x="300" y="385" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="12">89' Tielemans header from Trossard's cross</text>
-  
-  <!-- Timer -->
-  <rect x="490" y="45" width="55" height="22" rx="4" fill="#1a2332" stroke="#30363d" stroke-width="1"/>
+  <rect width="600" height="400" fill="#1a472a"/>
+  <defs>
+    <pattern id="pitchPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="none"/>
+      <rect x="0" y="0" width="1" height="20" fill="#000" opacity="0.08"/>
+      <rect x="0" y="0" width="20" height="1" fill="#000" opacity="0.08"/>
+    </pattern>
+    <radialGradient id="pitchVignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.35"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#pitchPattern)" opacity="0.12"/>
+  <rect width="600" height="400" fill="url(#pitchVignette)"/>
+
+  <rect x="40" y="40" width="520" height="320" fill="none" stroke="#fff" stroke-width="1.5" rx="4" opacity="0.45"/>
+  <line x1="300" y1="40" x2="300" y2="360" stroke="#fff" stroke-width="1" opacity="0.45"/>
+  <rect x="40" y="130" width="520" height="140" fill="none" stroke="#fff" stroke-width="1" opacity="0.35"/>
+  <circle cx="300" cy="200" r="45" fill="none" stroke="#fff" stroke-width="1" opacity="0.35"/>
+  <circle cx="300" cy="200" r="4" fill="#fff" opacity="0.35"/>
+  <rect x="40" y="140" width="100" height="120" fill="none" stroke="#fff" stroke-width="1" opacity="0.3"/>
+  <rect x="460" y="140" width="100" height="120" fill="none" stroke="#fff" stroke-width="1" opacity="0.3"/>
+  <rect x="510" y="175" width="50" height="50" fill="none" stroke="#fff" stroke-width="1" opacity="0.25"/>
+  <rect x="35" y="180" width="8" height="40" fill="none" stroke="#fff" stroke-width="2" opacity="0.5"/>
+  <rect x="557" y="180" width="8" height="40" fill="none" stroke="#fff" stroke-width="2" opacity="0.5"/>
+
+  <!-- Event location - Tielemans penalty spot area -->
+  <circle cx="520" cy="195" r="6" fill="#22c55e" opacity="0.8"/>
+  <circle cx="520" cy="195" r="14" fill="none" stroke="#22c55e" stroke-width="1.5" opacity="0.5"/>
+
+  <circle cx="520" cy="195" r="16" fill="#0d1117" stroke="#22c55e" stroke-width="2"/>
+  <text x="520" y="190" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="8" font-weight="bold">Tielemans</text>
+  <text x="520" y="200" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="7">penalty</text>
+
+  <!-- Penalty kick arrow -->
+  <path d="M 520 210 Q 530 220 565 200" fill="none" stroke="#22c55e" stroke-width="2"/>
+  <polygon points="565,200 557,195 558,205" fill="#22c55e"/>
+
+  <!-- Phantom penalty spot marker -->
+  <circle cx="530" cy="200" r="3" fill="#fff" opacity="0.6"/>
+
+  <rect x="35" y="180" width="8" height="40" fill="none" stroke="#ff6b6b" stroke-width="2.5"/>
+  <text x="39" y="205" text-anchor="middle" fill="#ff6b6b" font-family="Arial, sans-serif" font-size="14" font-weight="bold">G</text>
+
+  <rect x="230" y="8" width="140" height="24" rx="12" fill="#000" opacity="0.6"/>
+  <text x="300" y="24" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="13" font-weight="bold">BEL 2-2 SEN</text>
+
+  <rect x="120" y="360" width="360" height="30" rx="6" fill="#000" opacity="0.6"/>
+  <text x="300" y="380" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">89' Tielemans keeps his composure from the spot</text>
+
+  <rect x="490" y="45" width="55" height="22" rx="11" fill="#000" opacity="0.6"/>
   <text x="517" y="60" text-anchor="middle" fill="#22c55e" font-family="Arial, sans-serif" font-size="12" font-weight="bold">89'</text>
 </svg>

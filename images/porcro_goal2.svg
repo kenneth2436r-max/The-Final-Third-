@@ -1,53 +1,76 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
-  <rect width="600" height="400" fill="#0d1117"/>
-  <rect x="30" y="20" width="540" height="360" rx="8" fill="none" stroke="#30363d" stroke-width="1"/>
-  <text x="300" y="50" text-anchor="middle" fill="#22c55e" font-family="Arial,sans-serif" font-size="14" font-weight="bold">Ronaldo Penalty — 1-1</text>
-  <text x="300" y="68" text-anchor="middle" fill="#8b949e" font-family="Arial,sans-serif" font-size="11">68' — Leão fouled in the box</text>
-  <!-- Mini pitch -->
-  <rect x="80" y="80" width="440" height="260" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
-  <!-- Pitch markings -->
-  <rect x="80" y="130" width="440" height="160" fill="none" stroke="#30363d" stroke-width="0.5"/>
-  <line x1="300" y1="80" x2="300" y2="340" stroke="#30363d" stroke-width="0.5"/>
-  <circle cx="300" cy="210" r="30" fill="none" stroke="#30363d" stroke-width="0.5"/>
-  <!-- Goal box left (attacking towards left) -->
-  <rect x="80" y="155" width="50" height="110" fill="none" stroke="#30363d" stroke-width="0.8"/>
-  <rect x="80" y="175" width="35" height="70" fill="none" stroke="#30363d" stroke-width="0.5"/>
-  <!-- Goal box right -->
-  <rect x="470" y="155" width="50" height="110" fill="none" stroke="#30363d" stroke-width="0.8"/>
-  <rect x="485" y="175" width="35" height="70" fill="none" stroke="#30363d" stroke-width="0.5"/>
-  <!-- Penalty area left -->
-  <rect x="80" y="155" width="50" height="110" fill="none" stroke="#f0883e" stroke-width="1.5" stroke-dasharray="5,3"/>
-  <!-- Penalty spot -->
-  <circle cx="115" cy="210" r="3" fill="#f0883e"/>
-  <text x="115" y="195" text-anchor="middle" fill="#f0883e" font-family="Arial,sans-serif" font-size="7">PEN</text>
-  <!-- Leão fouled position -->
-  <circle cx="100" cy="205" r="5" fill="#e6edf3"/>
-  <text x="100" y="193" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="6">Leão</text>
-  <!-- Ronaldo at penalty spot -->
-  <circle cx="115" cy="210" r="7" fill="#22c55e"/>
-  <text x="115" y="225" text-anchor="middle" fill="#22c55e" font-family="Arial,sans-serif" font-size="6">Ronaldo</text>
-  <!-- GK diving -->
-  <circle cx="65" cy="180" r="5" fill="#58a6ff"/>
-  <text x="65" y="172" text-anchor="middle" fill="#58a6ff" font-family="Arial,sans-serif" font-size="6">GK</text>
-  <path d="M 65 180 Q 50 175 45 170" fill="none" stroke="#58a6ff" stroke-width="1" stroke-dasharray="3,2"/>
-  <!-- Shot towards goal -->
-  <path d="M 115 210 L 75 210" stroke="#22c55e" stroke-width="2.5"/>
-  <path d="M 75 210 L 70 210" stroke="#22c55e" stroke-width="2"/>
-  <text x="90" y="205" fill="#22c55e" font-family="Arial,sans-serif" font-size="7">Shot</text>
-  <!-- Goal indicator -->
-  <rect x="250" y="85" width="100" height="22" rx="4" fill="#22c55e" opacity="0.15"/>
-  <text x="300" y="100" text-anchor="middle" fill="#22c55e" font-family="Arial,sans-serif" font-size="12" font-weight="bold">⚽ GOAL</text>
-  <!-- PEN badge -->
-  <rect x="470" y="80" width="50" height="22" rx="4" fill="#f0883e" opacity="0.2"/>
-  <text x="495" y="95" text-anchor="middle" fill="#f0883e" font-family="Arial,sans-serif" font-size="11" font-weight="bold">PEN</text>
-  <!-- Timer -->
-  <circle cx="540" cy="40" r="16" fill="none" stroke="#22c55e" stroke-width="1.5"/>
-  <text x="540" y="45" text-anchor="middle" fill="#22c55e" font-family="Arial,sans-serif" font-size="10" font-weight="bold">68'</text>
-  <!-- Scoreboard -->
-  <rect x="240" y="355" width="120" height="28" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-  <text x="270" y="374" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="12" font-weight="bold">POR</text>
-  <text x="300" y="374" text-anchor="middle" fill="#22c55e" font-family="Arial,sans-serif" font-size="12" font-weight="bold">1 - 1</text>
-  <text x="340" y="374" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="12" font-weight="bold">CRO</text>
-  <!-- Foul indicator -->
-  <text x="100" y="218" text-anchor="middle" fill="#f0883e" font-family="Arial,sans-serif" font-size="6">foul</text>
+  <rect width="600" height="400" fill="#1a472a"/>
+  <defs>
+    <pattern id="pitchPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="none"/>
+      <rect x="0" y="0" width="1" height="20" fill="#000" opacity="0.08"/>
+      <rect x="0" y="0" width="20" height="1" fill="#000" opacity="0.08"/>
+    </pattern>
+    <radialGradient id="pitchVignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.35"/>
+    </radialGradient>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#22c55e"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#cc0000"/>
+    </marker>
+  </defs>
+  <rect width="600" height="400" fill="url(#pitchPattern)" opacity="0.12"/>
+  <rect width="600" height="400" fill="url(#pitchVignette)"/>
+  <!-- PITCH MARKINGS -->
+  <rect x="0" y="0" width="600" height="400" fill="none" stroke="#fff" stroke-width="2" opacity="0.25"/>
+  <line x1="300" y1="0" x2="300" y2="400" stroke="#fff" stroke-width="2" opacity="0.25"/>
+  <circle cx="300" cy="200" r="36" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.25"/>
+  <circle cx="300" cy="200" r="3" fill="#fff" opacity="0.25"/>
+  <rect x="0" y="120" width="88" height="160" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.25"/>
+  <rect x="0" y="160" width="35" height="80" fill="none" stroke="#fff" stroke-width="1.2" opacity="0.25"/>
+  <circle cx="72" cy="200" r="2" fill="#fff" opacity="0.25"/>
+  <path d="M 72 158 A 42 42 0 0 1 72 242" fill="none" stroke="#fff" stroke-width="1.2" opacity="0.25"/>
+  <rect x="512" y="120" width="88" height="160" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.25"/>
+  <rect x="565" y="160" width="35" height="80" fill="none" stroke="#fff" stroke-width="1.2" opacity="0.25"/>
+  <circle cx="528" cy="200" r="2" fill="#fff" opacity="0.25"/>
+  <path d="M 528 158 A 42 42 0 0 0 528 242" fill="none" stroke="#fff" stroke-width="1.2" opacity="0.25"/>
+  <rect x="0" y="176" width="6" height="48" fill="none" stroke="#fff" stroke-width="2" opacity="0.45"/>
+  <rect x="594" y="176" width="6" height="48" fill="none" stroke="#fff" stroke-width="2" opacity="0.45"/>
+  <path d="M 0 10 A 10 10 0 0 1 10 0" fill="none" stroke="#fff" stroke-width="1.2" opacity="0.25"/>
+  <path d="M 590 0 A 10 10 0 0 1 600 10" fill="none" stroke="#fff" stroke-width="1.2" opacity="0.25"/>
+  <path d="M 600 390 A 10 10 0 0 1 590 400" fill="none" stroke="#fff" stroke-width="1.2" opacity="0.25"/>
+  <path d="M 10 400 A 10 10 0 0 1 0 390" fill="none" stroke="#fff" stroke-width="1.2" opacity="0.25"/>
+  <!-- FERNANDES FOUL -->
+  <circle cx="505" cy="205" r="7" fill="none" stroke="#cc0000" stroke-width="1.5"/>
+  <text x="505" y="193" text-anchor="middle" fill="#cc0000" font-family="Arial,sans-serif" font-size="6">Fernandes</text>
+  <text x="505" y="218" text-anchor="middle" fill="#f0883e" font-family="Arial,sans-serif" font-size="6">foul</text>
+  <!-- PENALTY SPOT -->
+  <circle cx="530" cy="200" r="4" fill="#22c55e"/>
+  <!-- EVENT MARKER -->
+  <circle cx="530" cy="200" r="22" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.4"/>
+  <circle cx="530" cy="200" r="12" fill="none" stroke="#22c55e" stroke-width="2"/>
+  <!-- RONALDO -->
+  <text x="530" y="185" text-anchor="middle" fill="#22c55e" font-family="Arial,sans-serif" font-size="7">Ronaldo</text>
+  <!-- SHOT -->
+  <path d="M 530 200 L 595 200" stroke="#22c55e" stroke-width="2.5" marker-end="url(#arrowGreen)"/>
+  <text x="560" y="193" text-anchor="middle" fill="#22c55e" font-family="Arial,sans-serif" font-size="7">Shot</text>
+  <!-- GK DIVING -->
+  <circle cx="585" cy="185" r="6" fill="none" stroke="#006600" stroke-width="1.5"/>
+  <text x="585" y="178" text-anchor="middle" fill="#006600" font-family="Arial,sans-serif" font-size="6">GK</text>
+  <path d="M 585 185 Q 575 180 570 175" fill="none" stroke="#006600" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- BALL IN NET -->
+  <circle cx="592" cy="200" r="3" fill="#fff"/>
+  <path d="M 598 200 Q 602 193 600 200 Q 602 207 598 200" fill="none" stroke="#fff" stroke-width="1" opacity="0.4"/>
+  <!-- SCORE BANNER -->
+  <rect x="175" y="8" width="250" height="30" rx="15" fill="#000" opacity="0.75"/>
+  <text x="228" y="28" text-anchor="middle" fill="#cc0000" font-family="Arial,sans-serif" font-size="13" font-weight="bold">Portugal</text>
+  <text x="300" y="28" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="14" font-weight="bold">1 - 1</text>
+  <text x="372" y="28" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="13" font-weight="bold">Croatia</text>
+  <!-- PENALTY BADGE -->
+  <rect x="440" y="8" width="60" height="24" rx="12" fill="#f0883e" opacity="0.3"/>
+  <text x="470" y="25" text-anchor="middle" fill="#f0883e" font-family="Arial,sans-serif" font-size="11" font-weight="bold">PEN</text>
+  <!-- TIMER BADGE -->
+  <rect x="525" y="8" width="60" height="24" rx="12" fill="#000" opacity="0.75"/>
+  <text x="555" y="25" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="12" font-weight="bold">63'</text>
+  <!-- DESCRIPTION BAR -->
+  <rect x="100" y="365" width="400" height="26" rx="4" fill="#000" opacity="0.65"/>
+  <text x="300" y="382" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="11">Ronaldo 63' (pen) — Fernandes fouled in the box</text>
 </svg>

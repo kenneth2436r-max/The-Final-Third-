@@ -1,55 +1,77 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
-  <rect width="600" height="400" fill="#0d1117"/>
-  
-  <!-- Title -->
-  <text x="300" y="25" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="16" font-weight="bold">D. Duarte 1-1 (59')</text>
-  
-  <!-- Pitch (top-down, attack right for CPV) -->
-  <rect x="30" y="45" width="540" height="310" fill="#161b22" stroke="#30363d" stroke-width="2" rx="4"/>
-  
-  <!-- Pitch markings -->
-  <rect x="30" y="105" width="540" height="195" fill="none" stroke="#30363d" stroke-width="1" stroke-dasharray="6,4"/>
-  <line x1="300" y1="45" x2="300" y2="355" stroke="#30363d" stroke-width="1"/>
-  <circle cx="300" cy="200" r="25" fill="none" stroke="#30363d" stroke-width="1"/>
-  
-  <!-- Penalty area (ARG side) -->
-  <rect x="30" y="130" width="120" height="140" fill="none" stroke="#30363d" stroke-width="1"/>
-  <rect x="30" y="160" width="90" height="80" fill="none" stroke="#30363d" stroke-width="1"/>
-  
-  <!-- Goal (ARG) -->
-  <rect x="30" y="175" width="10" height="50" fill="none" stroke="#e6edf3" stroke-width="2"/>
-  
-  <!-- GK Martínez -->
-  <circle cx="50" cy="200" r="10" fill="#e6edf3" fill-opacity="0.15" stroke="#e6edf3" stroke-width="1.5"/>
-  <text x="50" y="216" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="7">Martínez</text>
-  
-  <!-- D. Duarte position -->
-  <circle cx="260" cy="230" r="12" fill="#22c55e" fill-opacity="0.4" stroke="#22c55e" stroke-width="2"/>
-  <text x="260" y="230" text-anchor="middle" fill="#22c55e" font-family="Arial, sans-serif" font-size="9" font-weight="bold">D.Duarte</text>
-  
-  <!-- Long shot trajectory -->
-  <path d="M 260 230 Q 180 210 100 195 Q 60 190 40 192" fill="none" stroke="#f85149" stroke-width="2.5" marker-end="url(#arrowRed)" stroke-dasharray="8,4"/>
-  
-  <!-- Shot power indicator -->
-  <text x="170" y="175" fill="#f85149" font-family="Arial, sans-serif" font-size="9" font-style="italic">🔥 Long range strike</text>
-  
-  <!-- Defenders between -->
-  <circle cx="200" cy="180" r="8" fill="#e6edf3" fill-opacity="0.1" stroke="#e6edf3" stroke-width="1"/>
-  <circle cx="180" cy="220" r="8" fill="#e6edf3" fill-opacity="0.1" stroke="#e6edf3" stroke-width="1"/>
-  
-  <!-- Goal indicator -->
-  <text x="35" y="195" fill="#f85149" font-family="Arial, sans-serif" font-size="12" font-weight="bold">⚽</text>
-  
-  <!-- Score banner -->
-  <rect x="200" y="360" width="200" height="30" rx="4" fill="#22c55e" fill-opacity="0.15" stroke="#22c55e" stroke-width="1"/>
-  <text x="300" y="380" text-anchor="middle" fill="#22c55e" font-family="Arial, sans-serif" font-size="13" font-weight="bold">ARG 1-1 CPV | 59'</text>
-  
+  <rect width="600" height="400" fill="#1a472a"/>
   <defs>
-    <marker id="arrowRed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f85149"/>
+    <pattern id="pitchPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="none"/>
+      <rect x="0" y="0" width="1" height="20" fill="#000" opacity="0.08"/>
+      <rect x="0" y="0" width="20" height="1" fill="#000" opacity="0.08"/>
+    </pattern>
+    <radialGradient id="pitchVignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.35"/>
+    </radialGradient>
+    <marker id="arrowShot" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ff0000"/>
+    </marker>
+    <marker id="arrowDel" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#22c55e"/>
     </marker>
   </defs>
-  
+  <rect width="600" height="400" fill="url(#pitchPattern)" opacity="0.12"/>
+  <rect width="600" height="400" fill="url(#pitchVignette)"/>
+  <!-- PITCH MARKINGS -->
+  <rect x="25" y="40" width="550" height="320" fill="none" stroke="#fff" stroke-opacity="0.3" stroke-width="2" rx="4"/>
+  <line x1="300" y1="40" x2="300" y2="360" stroke="#fff" stroke-opacity="0.3" stroke-width="1.5"/>
+  <circle cx="300" cy="200" r="28" fill="none" stroke="#fff" stroke-opacity="0.25" stroke-width="1.5"/>
+  <circle cx="300" cy="200" r="2" fill="#fff" fill-opacity="0.4"/>
+  <rect x="440" y="127" width="135" height="146" fill="none" stroke="#fff" stroke-opacity="0.25" stroke-width="1.5"/>
+  <rect x="475" y="160" width="100" height="80" fill="none" stroke="#fff" stroke-opacity="0.25" stroke-width="1"/>
+  <rect x="575" y="175" width="8" height="50" fill="none" stroke="#fff" stroke-opacity="0.45" stroke-width="2"/>
+  <rect x="25" y="127" width="135" height="146" fill="none" stroke="#fff" stroke-opacity="0.25" stroke-width="1.5"/>
+  <rect x="25" y="160" width="100" height="80" fill="none" stroke="#fff" stroke-opacity="0.25" stroke-width="1"/>
+  <rect x="17" y="175" width="8" height="50" fill="none" stroke="#fff" stroke-opacity="0.45" stroke-width="2"/>
+
+  <!-- Score banner -->
+  <rect x="195" y="8" width="210" height="28" rx="14" fill="#000" fill-opacity="0.65"/>
+  <text x="300" y="26" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="13" font-weight="bold">ARG 1-1 CPV</text>
+
+  <!-- Timer badge -->
+  <rect x="515" y="8" width="60" height="24" rx="12" fill="#000" fill-opacity="0.55"/>
+  <text x="545" y="24" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="12" font-weight="bold">38'</text>
+
+  <!-- G indicator on ARG goal -->
+  <text x="28" y="185" fill="#ff0000" font-family="Arial, sans-serif" font-size="18" font-weight="bold">G</text>
+
+  <!-- Event marker - Duarte header position -->
+  <circle cx="110" cy="200" r="10" fill="#22c55e" fill-opacity="0.6"/>
+  <circle cx="110" cy="200" r="16" fill="none" stroke="#22c55e" stroke-width="2"/>
+
+  <!-- Corner taker -->
+  <circle cx="25" cy="352" r="8" fill="#006600" stroke="#004d00" stroke-width="1.5"/>
+  <text x="25" y="368" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="7" style="text-shadow:1px 1px 2px #000;">corner</text>
+
+  <!-- D. Duarte -->
+  <circle cx="110" cy="200" r="12" fill="#006600" fill-opacity="0.85" stroke="#fff" stroke-width="1.5"/>
+  <text x="110" y="200" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="7" font-weight="bold">D.Duarte</text>
+
+  <!-- Corner delivery path -->
+  <path d="M 25 352 Q 40 280 80 230 Q 95 210 110 200" fill="none" stroke="#22c55e" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowDel)"/>
+
+  <!-- Header trajectory -->
+  <path d="M 110 200 L 30 195" fill="none" stroke="#ff0000" stroke-width="2.5" marker-end="url(#arrowShot)"/>
+
+  <!-- GK Martínez -->
+  <circle cx="30" cy="200" r="10" fill="#f5c842" stroke="#d4a830" stroke-width="1.5"/>
+  <text x="30" y="216" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="7" style="text-shadow:1px 1px 2px #000;">Martínez</text>
+
+  <!-- ARG defenders -->
+  <circle cx="90" cy="178" r="7" fill="#66aaff" fill-opacity="0.7" stroke="#fff" stroke-width="1"/>
+  <circle cx="95" cy="220" r="7" fill="#66aaff" fill-opacity="0.7" stroke="#fff" stroke-width="1"/>
+
+  <!-- Description bar -->
+  <rect x="155" y="360" width="290" height="28" rx="14" fill="#000" fill-opacity="0.6"/>
+  <text x="300" y="378" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="11">Duarte powers header from corner</text>
+
   <style>
     text { dominant-baseline: central; }
   </style>

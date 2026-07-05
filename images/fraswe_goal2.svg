@@ -1,41 +1,44 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
-  <rect width="600" height="400" fill="#0d1117"/>
-  <text x="300" y="25" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="18" font-weight="bold">Barcola 2-0 (53')</text>
-
-  <!-- Pitch top-down half -->
-  <rect x="30" y="40" width="540" height="320" fill="none" stroke="#22c55e" stroke-width="1.5" rx="3"/>
-  <rect x="30" y="40" width="270" height="320" fill="none" stroke="#22c55e" stroke-width="0.5" opacity="0.3"/>
-  <rect x="510" y="40" width="60" height="320" fill="none" stroke="#22c55e" stroke-width="1" opacity="0.5"/>
-  <rect x="530" y="110" width="40" height="180" fill="none" stroke="#22c55e" stroke-width="1.5"/>
-  <rect x="550" y="150" width="20" height="100" fill="none" stroke="#22c55e" stroke-width="1" opacity="0.5"/>
-
-  <!-- Olise position (deep midfield) -->
-  <circle cx="340" cy="250" r="7" fill="#22c55e" opacity="0.4"/>
-  <text x="340" y="240" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Olise</text>
-
-  <!-- Through ball -->
-  <line x1="340" y1="250" x2="380" y2="170" stroke="#e6edf3" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.7"/>
-  <polygon points="380,170 375,174 377,166" fill="#e6edf3" opacity="0.7"/>
-
-  <!-- Barcola run -->
-  <circle cx="380" cy="170" r="7" fill="#22c55e" opacity="0.6"/>
-  <text x="380" y="160" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Barcola</text>
-
-  <!-- Run arrow -->
-  <line x1="340" y1="200" x2="380" y2="170" stroke="#22c55e" stroke-width="1.5" stroke-dasharray="2,2" opacity="0.4"/>
-  <polygon points="380,170 374,173 377,165" fill="#22c55e" opacity="0.4"/>
-
-  <!-- Shot trajectory -->
-  <line x1="380" y1="170" x2="555" y2="175" stroke="#22c55e" stroke-width="2.5" stroke-dasharray="4,3"/>
-  <polygon points="555,175 548,178 551,171" fill="#22c55e"/>
-
-  <!-- Goal -->
-  <text x="560" y="175" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="10">⚽</text>
-
-  <!-- Scoreboard -->
-  <rect x="200" y="370" width="200" height="22" rx="4" fill="#1a3c2a" stroke="#22c55e" stroke-width="1"/>
-  <text x="300" y="385" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="11" font-weight="bold">FRA 2-0 SWE · 53'</text>
-
-  <!-- Label -->
-  <text x="150" y="80" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="9" opacity="0.7">Olise through ball → Barcola run → finish</text>
+  <rect width="600" height="400" fill="#1a472a"/>
+  <defs>
+    <pattern id="pitchPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="none"/>
+      <rect x="0" y="0" width="1" height="20" fill="#000" opacity="0.08"/>
+      <rect x="0" y="0" width="20" height="1" fill="#000" opacity="0.08"/>
+    </pattern>
+    <radialGradient id="pitchVignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.35"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#pitchPattern)" opacity="0.12"/>
+  <rect width="600" height="400" fill="url(#pitchVignette)"/>
+  <rect x="35" y="45" width="530" height="310" fill="none" stroke="#ffffff" stroke-width="1.5" rx="3"/>
+  <line x1="300" y1="45" x2="300" y2="355" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+  <circle cx="300" cy="200" r="30" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+  <rect x="35" y="145" width="130" height="110" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <rect x="35" y="175" width="55" height="50" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <rect x="435" y="145" width="130" height="110" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <rect x="510" y="175" width="55" height="50" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <rect x="180" y="8" width="240" height="28" rx="14" fill="#000" opacity="0.8"/>
+  <text x="300" y="27" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="14" font-weight="bold">France 2 - 0 Sweden</text>
+  <rect x="520" y="8" width="60" height="22" rx="11" fill="#000" opacity="0.7"/>
+  <text x="550" y="23" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="12" font-weight="bold">51'</text>
+  <circle cx="220" cy="180" r="7" fill="#22c55e" stroke="#ffffff" stroke-width="1.5" opacity="0.9"/>
+  <circle cx="220" cy="180" r="14" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.4"/>
+  <text x="220" y="167" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="8" font-weight="bold">Mbappé</text>
+  <path d="M 220 180 Q 300 185, 400 188, 520 195" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-dasharray="5,3" opacity="0.7"/>
+  <polygon points="520,195 513,198 516,191" fill="#22c55e" opacity="0.7"/>
+  <circle cx="530" cy="195" r="6" fill="#ffcc00" stroke="#0022aa" stroke-width="1"/>
+  <text x="530" y="210" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="7" opacity="0.9">Zetterström</text>
+  <text x="536" y="196" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="7" opacity="0.8">🧤</text>
+  <circle cx="300" cy="195" r="7" fill="#22c55e" stroke="#ffffff" stroke-width="1.5" opacity="0.95"/>
+  <circle cx="300" cy="195" r="14" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.4"/>
+  <text x="300" y="182" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="8" font-weight="bold">Barcola</text>
+  <path d="M 300 195 Q 400 195, 540 195" fill="none" stroke="#ff6b35" stroke-width="2" stroke-dasharray="4,3" opacity="0.8"/>
+  <polygon points="540,195 533,198 536,191" fill="#ff6b35" opacity="0.8"/>
+  <circle cx="542" cy="195" r="5" fill="#ff4444" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="542" y="197" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="8">⚽</text>
+  <rect x="100" y="370" width="400" height="22" rx="11" fill="#000" opacity="0.6"/>
+  <text x="300" y="384" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="10">Barcola tap-in after Mbappé's shot saved by Zetterström</text>
 </svg>

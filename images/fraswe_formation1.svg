@@ -1,49 +1,45 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
-  <rect width="600" height="400" fill="#0d1117"/>
-  <text x="300" y="30" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="18" font-weight="bold">France 4-3-3</text>
-
-  <!-- Pitch -->
-  <rect x="50" y="45" width="500" height="310" fill="none" stroke="#22c55e" stroke-width="1.5" rx="3"/>
-  <line x1="50" y1="200" x2="550" y2="200" stroke="#22c55e" stroke-width="1" opacity="0.5"/>
-  <circle cx="300" cy="200" r="35" fill="none" stroke="#22c55e" stroke-width="1" opacity="0.5"/>
-  <rect x="250" y="45" width="100" height="155" fill="none" stroke="#22c55e" stroke-width="1" opacity="0.3"/>
-  <rect x="250" y="200" width="100" height="155" fill="none" stroke="#22c55e" stroke-width="1" opacity="0.3"/>
-
-  <!-- GK -->
-  <circle cx="300" cy="55" r="16" fill="#1a3c2a" stroke="#22c55e" stroke-width="1.5"/>
-  <text x="300" y="59" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Maignan</text>
-
-  <!-- DEF -->
-  <circle cx="500" cy="130" r="16" fill="#1a3c2a" stroke="#22c55e" stroke-width="1.5"/>
-  <text x="500" y="134" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Koundé</text>
-
-  <circle cx="390" cy="140" r="16" fill="#1a3c2a" stroke="#22c55e" stroke-width="1.5"/>
-  <text x="390" y="144" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Saliba</text>
-
-  <circle cx="210" cy="140" r="16" fill="#1a3c2a" stroke="#22c55e" stroke-width="1.5"/>
-  <text x="210" y="144" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Upamecano</text>
-
-  <circle cx="100" cy="130" r="16" fill="#1a3c2a" stroke="#22c55e" stroke-width="1.5"/>
-  <text x="100" y="134" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Digne</text>
-
-  <!-- MID -->
-  <circle cx="460" cy="230" r="16" fill="#1a3c2a" stroke="#22c55e" stroke-width="1.5"/>
-  <text x="460" y="234" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Rabiot</text>
-
-  <circle cx="300" cy="250" r="16" fill="#1a3c2a" stroke="#22c55e" stroke-width="1.5"/>
-  <text x="300" y="254" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Tchouaméni</text>
-
-  <circle cx="140" cy="230" r="16" fill="#1a3c2a" stroke="#22c55e" stroke-width="1.5"/>
-  <text x="140" y="234" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Olise</text>
-
-  <!-- FWD -->
-  <circle cx="480" cy="330" r="16" fill="#1a3c2a" stroke="#22c55e" stroke-width="1.5"/>
-  <text x="480" y="334" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Dembélé</text>
-
-  <circle cx="300" cy="345" r="16" fill="#1a3c2a" stroke="#22c55e" stroke-width="1.5"/>
-  <text x="300" y="349" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Barcola</text>
-
-  <circle cx="120" cy="330" r="18" fill="#2a5c3a" stroke="#22c55e" stroke-width="2"/>
-  <text x="120" y="334" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7" font-weight="bold">Mbappé</text>
-  <text x="120" y="310" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="6" font-style="italic">(c)</text>
+  <rect width="600" height="400" fill="#1a472a"/>
+  <defs>
+    <pattern id="pitchPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="none"/>
+      <rect x="0" y="0" width="1" height="20" fill="#000" opacity="0.08"/>
+      <rect x="0" y="0" width="20" height="1" fill="#000" opacity="0.08"/>
+    </pattern>
+    <radialGradient id="pitchVignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.35"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#pitchPattern)" opacity="0.12"/>
+  <rect width="600" height="400" fill="url(#pitchVignette)"/>
+  <rect x="50" y="45" width="500" height="310" fill="none" stroke="#ffffff" stroke-width="1.5" rx="3"/>
+  <line x1="50" y1="200" x2="550" y2="200" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+  <circle cx="300" cy="200" r="35" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+  <rect x="250" y="45" width="100" height="155" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <rect x="250" y="200" width="100" height="155" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <text x="300" y="30" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="18" font-weight="bold" opacity="0.9">France 4-3-3</text>
+  <circle cx="300" cy="55" r="16" fill="#0022aa" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="300" y="59" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="7">Maignan</text>
+  <circle cx="500" cy="130" r="16" fill="#0022aa" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="500" y="134" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="7">Koundé</text>
+  <circle cx="390" cy="140" r="16" fill="#0022aa" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="390" y="144" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="7">Saliba</text>
+  <circle cx="210" cy="140" r="16" fill="#0022aa" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="210" y="144" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="7">Upamecano</text>
+  <circle cx="100" cy="130" r="16" fill="#0022aa" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="100" y="134" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="7">Digne</text>
+  <circle cx="460" cy="230" r="16" fill="#0022aa" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="460" y="234" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="7">Rabiot</text>
+  <circle cx="300" cy="250" r="16" fill="#0022aa" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="300" y="254" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="7">Tchouaméni</text>
+  <circle cx="140" cy="230" r="16" fill="#0022aa" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="140" y="234" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="7">Olise</text>
+  <circle cx="480" cy="330" r="16" fill="#0022aa" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="480" y="334" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="7">Dembélé</text>
+  <circle cx="300" cy="345" r="16" fill="#0022aa" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="300" y="349" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="7">Barcola</text>
+  <circle cx="120" cy="330" r="18" fill="#0022aa" stroke="#ffffff" stroke-width="2.5"/>
+  <text x="120" y="334" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="7" font-weight="bold">Mbappé</text>
+  <text x="120" y="310" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="6" font-style="italic" opacity="0.8">(c)</text>
 </svg>

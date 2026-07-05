@@ -1,43 +1,77 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
-  <rect width="600" height="400" fill="#0d1117"/>
-  <rect x="30" y="20" width="540" height="360" rx="8" fill="none" stroke="#30363d" stroke-width="1"/>
-  <text x="300" y="50" text-anchor="middle" fill="#22c55e" font-family="Arial,sans-serif" font-size="16" font-weight="bold">Croatia 4-2-3-1</text>
-  <!-- Pitch outline -->
-  <rect x="100" y="65" width="400" height="300" rx="4" fill="none" stroke="#22c55e" stroke-width="1.5" opacity="0.3"/>
-  <ellipse cx="300" cy="215" rx="60" ry="90" fill="none" stroke="#22c55e" stroke-width="1" opacity="0.3"/>
+  <rect width="600" height="400" fill="#1a472a"/>
+  <defs>
+    <pattern id="pitchPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="none"/>
+      <rect x="0" y="0" width="1" height="20" fill="#000" opacity="0.08"/>
+      <rect x="0" y="0" width="20" height="1" fill="#000" opacity="0.08"/>
+    </pattern>
+    <radialGradient id="pitchVignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.35"/>
+    </radialGradient>
+    <pattern id="croatiaCheckered" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="#fff"/>
+      <rect x="0" y="0" width="8" height="8" fill="#cc0000"/>
+      <rect x="8" y="8" width="8" height="8" fill="#cc0000"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="400" fill="url(#pitchPattern)" opacity="0.12"/>
+  <rect width="600" height="400" fill="url(#pitchVignette)"/>
+  <!-- PITCH MARKINGS -->
+  <rect x="0" y="0" width="600" height="400" fill="none" stroke="#fff" stroke-width="2" opacity="0.3"/>
+  <line x1="300" y1="0" x2="300" y2="400" stroke="#fff" stroke-width="2" opacity="0.3"/>
+  <circle cx="300" cy="200" r="36" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.3"/>
+  <circle cx="300" cy="200" r="3" fill="#fff" opacity="0.3"/>
+  <rect x="0" y="120" width="88" height="160" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.3"/>
+  <rect x="0" y="160" width="35" height="80" fill="none" stroke="#fff" stroke-width="1.2" opacity="0.3"/>
+  <circle cx="72" cy="200" r="2" fill="#fff" opacity="0.3"/>
+  <path d="M 72 158 A 42 42 0 0 1 72 242" fill="none" stroke="#fff" stroke-width="1.2" opacity="0.3"/>
+  <rect x="512" y="120" width="88" height="160" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.3"/>
+  <rect x="565" y="160" width="35" height="80" fill="none" stroke="#fff" stroke-width="1.2" opacity="0.3"/>
+  <circle cx="528" cy="200" r="2" fill="#fff" opacity="0.3"/>
+  <path d="M 528 158 A 42 42 0 0 0 528 242" fill="none" stroke="#fff" stroke-width="1.2" opacity="0.3"/>
+  <rect x="0" y="176" width="6" height="48" fill="none" stroke="#fff" stroke-width="2" opacity="0.5"/>
+  <rect x="594" y="176" width="6" height="48" fill="none" stroke="#fff" stroke-width="2" opacity="0.5"/>
+  <path d="M 0 10 A 10 10 0 0 1 10 0" fill="none" stroke="#fff" stroke-width="1.2" opacity="0.3"/>
+  <path d="M 590 0 A 10 10 0 0 1 600 10" fill="none" stroke="#fff" stroke-width="1.2" opacity="0.3"/>
+  <path d="M 600 390 A 10 10 0 0 1 590 400" fill="none" stroke="#fff" stroke-width="1.2" opacity="0.3"/>
+  <path d="M 10 400 A 10 10 0 0 1 0 390" fill="none" stroke="#fff" stroke-width="1.2" opacity="0.3"/>
+  <!-- FORMATION TITLE -->
+  <rect x="210" y="8" width="180" height="28" rx="14" fill="#000" opacity="0.6"/>
+  <text x="300" y="27" text-anchor="middle" fill="#cc0000" font-family="Arial,sans-serif" font-size="13" font-weight="bold">Croatia 4-3-3</text>
   <!-- GK -->
-  <circle cx="300" cy="330" r="18" fill="none" stroke="#e6edf3" stroke-width="1.5"/>
-  <text x="300" y="327" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Liva</text>
-  <text x="300" y="337" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">ković</text>
+  <circle cx="300" cy="350" r="18" fill="url(#croatiaCheckered)" stroke="#cc0000" stroke-width="1.5"/>
+  <text x="300" y="347" text-anchor="middle" fill="#000" font-family="Arial,sans-serif" font-size="7">Liva</text>
+  <text x="300" y="357" text-anchor="middle" fill="#000" font-family="Arial,sans-serif" font-size="7">ković</text>
   <!-- DEF -->
-  <circle cx="145" cy="270" r="18" fill="none" stroke="#e6edf3" stroke-width="1.5"/>
-  <text x="145" y="267" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Stani</text>
-  <text x="145" y="277" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">šić</text>
-  <circle cx="220" cy="270" r="18" fill="none" stroke="#e6edf3" stroke-width="1.5"/>
-  <text x="220" y="267" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Šutalo</text>
-  <circle cx="380" cy="270" r="18" fill="none" stroke="#e6edf3" stroke-width="1.5"/>
-  <text x="380" y="267" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Pong</text>
-  <text x="380" y="277" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">račić</text>
-  <circle cx="455" cy="270" r="18" fill="none" stroke="#e6edf3" stroke-width="1.5"/>
-  <text x="455" y="267" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Perišić</text>
-  <!-- CDM -->
-  <circle cx="230" cy="205" r="20" fill="none" stroke="#22c55e" stroke-width="2"/>
-  <text x="230" y="200" text-anchor="middle" fill="#22c55e" font-family="Arial,sans-serif" font-size="6">Modrić</text>
-  <text x="230" y="210" text-anchor="middle" fill="#888" font-family="Arial,sans-serif" font-size="5">(C)</text>
-  <circle cx="370" cy="205" r="18" fill="none" stroke="#e6edf3" stroke-width="1.5"/>
-  <text x="370" y="202" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Kova</text>
-  <text x="370" y="212" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">čić</text>
-  <!-- AM -->
-  <circle cx="145" cy="140" r="18" fill="none" stroke="#e6edf3" stroke-width="1.5"/>
-  <text x="145" y="137" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Vlašić</text>
-  <circle cx="300" cy="140" r="18" fill="none" stroke="#e6edf3" stroke-width="1.5"/>
-  <text x="300" y="137" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Sučić</text>
-  <circle cx="455" cy="140" r="18" fill="none" stroke="#e6edf3" stroke-width="1.5"/>
-  <text x="455" y="137" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Ba</text>
-  <text x="455" y="147" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">turina</text>
-  <!-- ST -->
-  <circle cx="300" cy="80" r="18" fill="none" stroke="#e6edf3" stroke-width="1.5"/>
-  <text x="300" y="77" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="7">Budimir</text>
-  <!-- Legend -->
-  <text x="300" y="382" text-anchor="middle" fill="#8b949e" font-family="Arial,sans-serif" font-size="10">GK → ST (attacking direction)</text>
+  <circle cx="140" cy="280" r="18" fill="url(#croatiaCheckered)" stroke="#cc0000" stroke-width="1.5"/>
+  <text x="140" y="277" text-anchor="middle" fill="#000" font-family="Arial,sans-serif" font-size="6">Stani</text>
+  <text x="140" y="287" text-anchor="middle" fill="#000" font-family="Arial,sans-serif" font-size="6">šić</text>
+  <circle cx="230" cy="280" r="18" fill="url(#croatiaCheckered)" stroke="#cc0000" stroke-width="1.5"/>
+  <text x="230" y="280" text-anchor="middle" fill="#000" font-family="Arial,sans-serif" font-size="7">Šutalo</text>
+  <circle cx="370" cy="280" r="18" fill="url(#croatiaCheckered)" stroke="#cc0000" stroke-width="1.5"/>
+  <text x="370" y="277" text-anchor="middle" fill="#000" font-family="Arial,sans-serif" font-size="6">Pong</text>
+  <text x="370" y="287" text-anchor="middle" fill="#000" font-family="Arial,sans-serif" font-size="6">račić</text>
+  <circle cx="460" cy="280" r="18" fill="url(#croatiaCheckered)" stroke="#cc0000" stroke-width="1.5"/>
+  <text x="460" y="280" text-anchor="middle" fill="#000" font-family="Arial,sans-serif" font-size="7">Perišić</text>
+  <!-- MID -->
+  <circle cx="170" cy="195" r="20" fill="url(#croatiaCheckered)" stroke="#cc0000" stroke-width="2"/>
+  <text x="170" y="190" text-anchor="middle" fill="#000" font-family="Arial,sans-serif" font-size="6">Modrić</text>
+  <text x="170" y="200" text-anchor="middle" fill="#000" font-family="Arial,sans-serif" font-size="5" opacity="0.7">(C)</text>
+  <circle cx="300" cy="195" r="18" fill="url(#croatiaCheckered)" stroke="#cc0000" stroke-width="1.5"/>
+  <text x="300" y="192" text-anchor="middle" fill="#000" font-family="Arial,sans-serif" font-size="6">Kova</text>
+  <text x="300" y="202" text-anchor="middle" fill="#000" font-family="Arial,sans-serif" font-size="6">čić</text>
+  <circle cx="430" cy="195" r="18" fill="url(#croatiaCheckered)" stroke="#cc0000" stroke-width="1.5"/>
+  <text x="430" y="192" text-anchor="middle" fill="#000" font-family="Arial,sans-serif" font-size="7">Sučić</text>
+  <!-- FWD -->
+  <circle cx="140" cy="110" r="18" fill="url(#croatiaCheckered)" stroke="#cc0000" stroke-width="1.5"/>
+  <text x="140" y="107" text-anchor="middle" fill="#000" font-family="Arial,sans-serif" font-size="7">Vlašić</text>
+  <circle cx="300" cy="105" r="18" fill="url(#croatiaCheckered)" stroke="#cc0000" stroke-width="1.5"/>
+  <text x="300" y="102" text-anchor="middle" fill="#000" font-family="Arial,sans-serif" font-size="7">Budimir</text>
+  <circle cx="460" cy="110" r="18" fill="url(#croatiaCheckered)" stroke="#cc0000" stroke-width="1.5"/>
+  <text x="460" y="107" text-anchor="middle" fill="#000" font-family="Arial,sans-serif" font-size="6">Ba</text>
+  <text x="460" y="117" text-anchor="middle" fill="#000" font-family="Arial,sans-serif" font-size="6">turina</text>
+  <!-- Direction legend -->
+  <text x="300" y="392" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="9" opacity="0.5">GK → ST (attacking direction)</text>
 </svg>
