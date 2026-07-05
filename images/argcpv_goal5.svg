@@ -10,77 +10,73 @@
       <stop offset="0%" stop-color="transparent"/>
       <stop offset="100%" stop-color="#000" stop-opacity="0.35"/>
     </radialGradient>
-    <marker id="arrowShot" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ff0000"/>
-    </marker>
-    <marker id="arrowCross" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#22c55e"/>
-    </marker>
   </defs>
   <rect width="600" height="400" fill="url(#pitchPattern)" opacity="0.12"/>
   <rect width="600" height="400" fill="url(#pitchVignette)"/>
-  <!-- PITCH MARKINGS -->
-  <rect x="25" y="40" width="550" height="320" fill="none" stroke="#fff" stroke-opacity="0.3" stroke-width="2" rx="4"/>
-  <line x1="300" y1="40" x2="300" y2="360" stroke="#fff" stroke-opacity="0.3" stroke-width="1.5"/>
-  <circle cx="300" cy="200" r="28" fill="none" stroke="#fff" stroke-opacity="0.25" stroke-width="1.5"/>
-  <circle cx="300" cy="200" r="2" fill="#fff" fill-opacity="0.4"/>
-  <rect x="440" y="127" width="135" height="146" fill="none" stroke="#fff" stroke-opacity="0.25" stroke-width="1.5"/>
-  <rect x="475" y="160" width="100" height="80" fill="none" stroke="#fff" stroke-opacity="0.25" stroke-width="1"/>
-  <rect x="575" y="175" width="8" height="50" fill="none" stroke="#fff" stroke-opacity="0.45" stroke-width="2"/>
-  <rect x="25" y="127" width="135" height="146" fill="none" stroke="#fff" stroke-opacity="0.25" stroke-width="1.5"/>
-  <rect x="25" y="160" width="100" height="80" fill="none" stroke="#fff" stroke-opacity="0.25" stroke-width="1"/>
-  <rect x="17" y="175" width="8" height="50" fill="none" stroke="#fff" stroke-opacity="0.45" stroke-width="2"/>
 
-  <!-- Score banner -->
-  <rect x="195" y="8" width="210" height="28" rx="14" fill="#000" fill-opacity="0.65"/>
-  <text x="300" y="26" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="13" font-weight="bold">ARG 3-2 CPV</text>
+  <rect x="40" y="40" width="520" height="320" fill="none" stroke="#fff" stroke-width="1.5" rx="4" opacity="0.45"/>
+  <line x1="300" y1="40" x2="300" y2="360" stroke="#fff" stroke-width="1" opacity="0.45"/>
+  <rect x="40" y="130" width="520" height="140" fill="none" stroke="#fff" stroke-width="1" opacity="0.35"/>
+  <circle cx="300" cy="200" r="45" fill="none" stroke="#fff" stroke-width="1" opacity="0.35"/>
+  <circle cx="300" cy="200" r="4" fill="#fff" opacity="0.35"/>
+  <rect x="40" y="140" width="100" height="120" fill="none" stroke="#fff" stroke-width="1" opacity="0.3"/>
+  <rect x="460" y="140" width="100" height="120" fill="none" stroke="#fff" stroke-width="1" opacity="0.3"/>
+  <rect x="40" y="175" width="50" height="50" fill="none" stroke="#fff" stroke-width="1" opacity="0.25"/>
+  <rect x="510" y="175" width="50" height="50" fill="none" stroke="#fff" stroke-width="1" opacity="0.25"/>
+  <rect x="35" y="180" width="8" height="40" fill="none" stroke="#fff" stroke-width="2" opacity="0.5"/>
+  <rect x="557" y="180" width="8" height="40" fill="none" stroke="#fff" stroke-width="2" opacity="0.5"/>
 
-  <!-- Timer badge -->
-  <rect x="515" y="8" width="60" height="24" rx="12" fill="#000" fill-opacity="0.55"/>
-  <text x="545" y="24" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="12" font-weight="bold">88'</text>
+  <!-- Event location: Messi corner from right -->
+  <circle cx="520" cy="180" r="6" fill="#66aaff" opacity="0.8"/>
+  <circle cx="520" cy="180" r="14" fill="none" stroke="#66aaff" stroke-width="1.5" opacity="0.5"/>
 
-  <!-- G indicator on CPV goal (own goal) -->
-  <text x="562" y="185" fill="#ff0000" font-family="Arial, sans-serif" font-size="18" font-weight="bold">G</text>
+  <!-- Messi corner taker -->
+  <circle cx="530" cy="170" r="14" fill="#0d1117" stroke="#66aaff" stroke-width="2"/>
+  <text x="530" y="166" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="7" font-weight="bold">Messi</text>
+  <text x="530" y="175" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="7">corner</text>
 
-  <!-- Event marker - Borges deflection position -->
-  <circle cx="490" cy="165" r="10" fill="#22c55e" fill-opacity="0.6"/>
-  <circle cx="490" cy="165" r="16" fill="none" stroke="#22c55e" stroke-width="2"/>
+  <!-- Whip to near post -->
+  <path d="M 520 175 Q 480 120 460 155" fill="none" stroke="#66aaff" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="460,155 465,162 456,161" fill="#66aaff"/>
+  <circle cx="465" cy="155" r="5" fill="#fff"/>
 
-  <!-- Borges (own goal) -->
-  <circle cx="490" cy="165" r="12" fill="#006600" fill-opacity="0.85" stroke="#ff0000" stroke-width="2"/>
-  <text x="490" y="165" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="7" font-weight="bold">Borges</text>
+  <!-- Romero leaps for header -->
+  <circle cx="460" cy="165" r="16" fill="#0d1117" stroke="#66aaff" stroke-width="2.5"/>
+  <text x="460" y="161" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="8" font-weight="bold">Romero</text>
+  <text x="460" y="171" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="7">powerful header</text>
 
-  <!-- Messi (crosser) -->
-  <circle cx="420" cy="255" r="12" fill="#66aaff" fill-opacity="0.8" stroke="#fff" stroke-width="1.5"/>
-  <text x="420" y="255" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="8" font-weight="bold">Messi</text>
+  <!-- Header path -->
+  <path d="M 455 160 Q 440 155 435 165" fill="none" stroke="#66aaff" stroke-width="2"/>
+  <polygon points="435,165 442,169 439,160" fill="#66aaff"/>
 
-  <!-- Cross delivery -->
-  <path d="M 420 255 Q 430 210 460 180 Q 475 170 490 165" fill="none" stroke="#22c55e" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowCross)"/>
+  <!-- Borges deflection point -->
+  <circle cx="435" cy="170" r="14" fill="#0d1117" stroke="#22c55e" stroke-width="2"/>
+  <text x="435" y="166" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="7" font-weight="bold">Borges</text>
+  <text x="435" y="176" text-anchor="middle" fill="#ff6b6b" font-family="Arial, sans-serif" font-size="7">DEFLECTION</text>
 
-  <!-- Deflection trajectory into goal -->
-  <path d="M 490 165 Q 530 175 568 190" fill="none" stroke="#ff0000" stroke-width="2.5" marker-end="url(#arrowShot)"/>
+  <!-- Wicked deflection trajectory change -->
+  <path d="M 435 175 Q 420 195 415 200" fill="none" stroke="#ff6b6b" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="415,200 422,204 420,195" fill="#ff6b6b"/>
 
-  <!-- OG label -->
-  <rect x="482" y="178" width="30" height="16" rx="3" fill="#ff0000" fill-opacity="0.7"/>
-  <text x="497" y="190" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="9" font-weight="bold">OG</text>
+  <!-- Ball rolls into goal -->
+  <path d="M 415 200 Q 400 205 80 205" fill="none" stroke="#66aaff" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <polygon points="80,205 88,209 88,201" fill="#66aaff"/>
 
-  <!-- GK Vozinha -->
-  <circle cx="565" cy="200" r="10" fill="#f5c842" stroke="#d4a830" stroke-width="1.5"/>
-  <text x="565" y="216" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="7" style="text-shadow:1px 1px 2px #000;">Vozinha</text>
+  <!-- Vozinha stranded -->
+  <circle cx="540" cy="200" r="12" fill="#0d1117" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="540" y="197" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="6">Vozinha</text>
+  <text x="540" y="206" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="6">stranded</text>
 
-  <!-- CPV defenders -->
-  <circle cx="500" cy="195" r="7" fill="#006600" stroke="#004d00" stroke-width="1"/>
-  <circle cx="520" cy="200" r="7" fill="#006600" stroke="#004d00" stroke-width="1"/>
+  <!-- Goal -->
+  <rect x="35" y="180" width="8" height="40" fill="none" stroke="#ff6b6b" stroke-width="2.5"/>
+  <text x="39" y="205" text-anchor="middle" fill="#ff6b6b" font-family="Arial, sans-serif" font-size="14" font-weight="bold">OG</text>
 
-  <!-- L. Martínez waiting for cross -->
-  <circle cx="485" cy="195" r="8" fill="#66aaff" fill-opacity="0.6" stroke="#fff" stroke-width="1"/>
-  <text x="485" y="208" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="6" style="text-shadow:1px 1px 2px #000;">L.Martínez</text>
+  <rect x="230" y="8" width="140" height="24" rx="12" fill="#000" opacity="0.6"/>
+  <text x="300" y="24" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="13" font-weight="bold">ARG 3-2 CPV</text>
 
-  <!-- Description bar -->
-  <rect x="140" y="360" width="320" height="28" rx="14" fill="#000" fill-opacity="0.6"/>
-  <text x="300" y="378" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="11">Borges' deflection sends Messi cross into own net</text>
+  <rect x="80" y="360" width="440" height="30" rx="6" fill="#000" opacity="0.6"/>
+  <text x="300" y="380" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">111' Romero header deflected off Borges — cruel own goal winner</text>
 
-  <style>
-    text { dominant-baseline: central; }
-  </style>
+  <rect x="475" y="45" width="70" height="22" rx="11" fill="#000" opacity="0.6"/>
+  <text x="510" y="60" text-anchor="middle" fill="#66aaff" font-family="Arial, sans-serif" font-size="11" font-weight="bold">111' ET</text>
 </svg>
