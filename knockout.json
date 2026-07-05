@@ -4,9 +4,9 @@
       "name": "Round of 32",
       "matches": [
         {"match_id": "M74", "team1": "Germany", "team2": "Paraguay", "date": "Jun 30, 2026", "status": "upcoming"},
-        {"match_id": "M75", "team1": "Netherlands", "team2": "Morocco", "date": "Jun 30, 2026", "status": "upcoming"},
+        {"match_id": "M75", "team1": "France", "team2": "Sweden", "date": "Jun 30, 2026", "status": "upcoming"},
         {"match_id": "M73", "team1": "South Africa", "team2": "Canada", "date": "Jun 29, 2026", "status": "upcoming"},
-        {"match_id": "M77", "team1": "France", "team2": "Sweden", "date": "Jul 1, 2026", "status": "upcoming"},
+        {"match_id": "M77", "team1": "Netherlands", "team2": "Morocco", "date": "Jul 1, 2026", "status": "upcoming"},
         {"match_id": "M76", "team1": "Brazil", "team2": "Japan", "date": "Jun 29, 2026", "status": "upcoming"},
         {"match_id": "M78", "team1": "Ivory Coast", "team2": "Norway", "date": "Jun 30, 2026", "status": "upcoming"},
         {"match_id": "M79", "team1": "Mexico", "team2": "Ecuador", "date": "Jul 1, 2026", "status": "upcoming"},
@@ -24,20 +24,20 @@
     {
       "name": "Round of 16",
       "matches": [
-        {"match_id": "M89", "team1": "Paraguay", "team2": "Morocco", "date": "Jul 5, 2026", "status": "upcoming"},
-        {"match_id": "M90", "team1": "Canada", "team2": "France", "date": "Jul 4, 2026", "status": "upcoming"},
+        {"match_id": "M89", "team1": "Paraguay", "team2": "France", "date": "Jul 5, 2026", "status": "upcoming"},
+        {"match_id": "M90", "team1": "Canada", "team2": "Morocco", "date": "Jul 4, 2026", "status": "upcoming"},
         {"match_id": "M91", "team1": "Brazil", "team2": "Norway", "date": "Jul 6, 2026", "status": "upcoming"},
-        {"match_id": "M92", "team1": "Mexico", "team2": "W80", "date": "Jul 6, 2026", "status": "upcoming"},
-        {"match_id": "M93", "team1": "W83", "team2": "W84", "date": "Jul 7, 2026", "status": "upcoming"},
-        {"match_id": "M94", "team1": "W81", "team2": "W82", "date": "Jul 7, 2026", "status": "upcoming"},
-        {"match_id": "M95", "team1": "W86", "team2": "W88", "date": "Jul 7, 2026", "status": "upcoming"},
-        {"match_id": "M96", "team1": "W85", "team2": "W87", "date": "Jul 8, 2026", "status": "upcoming"}
+        {"match_id": "M92", "team1": "Mexico", "team2": "England", "date": "Jul 6, 2026", "status": "upcoming"},
+        {"match_id": "M93", "team1": "USA", "team2": "Belgium", "date": "Jul 7, 2026", "status": "upcoming"},
+        {"match_id": "M94", "team1": "Portugal", "team2": "Spain", "date": "Jul 7, 2026", "status": "upcoming"},
+        {"match_id": "M95", "team1": "Argentina", "team2": "Egypt", "date": "Jul 7, 2026", "status": "upcoming"},
+        {"match_id": "M96", "team1": "Switzerland", "team2": "Colombia", "date": "Jul 8, 2026", "status": "upcoming"}
       ]
     },
     {
       "name": "Quarter-Finals",
       "matches": [
-        {"match_id": "M97", "team1": "W89", "team2": "W90", "date": "Jul 10, 2026", "status": "upcoming"},
+        {"match_id": "M97", "team1": "France", "team2": "Morocco", "date": "Jul 10, 2026", "status": "upcoming"},
         {"match_id": "M98", "team1": "W93", "team2": "W94", "date": "Jul 11, 2026", "status": "upcoming"},
         {"match_id": "M99", "team1": "W91", "team2": "W92", "date": "Jul 12, 2026", "status": "upcoming"},
         {"match_id": "M100", "team1": "W95", "team2": "W96", "date": "Jul 12, 2026", "status": "upcoming"}
