@@ -1,8 +1,12 @@
 {
   "functions": {
-    "api/**/*.js": {
-      "memory": 128,
-      "maxDuration": 10
+    "api/subscribe.js": {
+      "maxDuration": 10,
+      "memory": 128
+    },
+    "api/broadcast.js": {
+      "maxDuration": 10,
+      "memory": 128
     }
   }
 }

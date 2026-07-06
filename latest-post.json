@@ -1,20 +1,6 @@
-[
-  {
-    "id": "germany-vs-ecuador-2026",
-    "title": "Germany vs Ecuador - Post-match",
-    "summary": "A genuine shock — Ecuador came from behind to beat Germany 2-1 and reach the knockouts for the first time since 2006.",
-    "file": "posts/germany-vs-ecuador.html"
-  },
-  {
-    "id": "brazil-vs-japan-2026",
-    "title": "Brazil vs Japan - Post-match",
-    "summary": "Brazil advance to face Norway in the Round of 16. Japan's historic World Cup run ends in Houston, narrowly denied one of the great upsets.",
-    "file": "posts/brazil-vs-japan.html"
-  },
-  {
-    "id": "germany-vs-paraguay-2026",
-    "title": "Germany vs Paraguay - Post-match",
-    "summary": "Paraguay advance to face Morocco in the Round of 16. Germany's 2026 World Cup ends here - their earliest exit since 2018, and arguably the most painful in their entire tournament history.",
-    "file": "posts/germany-vs-paraguay.html"
-  }
-]
+{
+  "id": "argentina-vs-cape-verde-2026",
+  "title": "Argentina vs Cabo Verde - Post-match analysis",
+  "summary": "The defending champions survive a monumental scare against tournament debutants Cabo Verde, needing extra time and an own goal after Messi's early strike was cancelled out.",
+  "file": "posts/argentina-vs-cape-verde.html"
+}

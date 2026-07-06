@@ -1,33 +1,15 @@
-name: Notify subscribers on new post
-
+name: Notify on new post
 on:
   push:
     branches: [main]
     paths:
-      - 'posts/*.html'
-      - 'posts.json'
-
+      - "posts/*.html"
+      - "posts.json"
 jobs:
-  notify:
+  broadcast:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Detect new posts
-        id: detect
-        run: |
-          NEW=$(git diff --name-only HEAD~1 HEAD -- 'posts/*.html' 2>/dev/null || echo "")
-          if [ -n "$NEW" ]; then
-            FIRST=$(echo "$NEW" | head -1)
-            SLUG=$(basename "$FIRST" .html)
-            TITLE=$(echo "$SLUG" | sed 's/-vs-//;s/-/ /g' | sed 's/\b\(.\)/\u\1/g')
-            echo "title=New analysis: $SLUG" >> $GITHUB_OUTPUT
-            echo "body=Match analysis published." >> $GITHUB_OUTPUT
-            echo "url=/$FIRST" >> $GITHUB_OUTPUT
-            echo "has_new=true" >> $GITHUB_OUTPUT
-          else
-            echo "has_new=false" >> $GITHUB_OUTPUT
-          fi
-      - name: Trigger push notification
-        if: steps.detect.outputs.has_new == 'true'
-        run: |
-          curl -s "https://the-final-third19.vercel.app/api/broadcast?key=${{ secrets.BROADCAST_KEY }}&title=${{ steps.detect.outputs.title }}&body=${{ steps.detect.outputs.body }}&url=${{ steps.detect.outputs.url }}"
+      - run: |
+          curl -X POST "https://the-final-third19.vercel.app/api/broadcast?key=${{ secrets.BROADCAST_KEY }}" \
+            -H "Content-Type: application/json" \
+            -d '{"title":"New Match Analysis","body":"A new post-match analysis is live!","url":"/"}'
