@@ -3,63 +3,63 @@
     {
       "name": "Round of 32",
       "matches": [
-        {"match_id": "M74", "team1": "Germany", "team2": "Paraguay", "date": "Jun 30, 2026", "status": "upcoming"},
-        {"match_id": "M75", "team1": "France", "team2": "Sweden", "date": "Jun 30, 2026", "status": "upcoming"},
-        {"match_id": "M73", "team1": "South Africa", "team2": "Canada", "date": "Jun 29, 2026", "status": "upcoming"},
-        {"match_id": "M77", "team1": "Netherlands", "team2": "Morocco", "date": "Jul 1, 2026", "status": "upcoming"},
-        {"match_id": "M76", "team1": "Brazil", "team2": "Japan", "date": "Jun 29, 2026", "status": "upcoming"},
-        {"match_id": "M78", "team1": "Ivory Coast", "team2": "Norway", "date": "Jun 30, 2026", "status": "upcoming"},
-        {"match_id": "M79", "team1": "Mexico", "team2": "Ecuador", "date": "Jul 1, 2026", "status": "upcoming"},
-        {"match_id": "M80", "team1": "England", "team2": "DR Congo", "date": "Jul 1, 2026", "status": "upcoming"},
-        {"match_id": "M81", "team1": "USA", "team2": "Bosnia-Herzegovina", "date": "Jul 2, 2026", "status": "upcoming"},
-        {"match_id": "M82", "team1": "Belgium", "team2": "Senegal", "date": "Jul 2, 2026", "status": "upcoming"},
-        {"match_id": "M83", "team1": "Portugal", "team2": "Croatia", "date": "Jul 3, 2026", "status": "upcoming"},
-        {"match_id": "M84", "team1": "Spain", "team2": "Austria", "date": "Jul 3, 2026", "status": "upcoming"},
-        {"match_id": "M85", "team1": "Argentina", "team2": "Cape Verde", "date": "Jul 4, 2026", "status": "upcoming"},
-        {"match_id": "M86", "team1": "Australia", "team2": "Egypt", "date": "Jul 3, 2026", "status": "upcoming"},
-        {"match_id": "M87", "team1": "Switzerland", "team2": "Algeria", "date": "Jul 4, 2026", "status": "upcoming"},
-        {"match_id": "M88", "team1": "Colombia", "team2": "Ghana", "date": "Jul 4, 2026", "status": "upcoming"}
+        {"match_id": "R32_1", "team1": "South Africa", "team2": "Canada", "score": "0 - 1", "winner": "Canada", "date": "Jun 28", "status": "played"},
+        {"match_id": "R32_2", "team1": "Brazil", "team2": "Japan", "score": "2 - 1", "winner": "Brazil", "date": "Jun 29", "status": "played"},
+        {"match_id": "R32_3", "team1": "Germany", "team2": "Paraguay", "score": "1 - 1 (3-4 pens)", "winner": "Paraguay", "date": "Jun 29", "status": "played"},
+        {"match_id": "R32_4", "team1": "Netherlands", "team2": "Morocco", "score": "1 - 1 (2-3 pens)", "winner": "Morocco", "date": "Jun 30", "status": "played"},
+        {"match_id": "R32_5", "team1": "Norway", "team2": "Ivory Coast", "score": "2 - 1", "winner": "Norway", "date": "Jun 30", "status": "played"},
+        {"match_id": "R32_6", "team1": "France", "team2": "Sweden", "score": "3 - 0", "winner": "France", "date": "Jun 30", "status": "played"},
+        {"match_id": "R32_7", "team1": "Mexico", "team2": "Ecuador", "score": "2 - 0", "winner": "Mexico", "date": "Jul 1", "status": "played"},
+        {"match_id": "R32_8", "team1": "England", "team2": "DR Congo", "score": "2 - 1", "winner": "England", "date": "Jul 1", "status": "played"},
+        {"match_id": "R32_9", "team1": "Belgium", "team2": "Senegal", "score": "3 - 2", "winner": "Belgium", "date": "Jul 1", "status": "played"},
+        {"match_id": "R32_10", "team1": "USA", "team2": "Bosnia-Herzegovina", "score": "2 - 0", "winner": "USA", "date": "Jul 1", "status": "played"},
+        {"match_id": "R32_11", "team1": "Spain", "team2": "Austria", "score": "3 - 0", "winner": "Spain", "date": "Jul 2", "status": "played"},
+        {"match_id": "R32_12", "team1": "Portugal", "team2": "Croatia", "score": "2 - 1", "winner": "Portugal", "date": "Jul 2", "status": "played"},
+        {"match_id": "R32_13", "team1": "Switzerland", "team2": "Algeria", "score": "2 - 0", "winner": "Switzerland", "date": "Jul 2", "status": "played"},
+        {"match_id": "R32_14", "team1": "Egypt", "team2": "Australia", "score": "1 - 1 (4-2 pens)", "winner": "Egypt", "date": "Jul 3", "status": "played"},
+        {"match_id": "R32_15", "team1": "Argentina", "team2": "Cape Verde", "score": "3 - 2", "winner": "Argentina", "date": "Jul 3", "status": "played"},
+        {"match_id": "R32_16", "team1": "Colombia", "team2": "Ghana", "score": "1 - 0", "winner": "Colombia", "date": "Jul 3", "status": "played"}
       ]
     },
     {
       "name": "Round of 16",
       "matches": [
-        {"match_id": "M89", "team1": "Paraguay", "team2": "France", "date": "Jul 5, 2026", "status": "upcoming"},
-        {"match_id": "M90", "team1": "Canada", "team2": "Morocco", "date": "Jul 4, 2026", "status": "upcoming"},
-        {"match_id": "M91", "team1": "Brazil", "team2": "Norway", "date": "Jul 6, 2026", "status": "upcoming"},
-        {"match_id": "M92", "team1": "Mexico", "team2": "England", "date": "Jul 6, 2026", "status": "upcoming"},
-        {"match_id": "M93", "team1": "USA", "team2": "Belgium", "date": "Jul 7, 2026", "status": "upcoming"},
-        {"match_id": "M94", "team1": "Portugal", "team2": "Spain", "date": "Jul 7, 2026", "status": "upcoming"},
-        {"match_id": "M95", "team1": "Argentina", "team2": "Egypt", "date": "Jul 7, 2026", "status": "upcoming"},
-        {"match_id": "M96", "team1": "Switzerland", "team2": "Colombia", "date": "Jul 8, 2026", "status": "upcoming"}
+        {"match_id": "R16_1", "team1": "Morocco", "team2": "Canada", "score": "3 - 0", "winner": "Morocco", "date": "Jul 4", "status": "played"},
+        {"match_id": "R16_2", "team1": "France", "team2": "Paraguay", "score": "1 - 0", "winner": "France", "date": "Jul 4", "status": "played"},
+        {"match_id": "R16_3", "team1": "Brazil", "team2": "Norway", "score": "1 - 2", "winner": "Norway", "date": "Jul 5", "status": "played"},
+        {"match_id": "R16_4", "team1": "Mexico", "team2": "England", "score": "2 - 3", "winner": "England", "date": "Jul 5", "status": "played"},
+        {"match_id": "R16_5", "team1": "Portugal", "team2": "Spain", "score": "TBD", "winner": "", "date": "Jul 6", "status": "upcoming"},
+        {"match_id": "R16_6", "team1": "USA", "team2": "Belgium", "score": "TBD", "winner": "", "date": "Jul 6", "status": "upcoming"},
+        {"match_id": "R16_7", "team1": "Argentina", "team2": "Egypt", "score": "TBD", "winner": "", "date": "Jul 7", "status": "upcoming"},
+        {"match_id": "R16_8", "team1": "Switzerland", "team2": "Colombia", "score": "TBD", "winner": "", "date": "Jul 7", "status": "upcoming"}
       ]
     },
     {
       "name": "Quarter-Finals",
       "matches": [
-        {"match_id": "M97", "team1": "France", "team2": "Morocco", "date": "Jul 10, 2026", "status": "upcoming"},
-        {"match_id": "M98", "team1": "Norway", "team2": "England", "date": "Jul 11, 2026", "status": "upcoming"},
-        {"match_id": "M99", "team1": "W91", "team2": "W92", "date": "Jul 12, 2026", "status": "upcoming"},
-        {"match_id": "M100", "team1": "W95", "team2": "W96", "date": "Jul 12, 2026", "status": "upcoming"}
+        {"match_id": "QF_1", "team1": "Morocco", "team2": "France", "score": "TBD", "winner": "", "date": "Jul 9", "status": "upcoming"},
+        {"match_id": "QF_2", "team1": "Norway", "team2": "England", "score": "TBD", "winner": "", "date": "Jul 11", "status": "upcoming"},
+        {"match_id": "QF_3", "team1": "Portugal/Spain", "team2": "USA/Belgium", "score": "TBD", "winner": "", "date": "Jul 10", "status": "upcoming"},
+        {"match_id": "QF_4", "team1": "Argentina/Egypt", "team2": "Switzerland/Colombia", "score": "TBD", "winner": "", "date": "Jul 11", "status": "upcoming"}
       ]
     },
     {
       "name": "Semi-Finals",
       "matches": [
-        {"match_id": "M101", "team1": "W97", "team2": "W99", "date": "Jul 15, 2026", "status": "upcoming"},
-        {"match_id": "M102", "team1": "W98", "team2": "W100", "date": "Jul 16, 2026", "status": "upcoming"}
+        {"match_id": "SF_1", "team1": "TBD", "team2": "TBD", "score": "TBD", "winner": "", "date": "Jul 14", "status": "upcoming"},
+        {"match_id": "SF_2", "team1": "TBD", "team2": "TBD", "score": "TBD", "winner": "", "date": "Jul 15", "status": "upcoming"}
       ]
     },
     {
       "name": "3rd Place",
       "matches": [
-        {"match_id": "M103", "team1": "RU101", "team2": "RU102", "date": "Jul 19, 2026", "venue": "TBD", "status": "upcoming"}
+        {"match_id": "3RD", "team1": "TBD", "team2": "TBD", "score": "TBD", "winner": "", "date": "Jul 18", "venue": "Hard Rock Stadium, Miami", "status": "upcoming"}
       ]
     },
     {
       "name": "Final",
       "matches": [
-        {"match_id": "M104", "team1": "W101", "team2": "W102", "date": "Jul 20, 2026", "venue": "MetLife Stadium, New York/New Jersey", "status": "upcoming"}
+        {"match_id": "FINAL", "team1": "TBD", "team2": "TBD", "score": "TBD", "winner": "", "date": "Jul 19", "venue": "MetLife Stadium, New York/New Jersey", "status": "upcoming"}
       ]
     }
   ]
