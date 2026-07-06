@@ -38,7 +38,7 @@
       "name": "Quarter-Finals",
       "matches": [
         {"match_id": "M97", "team1": "France", "team2": "Morocco", "date": "Jul 10, 2026", "status": "upcoming"},
-        {"match_id": "M98", "team1": "Norway", "team2": "W94", "date": "Jul 11, 2026", "status": "upcoming"},
+        {"match_id": "M98", "team1": "Norway", "team2": "England", "date": "Jul 11, 2026", "status": "upcoming"},
         {"match_id": "M99", "team1": "W91", "team2": "W92", "date": "Jul 12, 2026", "status": "upcoming"},
         {"match_id": "M100", "team1": "W95", "team2": "W96", "date": "Jul 12, 2026", "status": "upcoming"}
       ]
