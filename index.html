@@ -126,6 +126,7 @@
   .b-team{display:flex;align-items:center;gap:6px;padding:7px 10px;font-size:12px;font-weight:600;}
   .b-team:first-child{border-bottom:1px solid var(--border);}
   .b-team.winner{color:var(--green);}
+  .b-team.eliminated{opacity:0.3;text-decoration:line-through;text-decoration-color:var(--red);}
   .b-team.tbd{color:var(--muted);font-style:italic;}
   .b-flag{font-size:14px;flex-shrink:0;}
   .b-name{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
@@ -991,14 +992,16 @@ function renderBracket(data){
 
       const t1Won = m.score && m.winner===m.team1;
       const t2Won = m.score && m.winner===m.team2;
+      const t1Elim = m.score && m.winner && m.winner!==m.team1;
+      const t2Elim = m.score && m.winner && m.winner!==m.team2;
 
       matchEl.innerHTML=`
-        <div class="b-team ${!m.team1?'tbd':''} ${t1Won?'winner':''}">
+        <div class="b-team ${!m.team1?'tbd':''} ${t1Won?'winner':''} ${t1Elim?'eliminated':''}">
           ${flagImgHtml(m.team1,'b-flag-img')}
           <span class="b-name">${m.team1||'TBD'}</span>
           <span class="b-score ${t1Won?'winner':''}">${m.score?m.score.split('-')[0].trim():''}</span>
         </div>
-        <div class="b-team ${!m.team2?'tbd':''} ${t2Won?'winner':''}">
+        <div class="b-team ${!m.team2?'tbd':''} ${t2Won?'winner':''} ${t2Elim?'eliminated':''}">
           ${flagImgHtml(m.team2,'b-flag-img')}
           <span class="b-name">${m.team2||'TBD'}</span>
           <span class="b-score ${t2Won?'winner':''}">${m.score?m.score.split('-')[1].trim():''}</span>
