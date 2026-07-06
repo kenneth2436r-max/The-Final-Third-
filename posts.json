@@ -129,6 +129,7 @@
   },
   {
     "file": "posts/algeria-vs-austria.html",
+    "image": "algeria-vs-austria.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "comp": "World Cup 2026 · Group J",
@@ -157,6 +158,7 @@
   },
   {
     "file": "posts/colombia-vs-portugal.html",
+    "image": "colombia-vs-portugal.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "comp": "World Cup 2026 · Group K",
@@ -170,6 +172,7 @@
   },
   {
     "file": "posts/uruguay-vs-spain.html",
+    "image": "uruguay-vs-spain.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "comp": "World Cup 2026 · Group H",
@@ -183,6 +186,7 @@
   },
   {
     "file": "posts/norway-vs-france.html",
+    "image": "norway-vs-france.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "comp": "World Cup 2026 · Group I",
@@ -196,6 +200,7 @@
   },
   {
     "file": "posts/germany-vs-ecuador.html",
+    "image": "germany-vs-ecuador.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "comp": "World Cup 2026 · Group E",
@@ -209,6 +214,7 @@
   },
   {
     "file": "posts/morocco-vs-haiti.html",
+    "image": "morocco-vs-haiti.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "comp": "World Cup 2026 · Group C",
@@ -222,6 +228,7 @@
   },
   {
     "file": "posts/scotland-vs-brazil.html",
+    "image": "scotland-vs-brazil.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "comp": "World Cup 2026 · Group C",
@@ -235,6 +242,7 @@
   },
   {
     "file": "posts/england-vs-ghana.html",
+    "image": "england-vs-ghana.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "comp": "World Cup 2026 · Group L",
@@ -248,6 +256,7 @@
   },
   {
     "file": "posts/argentina-vs-austria.html",
+    "image": "argentina-vs-austria.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "comp": "World Cup 2026 · Group J",
@@ -261,6 +270,7 @@
   },
   {
     "file": "posts/spain-vs-saudi-arabia.html",
+    "image": "spain-vs-saudi-arabia.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "comp": "World Cup 2026 · Group H",
@@ -274,6 +284,7 @@
   },
   {
     "file": "posts/brazil-vs-haiti.html",
+    "image": "brazil-vs-haiti.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "comp": "World Cup 2026 · Group C",
@@ -287,6 +298,7 @@
   },
   {
     "file": "posts/portugal-vs-dr-congo.html",
+    "image": "portugal-vs-dr-congo.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "comp": "World Cup 2026 · Group K",
@@ -300,6 +312,7 @@
   },
   {
     "file": "posts/iraq-vs-norway.html",
+    "image": "iraq-vs-norway.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "comp": "World Cup 2026 · Group I",
@@ -313,6 +326,7 @@
   },
   {
     "file": "posts/france-vs-senegal.html",
+    "image": "france-vs-senegal.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "comp": "World Cup 2026 · Group I",
@@ -326,6 +340,7 @@
   },
   {
     "file": "posts/argentina-vs-algeria.html",
+    "image": "argentina-vs-algeria.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "comp": "World Cup 2026 · Group J",
@@ -339,6 +354,7 @@
   },
   {
     "file": "posts/spain-vs-cape-verde.html",
+    "image": "spain-vs-cape-verde.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "comp": "World Cup 2026 · Group H",
@@ -352,6 +368,7 @@
   },
   {
     "file": "posts/germany-vs-curacao.html",
+    "image": "germany-vs-curacao.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "comp": "World Cup 2026 · Group E",
@@ -365,6 +382,7 @@
   },
   {
     "file": "posts/brazil-vs-morocco.html",
+    "image": "brazil-vs-morocco.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "comp": "World Cup 2026 · Group C",
@@ -378,6 +396,7 @@
   },
   {
     "file": "posts/mexico-vs-south-africa.html",
+    "image": "mexico-vs-south-africa.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "comp": "World Cup 2026 · Group A",
