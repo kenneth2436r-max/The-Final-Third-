@@ -1,5 +1,47 @@
 [
   {
+    "file": "posts/mexico-vs-england.html",
+    "image": "mexico-vs-england.png",
+    "tag": "post",
+    "tagLabel": "Full-time",
+    "comp": "World Cup 2026 · Round of 16 · Match 92",
+    "title": "Mexico vs England - Post-match analysis",
+    "summary": "An all-time World Cup classic at the Azteca — Bellingham's first-half brace, a Quansah red card, Kane's penalty, and a nervy finish with 10 men — England bury the ghosts of 1970 and survive altitude, a hostile crowd, and a spirited Mexico fightback to reach the quarterfinals.",
+    "chips": ["Mexico", "England", "Bellingham", "Kane", "Saka", "Gordon", "Quansah", "Jimenez", "Pickford"],
+    "date": "5 Jul 2026",
+    "readTime": 5,
+    "predicted": "Predicted England win ✓",
+    "correct": true
+  },
+  {
+    "file": "posts/brazil-vs-norway.html",
+    "image": "brazil-vs-norway.png",
+    "tag": "post",
+    "tagLabel": "Full-time",
+    "comp": "World Cup 2026 · Round of 16 · Match 90",
+    "title": "Brazil vs Norway - Post-match analysis",
+    "summary": "One of the great World Cup shocks — Erling Haaland scores twice in the final 11 minutes to knock five-time champions Brazil out at the last-16 stage, their earliest exit since 1990. Norway reach the quarterfinals for the first time in their history.",
+    "chips": ["Brazil", "Norway", "Haaland", "Neymar", "Vinicius Jr", "Martinelli"],
+    "date": "5 Jul 2026",
+    "readTime": 4,
+    "predicted": "Predicted Norway win ✓",
+    "correct": true
+  },
+  {
+    "file": "posts/paraguay-vs-france.html",
+    "image": "paraguay-vs-france.png",
+    "tag": "post",
+    "tagLabel": "Full-time",
+    "comp": "World Cup 2026 · Round of 16 · Match 89",
+    "title": "Paraguay vs France - Post-match analysis",
+    "summary": "An attritional, grind-it-out win for France — Mbappe's second-half penalty the only separator as Paraguay's 5-4-1 nearly held firm for 70 minutes. Orlando Gill, on the losing side, was the best player on the pitch.",
+    "chips": ["Paraguay", "France", "Mbappe", "Orlando Gill", "Kolo Muani", "Kounde", "Tchouameni"],
+    "date": "4 Jul 2026",
+    "readTime": 3,
+    "predicted": "Predicted France win ✓",
+    "correct": true
+  },
+  {
     "file": "posts/argentina-vs-cape-verde.html",
     "matchId": "arg-cpv-2026",
     "image": "argentina-vs-cape-verde.png",
@@ -34,7 +76,7 @@
   {
     "file": "posts/france-vs-sweden.html",
     "matchId": "fra-swe-2026",
-    "image": "france-vs-sweden.svg",
+    "image": "france-vs-sweden.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "status": "post",
@@ -448,48 +490,6 @@
     "date": "23 Jun 2026",
     "readTime": 7,
     "predicted": "Predicted Portugal win ✓",
-    "correct": true
-  },
-  {
-    "file": "posts/paraguay-vs-france.html",
-    "image": "paraguay-vs-france.png",
-    "tag": "post",
-    "tagLabel": "Full-time",
-    "comp": "World Cup 2026 · Round of 16 · Match 89",
-    "title": "Paraguay vs France - Post-match analysis",
-    "summary": "An attritional, grind-it-out win for France — Mbappe's second-half penalty the only separator as Paraguay's 5-4-1 nearly held firm for 70 minutes. Orlando Gill, on the losing side, was the best player on the pitch.",
-    "chips": ["Paraguay", "France", "Mbappe", "Orlando Gill", "Kolo Muani", "Kounde", "Tchouameni"],
-    "date": "4 Jul 2026",
-    "readTime": 3,
-    "predicted": "Predicted France win ✓",
-    "correct": true
-  },
-  {
-    "file": "posts/brazil-vs-norway.html",
-    "image": "brazil-vs-norway.png",
-    "tag": "post",
-    "tagLabel": "Full-time",
-    "comp": "World Cup 2026 · Round of 16 · Match 90",
-    "title": "Brazil vs Norway - Post-match analysis",
-    "summary": "One of the great World Cup shocks — Erling Haaland scores twice in the final 11 minutes to knock five-time champions Brazil out at the last-16 stage, their earliest exit since 1990. Norway reach the quarterfinals for the first time in their history.",
-    "chips": ["Brazil", "Norway", "Haaland", "Neymar", "Vinicius Jr", "Martinelli"],
-    "date": "5 Jul 2026",
-    "readTime": 4,
-    "predicted": "Predicted Norway win ✓",
-    "correct": true
-  },
-  {
-    "file": "posts/mexico-vs-england.html",
-    "image": "mexico-vs-england.png",
-    "tag": "post",
-    "tagLabel": "Full-time",
-    "comp": "World Cup 2026 · Round of 16 · Match 92",
-    "title": "Mexico vs England - Post-match analysis",
-    "summary": "An all-time World Cup classic at the Azteca — Bellingham's first-half brace, a Quansah red card, Kane's penalty, and a nervy finish with 10 men — England bury the ghosts of 1970 and survive altitude, a hostile crowd, and a spirited Mexico fightback to reach the quarterfinals.",
-    "chips": ["Mexico", "England", "Bellingham", "Kane", "Saka", "Gordon", "Quansah", "Jimenez", "Pickford"],
-    "date": "5 Jul 2026",
-    "readTime": 5,
-    "predicted": "Predicted England win ✓",
     "correct": true
   }
 ]
