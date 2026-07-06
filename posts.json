@@ -12,7 +12,7 @@
     "chips": ["Argentina", "Cabo Verde", "Messi", "L. Martinez", "D. Duarte"],
     "date": "3 Jul 2026",
     "readTime": 10,
-    "predicted": "Predicted Argentina to win ✅",
+    "predicted": "Predicted Argentina to win ✓",
     "correct": true
   },
   {
@@ -28,7 +28,7 @@
     "chips": ["England", "DR Congo", "Kane", "Cipenga", "Gordon"],
     "date": "1 Jul 2026",
     "readTime": 9,
-    "predicted": "Predicted England to win ✅",
+    "predicted": "Predicted England to win ✓",
     "correct": true
   },
   {
@@ -92,7 +92,7 @@
     "chips": ["Belgium", "Senegal", "Tielemans", "Lukaku", "Sarr"],
     "date": "29 Jun 2026",
     "readTime": 10,
-    "predicted": "Predicted Belgium to win ✅",
+    "predicted": "Predicted Belgium to win ✓",
     "correct": true
   },
   {
