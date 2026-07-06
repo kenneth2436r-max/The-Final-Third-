@@ -2,7 +2,7 @@
   {
     "file": "posts/argentina-vs-cape-verde.html",
     "matchId": "arg-cpv-2026",
-    "image": "argentina-vs-cape-verde.svg",
+    "image": "argentina-vs-cape-verde.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "status": "post",
@@ -18,7 +18,7 @@
   {
     "file": "posts/england-vs-dr-congo.html",
     "matchId": "eng-cod-2026",
-    "image": "england-vs-dr-congo.svg",
+    "image": "england-vs-dr-congo.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "status": "post",
@@ -34,7 +34,7 @@
   {
     "file": "posts/france-vs-sweden.html",
     "matchId": "fra-swe-2026",
-    "image": "france-vs-sweden.svg",
+    "image": "france-vs-sweden.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "status": "post",
@@ -50,7 +50,7 @@
   {
     "file": "posts/portugal-vs-croatia.html",
     "matchId": "por-cro-2026",
-    "image": "portugal-vs-croatia.svg",
+    "image": "portugal-vs-croatia.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "status": "post",
@@ -66,7 +66,7 @@
   {
     "file": "posts/spain-vs-austria.html",
     "matchId": "esp-aut-2026",
-    "image": "spain-vs-austria.svg",
+    "image": "spain-vs-austria.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "status": "post",
@@ -82,7 +82,7 @@
   {
     "file": "posts/belgium-vs-senegal.html",
     "matchId": "bel-sen-2026",
-    "image": "belgium-vs-senegal.svg",
+    "image": "belgium-vs-senegal.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "status": "post",
@@ -98,7 +98,7 @@
   {
     "file": "posts/germany-vs-paraguay.html",
     "matchId": "ger-par-2026",
-    "image": "germany-vs-paraguay.svg",
+    "image": "germany-vs-paraguay.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "status": "post",
