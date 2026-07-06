@@ -2,7 +2,7 @@
   {
     "file": "posts/argentina-vs-cape-verde.html",
     "matchId": "arg-cpv-2026",
-    "image": "argentina-vs-cape-verde.svg",
+    "image": "argentina-vs-cape-verde.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "status": "post",
@@ -12,13 +12,13 @@
     "chips": ["Argentina", "Cabo Verde", "Messi", "L. Martinez", "D. Duarte"],
     "date": "3 Jul 2026",
     "readTime": 10,
-    "predicted": "Predicted Argentina to win ✅",
+    "predicted": "Predicted Argentina to win ✓",
     "correct": true
   },
   {
     "file": "posts/england-vs-dr-congo.html",
     "matchId": "eng-cod-2026",
-    "image": "england-vs-dr-congo.svg",
+    "image": "england-vs-dr-congo.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "status": "post",
@@ -28,7 +28,7 @@
     "chips": ["England", "DR Congo", "Kane", "Cipenga", "Gordon"],
     "date": "1 Jul 2026",
     "readTime": 9,
-    "predicted": "Predicted England to win ✅",
+    "predicted": "Predicted England to win ✓",
     "correct": true
   },
   {
@@ -50,7 +50,7 @@
   {
     "file": "posts/portugal-vs-croatia.html",
     "matchId": "por-cro-2026",
-    "image": "portugal-vs-croatia.svg",
+    "image": "portugal-vs-croatia.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "status": "post",
@@ -66,7 +66,7 @@
   {
     "file": "posts/spain-vs-austria.html",
     "matchId": "esp-aut-2026",
-    "image": "spain-vs-austria.svg",
+    "image": "spain-vs-austria.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "status": "post",
@@ -82,7 +82,7 @@
   {
     "file": "posts/belgium-vs-senegal.html",
     "matchId": "bel-sen-2026",
-    "image": "belgium-vs-senegal.svg",
+    "image": "belgium-vs-senegal.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "status": "post",
@@ -92,13 +92,13 @@
     "chips": ["Belgium", "Senegal", "Tielemans", "Lukaku", "Sarr"],
     "date": "29 Jun 2026",
     "readTime": 10,
-    "predicted": "Predicted Belgium to win ✅",
+    "predicted": "Predicted Belgium to win ✓",
     "correct": true
   },
   {
     "file": "posts/germany-vs-paraguay.html",
     "matchId": "ger-par-2026",
-    "image": "germany-vs-paraguay.svg",
+    "image": "germany-vs-paraguay.png",
     "tag": "post",
     "tagLabel": "Full-time",
     "status": "post",
