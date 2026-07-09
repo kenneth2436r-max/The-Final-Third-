@@ -1,93 +1,467 @@
 [
-  {"player": "Orlando Gill", "team": "Paraguay", "match": "Germany vs Paraguay"},
-  {"player": "Casemiro", "team": "Brazil", "match": "Brazil vs Japan"},
-  {"player": "Stephen Eustáquio", "team": "Canada", "match": "South Africa vs Canada"},
-  {"player": "Riyad Mahrez", "team": "Algeria", "match": "Algeria vs Austria"},
-  {"player": "Gonzalo Lo Celso", "team": "Argentina", "match": "Jordan vs Argentina"},
-  {"player": "Diogo Costa", "team": "Portugal", "match": "Colombia vs Portugal"},
-  {"player": "Yoane Wissa", "team": "DR Congo", "match": "DR Congo vs Uzbekistan"},
-  {"player": "Jude Bellingham", "team": "England", "match": "Panama vs England"},
-  {"player": "Petar Sucic", "team": "Croatia", "match": "Croatia vs Ghana"},
-  {"player": "Ramin Rezaeian", "team": "IR Iran", "match": "Egypt vs IR Iran"},
-  {"player": "Leandro Trossard", "team": "Belgium", "match": "New Zealand vs Belgium"},
-  {"player": "Alex Baena", "team": "Spain", "match": "Uruguay vs Spain"},
-  {"player": "Deroy Duarte", "team": "Cape Verde", "match": "Cape Verde vs Saudi Arabia"},
-  {"player": "Ousmane Dembele", "team": "France", "match": "Norway vs France"},
-  {"player": "Pape Gueye", "team": "Senegal", "match": "Senegal vs Iraq"},
-  {"player": "Arda Guler", "team": "Turkiye", "match": "Turkiye vs USA"},
-  {"player": "Aiden O'Neill", "team": "Australia", "match": "Paraguay vs Australia"},
-  {"player": "Anthony Elanga", "team": "Sweden", "match": "Japan vs Sweden"},
-  {"player": "Brian Brobbey", "team": "Netherlands", "match": "Tunisia vs Netherlands"},
-  {"player": "Nicolas Pepe", "team": "Ivory Coast", "match": "Curacao vs Ivory Coast"},
-  {"player": "Nilson Angulo", "team": "Ecuador", "match": "Ecuador vs Germany"},
-  {"player": "Thapelo Maseko", "team": "South Africa", "match": "South Africa vs South Korea"},
-  {"player": "Mateo Chavez", "team": "Mexico", "match": "Czech Republic vs Mexico"},
-  {"player": "Vinicius Junior", "team": "Brazil", "match": "Scotland vs Brazil"},
-  {"player": "Achraf Hakimi", "team": "Morocco", "match": "Morocco vs Haiti"},
-  {"player": "Kerim Alajbegovic", "team": "Bosnia-Herzegovina", "match": "Bosnia-Herzegovina vs Qatar"},
-  {"player": "Johan Manzambi", "team": "Switzerland", "match": "Switzerland vs Canada"},
-  {"player": "Daniel Munoz", "team": "Colombia", "match": "Colombia vs DR Congo"},
-  {"player": "Cristian Martinez", "team": "Panama", "match": "Panama vs Croatia"},
-  {"player": "Jude Bellingham", "team": "England", "match": "England vs Ghana"},
-  {"player": "Cristiano Ronaldo", "team": "Portugal", "match": "Portugal vs Uzbekistan"},
-  {"player": "Ibrahim Maza", "team": "Algeria", "match": "Jordan vs Algeria"},
-  {"player": "Erling Haaland", "team": "Norway", "match": "Norway vs Senegal"},
-  {"player": "Kylian Mbappe", "team": "France", "match": "France vs Iraq"},
-  {"player": "Lionel Messi", "team": "Argentina", "match": "Argentina vs Austria"},
-  {"player": "Mohamed Salah", "team": "Egypt", "match": "New Zealand vs Egypt"},
-  {"player": "Kevin Pina", "team": "Cape Verde", "match": "Uruguay vs Cape Verde"},
-  {"player": "Alireza Beiranvand", "team": "IR Iran", "match": "Belgium vs IR Iran"},
-  {"player": "Mikel Oyarzabal", "team": "Spain", "match": "Spain vs Saudi Arabia"},
-  {"player": "Ayase Ueda", "team": "Japan", "match": "Tunisia vs Japan"},
-  {"player": "Eloy Room", "team": "Curacao", "match": "Ecuador vs Curacao"},
-  {"player": "Deniz Undav", "team": "Germany", "match": "Germany vs Ivory Coast"},
-  {"player": "Cody Gakpo", "team": "Netherlands", "match": "Netherlands vs Sweden"},
-  {"player": "Matias Galarza", "team": "Paraguay", "match": "Turkiye vs Paraguay"},
-  {"player": "Vinicius Junior", "team": "Brazil", "match": "Brazil vs Haiti"},
-  {"player": "Ismael Saibari", "team": "Morocco", "match": "Scotland vs Morocco"},
-  {"player": "Folarin Balogun", "team": "USA", "match": "USA vs Australia"},
-  {"player": "Luis Romo", "team": "Mexico", "match": "Mexico vs South Korea"},
-  {"player": "Jonathan David", "team": "Canada", "match": "Canada vs Qatar"},
-  {"player": "Johan Manzambi", "team": "Switzerland", "match": "Switzerland vs Bosnia-Herzegovina"},
-  {"player": "Ladislav Krejci", "team": "Czech Republic", "match": "Czech Republic vs South Africa"},
-  {"player": "Luis Diaz", "team": "Colombia", "match": "Uzbekistan vs Colombia"},
-  {"player": "Antoine Semenyo", "team": "Ghana", "match": "Ghana vs Panama"},
-  {"player": "Harry Kane", "team": "England", "match": "England vs Croatia"},
-  {"player": "Joao Neves", "team": "Portugal", "match": "Portugal vs DR Congo"},
-  {"player": "Ali Olwan", "team": "Jordan", "match": "Austria vs Jordan"},
-  {"player": "Lionel Messi", "team": "Argentina", "match": "Argentina vs Algeria"},
-  {"player": "Erling Haaland", "team": "Norway", "match": "Iraq vs Norway"},
-  {"player": "Michael Olise", "team": "France", "match": "France vs Senegal"},
-  {"player": "Ramin Rezaeian", "team": "IR Iran", "match": "IR Iran vs New Zealand"},
-  {"player": "Federico Valverde", "team": "Uruguay", "match": "Saudi Arabia vs Uruguay"},
-  {"player": "Emam Ashour", "team": "Egypt", "match": "Belgium vs Egypt"},
-  {"player": "Vozinha", "team": "Cape Verde", "match": "Spain vs Cape Verde"},
-  {"player": "Alexander Isak", "team": "Sweden", "match": "Sweden vs Tunisia"},
-  {"player": "Yan Diomande", "team": "Ivory Coast", "match": "Ivory Coast vs Ecuador"},
-  {"player": "Virgil van Dijk", "team": "Netherlands", "match": "Netherlands vs Japan"},
-  {"player": "Kai Havertz", "team": "Germany", "match": "Germany vs Curacao"},
-  {"player": "Nestory Irankunda", "team": "Australia", "match": "Australia vs Turkiye"},
-  {"player": "John McGinn", "team": "Scotland", "match": "Scotland vs Haiti"},
-  {"player": "Vinicius Junior", "team": "Brazil", "match": "Brazil vs Morocco"},
-  {"player": "Mahmoud Abunada", "team": "Qatar", "match": "Qatar vs Switzerland"},
-  {"player": "Folarin Balogun", "team": "USA", "match": "USA vs Paraguay"},
-  {"player": "Ismael Kone", "team": "Canada", "match": "Canada vs Bosnia-Herzegovina"},
-  {"player": "Hwang In-beom", "team": "South Korea", "match": "South Korea vs Czech Republic"},
-  {"player": "Julian Quinones", "team": "Mexico", "match": "Mexico vs South Africa"},
-  {"player": "Luis Díaz", "team": "Colombia", "match": "Colombia vs Ghana"},
-  {"player": "Lionel Messi", "team": "Argentina", "match": "Argentina vs Cape Verde"},
-  {"player": "Mohamed Salah", "team": "Egypt", "match": "Australia vs Egypt"},
-  {"player": "Breel Embolo", "team": "Switzerland", "match": "Switzerland vs Algeria"},
-  {"player": "Cristiano Ronaldo", "team": "Portugal", "match": "Portugal vs Croatia"},
-  {"player": "Lamine Yamal", "team": "Spain", "match": "Spain vs Austria"},
-  {"player": "Malik Tillman", "team": "USA", "match": "USA vs Bosnia-Herzegovina"},
-  {"player": "Youri Tielemans", "team": "Belgium", "match": "Belgium vs Senegal"},
-  {"player": "Harry Kane", "team": "England", "match": "England vs DR Congo"},
-  {"player": "Julian Quiñones", "team": "Mexico", "match": "Mexico vs Ecuador"},
-  {"player": "Kylian Mbappé", "team": "France", "match": "France vs Sweden"},
-  {"player": "Antonio Nusa", "team": "Norway", "match": "Ivory Coast vs Norway"},
-  {"player": "Ismael Diop", "team": "Morocco", "match": "Netherlands vs Morocco"},
-  {"player": "Orjan Nyland", "team": "Norway", "match": "Brazil vs Norway"},
-  {"player": "Jude Bellingham", "team": "England", "match": "Mexico vs England"},
-  {"player": "Orlando Gill", "team": "Paraguay", "match": "Paraguay vs France"}
+  {
+    "player": "Julian Quinones",
+    "team": "Mexico",
+    "match": "Mexico vs South Africa"
+  },
+  {
+    "player": "Hwang In-beom",
+    "team": "South Korea",
+    "match": "South Korea vs Czech Republic"
+  },
+  {
+    "player": "Ismael Kone",
+    "team": "Canada",
+    "match": "Canada vs Bosnia-Herzegovina"
+  },
+  {
+    "player": "Mahmoud Abunada",
+    "team": "Qatar",
+    "match": "Qatar vs Switzerland"
+  },
+  {
+    "player": "Vinicius Junior",
+    "team": "Brazil",
+    "match": "Brazil vs Morocco"
+  },
+  {
+    "player": "John McGinn",
+    "team": "Scotland",
+    "match": "Haiti vs Scotland"
+  },
+  {
+    "player": "Nestory Irankunda",
+    "team": "Australia",
+    "match": "Australia vs Turkiye"
+  },
+  {
+    "player": "Kai Havertz",
+    "team": "Germany",
+    "match": "Germany vs Curacao"
+  },
+  {
+    "player": "Virgil van Dijk",
+    "team": "Netherlands",
+    "match": "Netherlands vs Japan"
+  },
+  {
+    "player": "Yan Diomande",
+    "team": "Ivory Coast",
+    "match": "Ivory Coast vs Ecuador"
+  },
+  {
+    "player": "Alexander Isak",
+    "team": "Sweden",
+    "match": "Sweden vs Tunisia"
+  },
+  {
+    "player": "Vozinha",
+    "team": "Cape Verde",
+    "match": "Spain vs Cape Verde"
+  },
+  {
+    "player": "Emam Ashour",
+    "team": "Egypt",
+    "match": "Belgium vs Egypt"
+  },
+  {
+    "player": "Federico Valverde",
+    "team": "Uruguay",
+    "match": "Saudi Arabia vs Uruguay"
+  },
+  {
+    "player": "Ramin Rezaeian",
+    "team": "IR Iran",
+    "match": "IR Iran vs New Zealand"
+  },
+  {
+    "player": "Michael Olise",
+    "team": "France",
+    "match": "France vs Senegal"
+  },
+  {
+    "player": "Erling Haaland",
+    "team": "Norway",
+    "match": "Iraq vs Norway"
+  },
+  {
+    "player": "Lionel Messi",
+    "team": "Argentina",
+    "match": "Argentina vs Algeria"
+  },
+  {
+    "player": "Ali Olwan",
+    "team": "Jordan",
+    "match": "Austria vs Jordan"
+  },
+  {
+    "player": "Joao Neves",
+    "team": "Portugal",
+    "match": "Portugal vs DR Congo"
+  },
+  {
+    "player": "Harry Kane",
+    "team": "England",
+    "match": "England vs Croatia"
+  },
+  {
+    "player": "Antoine Semenyo",
+    "team": "Ghana",
+    "match": "Ghana vs Panama"
+  },
+  {
+    "player": "Luis Diaz",
+    "team": "Colombia",
+    "match": "Uzbekistan vs Colombia"
+  },
+  {
+    "player": "Ladislav Krejci",
+    "team": "Czech Republic",
+    "match": "Czech Republic vs South Africa"
+  },
+  {
+    "player": "Luis Romo",
+    "team": "Mexico",
+    "match": "Mexico vs South Korea"
+  },
+  {
+    "player": "Folarin Balogun",
+    "team": "USA",
+    "match": "USA vs Australia"
+  },
+  {
+    "player": "Ismael Saibari",
+    "team": "Morocco",
+    "match": "Scotland vs Morocco"
+  },
+  {
+    "player": "Vinicius Junior",
+    "team": "Brazil",
+    "match": "Brazil vs Haiti"
+  },
+  {
+    "player": "Matias Galarza",
+    "team": "Paraguay",
+    "match": "Turkiye vs Paraguay"
+  },
+  {
+    "player": "Cody Gakpo",
+    "team": "Netherlands",
+    "match": "Netherlands vs Sweden"
+  },
+  {
+    "player": "Denis Undav",
+    "team": "Germany",
+    "match": "Germany vs Ivory Coast"
+  },
+  {
+    "player": "Eloy Room",
+    "team": "Curacao",
+    "match": "Ecuador vs Curacao"
+  },
+  {
+    "player": "Ayase Ueda",
+    "team": "Japan",
+    "match": "Tunisia vs Japan"
+  },
+  {
+    "player": "Mikel Oyarzabal",
+    "team": "Spain",
+    "match": "Spain vs Saudi Arabia"
+  },
+  {
+    "player": "Alireza Beiranvand",
+    "team": "IR Iran",
+    "match": "Belgium vs IR Iran"
+  },
+  {
+    "player": "Kevin Pina",
+    "team": "Cape Verde",
+    "match": "Uruguay vs Cape Verde"
+  },
+  {
+    "player": "Mohamed Salah",
+    "team": "Egypt",
+    "match": "New Zealand vs Egypt"
+  },
+  {
+    "player": "Lionel Messi",
+    "team": "Argentina",
+    "match": "Argentina vs Austria"
+  },
+  {
+    "player": "Kylian Mbappe",
+    "team": "France",
+    "match": "France vs Iraq"
+  },
+  {
+    "player": "Erling Haaland",
+    "team": "Norway",
+    "match": "Norway vs Senegal"
+  },
+  {
+    "player": "Ibrahim Maza",
+    "team": "Algeria",
+    "match": "Jordan vs Algeria"
+  },
+  {
+    "player": "Cristiano Ronaldo",
+    "team": "Portugal",
+    "match": "Portugal vs Uzbekistan"
+  },
+  {
+    "player": "Jude Bellingham",
+    "team": "England",
+    "match": "England vs Ghana"
+  },
+  {
+    "player": "Cristian Martinez",
+    "team": "Panama",
+    "match": "Panama vs Croatia"
+  },
+  {
+    "player": "Daniel Munoz",
+    "team": "Colombia",
+    "match": "Colombia vs DR Congo"
+  },
+  {
+    "player": "Johan Manzambi",
+    "team": "Switzerland",
+    "match": "Switzerland vs Canada"
+  },
+  {
+    "player": "Kerim Alajbegovic",
+    "team": "Bosnia-Herzegovina",
+    "match": "Bosnia-Herzegovina vs Qatar"
+  },
+  {
+    "player": "Achraf Hakimi",
+    "team": "Morocco",
+    "match": "Morocco vs Haiti"
+  },
+  {
+    "player": "Vinicius Junior",
+    "team": "Brazil",
+    "match": "Scotland vs Brazil"
+  },
+  {
+    "player": "Mateo Chavez",
+    "team": "Mexico",
+    "match": "Czech Republic vs Mexico"
+  },
+  {
+    "player": "Thapelo Maseko",
+    "team": "South Africa",
+    "match": "South Africa vs South Korea"
+  },
+  {
+    "player": "Nilson Angulo",
+    "team": "Ecuador",
+    "match": "Ecuador vs Germany"
+  },
+  {
+    "player": "Nicolas Pepe",
+    "team": "Ivory Coast",
+    "match": "Curacao vs Ivory Coast"
+  },
+  {
+    "player": "Brian Brobbey",
+    "team": "Netherlands",
+    "match": "Tunisia vs Netherlands"
+  },
+  {
+    "player": "Anthony Elanga",
+    "team": "Sweden",
+    "match": "Japan vs Sweden"
+  },
+  {
+    "player": "Aiden O'Neill",
+    "team": "Australia",
+    "match": "Paraguay vs Australia"
+  },
+  {
+    "player": "Arda Guler",
+    "team": "Turkiye",
+    "match": "Turkiye vs USA"
+  },
+  {
+    "player": "Pape Gueye",
+    "team": "Senegal",
+    "match": "Senegal vs Iraq"
+  },
+  {
+    "player": "Ousmane Dembele",
+    "team": "France",
+    "match": "Norway vs France"
+  },
+  {
+    "player": "Alex Baena",
+    "team": "Spain",
+    "match": "Uruguay vs Spain"
+  },
+  {
+    "player": "Deroy Duarte",
+    "team": "Cape Verde",
+    "match": "Cape Verde vs Saudi Arabia"
+  },
+  {
+    "player": "Ramin Rezaeian",
+    "team": "IR Iran",
+    "match": "Egypt vs IR Iran"
+  },
+  {
+    "player": "Leandro Trossard",
+    "team": "Belgium",
+    "match": "New Zealand vs Belgium"
+  },
+  {
+    "player": "Jude Bellingham",
+    "team": "England",
+    "match": "Panama vs England"
+  },
+  {
+    "player": "Petar Sucic",
+    "team": "Croatia",
+    "match": "Croatia vs Ghana"
+  },
+  {
+    "player": "Yoane Wissa",
+    "team": "DR Congo",
+    "match": "DR Congo vs Uzbekistan"
+  },
+  {
+    "player": "Diogo Costa",
+    "team": "Portugal",
+    "match": "Colombia vs Portugal"
+  },
+  {
+    "player": "Gonzalo Lo Celso",
+    "team": "Argentina",
+    "match": "Jordan vs Argentina"
+  },
+  {
+    "player": "Riyad Mahrez",
+    "team": "Algeria",
+    "match": "Algeria vs Austria"
+  },
+  {
+    "player": "Stephen Eustaquio",
+    "team": "Canada",
+    "match": "South Africa vs Canada"
+  },
+  {
+    "player": "Casemiro",
+    "team": "Brazil",
+    "match": "Brazil vs Japan"
+  },
+  {
+    "player": "Orlando Gill",
+    "team": "Paraguay",
+    "match": "Germany vs Paraguay"
+  },
+  {
+    "player": "Issa Diop",
+    "team": "Morocco",
+    "match": "Netherlands vs Morocco"
+  },
+  {
+    "player": "Antonio Nusa",
+    "team": "Norway",
+    "match": "Ivory Coast vs Norway"
+  },
+  {
+    "player": "Kylian Mbappe",
+    "team": "France",
+    "match": "France vs Sweden"
+  },
+  {
+    "player": "Julian Quinones",
+    "team": "Mexico",
+    "match": "Mexico vs Ecuador"
+  },
+  {
+    "player": "Harry Kane",
+    "team": "England",
+    "match": "England vs Congo DR"
+  },
+  {
+    "player": "Youri Tielemans",
+    "team": "Belgium",
+    "match": "Belgium vs Senegal"
+  },
+  {
+    "player": "Malik Tillman",
+    "team": "USA",
+    "match": "USA vs Bosnia-Herzegovina"
+  },
+  {
+    "player": "Lamine Yamal",
+    "team": "Spain",
+    "match": "Spain vs Austria"
+  },
+  {
+    "player": "Cristiano Ronaldo",
+    "team": "Portugal",
+    "match": "Portugal vs Croatia"
+  },
+  {
+    "player": "Breel Embolo",
+    "team": "Switzerland",
+    "match": "Switzerland vs Algeria"
+  },
+  {
+    "player": "Mohamed Salah",
+    "team": "Egypt",
+    "match": "Australia vs Egypt"
+  },
+  {
+    "player": "Lionel Messi",
+    "team": "Argentina",
+    "match": "Argentina vs Cabo Verde"
+  },
+  {
+    "player": "Luis Diaz",
+    "team": "Colombia",
+    "match": "Colombia vs Ghana"
+  },
+  {
+    "player": "Azzedine Ounahi",
+    "team": "Morocco",
+    "match": "Canada vs Morocco"
+  },
+  {
+    "player": "Orlando Gill",
+    "team": "Paraguay",
+    "match": "Paraguay vs France"
+  },
+  {
+    "player": "Erling Haaland",
+    "team": "Norway",
+    "match": "Brazil vs Norway"
+  },
+  {
+    "player": "Jude Bellingham",
+    "team": "England",
+    "match": "Mexico vs England"
+  },
+  {
+    "player": "Rodri",
+    "team": "Spain",
+    "match": "Spain vs Portugal"
+  },
+  {
+    "player": "Charles De Ketelaere",
+    "team": "Belgium",
+    "match": "USA vs Belgium"
+  },
+  {
+    "player": "Lionel Messi",
+    "team": "Argentina",
+    "match": "Argentina vs Egypt"
+  },
+  {
+    "player": "Gregor Kobel",
+    "team": "Switzerland",
+    "match": "Switzerland vs Colombia"
+  }
 ]
