@@ -86,5 +86,8 @@
   {"player": "Julian Quiñones", "team": "Mexico", "match": "Mexico vs Ecuador"},
   {"player": "Kylian Mbappé", "team": "France", "match": "France vs Sweden"},
   {"player": "Antonio Nusa", "team": "Norway", "match": "Ivory Coast vs Norway"},
-  {"player": "Ismael Diop", "team": "Morocco", "match": "Netherlands vs Morocco"}
+  {"player": "Ismael Diop", "team": "Morocco", "match": "Netherlands vs Morocco"},
+  {"player": "Orjan Nyland", "team": "Norway", "match": "Brazil vs Norway"},
+  {"player": "Jude Bellingham", "team": "England", "match": "Mexico vs England"},
+  {"player": "Orlando Gill", "team": "Paraguay", "match": "Paraguay vs France"}
 ]
