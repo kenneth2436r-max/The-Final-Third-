@@ -27,11 +27,11 @@
   <text x="550" y="23" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="12" font-weight="bold">36'</text>
   <circle cx="300" cy="230" r="8" fill="#f97316" stroke="#ffffff" stroke-width="1.5" opacity="0.95"/>
   <text x="300" y="217" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="8" font-weight="bold">Rice</text>
-  <path d="M 300 230 Q 310 210 320 195 Q 330 180 350 170" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="5,3" opacity="0.6"/>
-  <polygon points="350,170 344,173 346,165" fill="#ffffff" opacity="0.6"/>
-  <circle cx="350" cy="170" r="6" fill="#f97316" stroke="#ffffff" stroke-width="1.5" opacity="0.9"/>
-  <text x="350" y="157" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="8" font-weight="bold">Saka</text>
-  <path d="M 350 170 Q 340 165 330 175 Q 320 185 310 190 Q 180 200 65 170" fill="none" stroke="#f97316" stroke-width="3" stroke-dasharray="5,3" opacity="0.8"/>
+  <path d="M 300 230 Q 290 210 280 195 Q 270 185 250 175" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="5,3" opacity="0.6"/>
+  <polygon points="250,175 256,178 254,170" fill="#ffffff" opacity="0.6"/>
+  <circle cx="250" cy="175" r="6" fill="#f97316" stroke="#ffffff" stroke-width="1.5" opacity="0.9"/>
+  <text x="250" y="162" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="8" font-weight="bold">Saka</text>
+  <path d="M 250 175 Q 220 178 190 175 Q 140 172 65 170" fill="none" stroke="#f97316" stroke-width="3" stroke-dasharray="5,3" opacity="0.8"/>
   <polygon points="65,170 72,173 69,166" fill="#f97316" opacity="0.8"/>
   <circle cx="65" cy="170" r="6" fill="#ff4444" stroke="#ffffff" stroke-width="1.5"/>
   <text x="65" y="172" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="8">⚽</text>

@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
   <rect width="600" height="400" fill="#1a472a"/>
+  <rect width="600" height="400" fill="url(#pitchPattern)" opacity="0.12"/>
   <defs>
     <pattern id="pitchPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
       <rect width="20" height="20" fill="none"/>
@@ -13,64 +14,34 @@
   </defs>
   <rect width="600" height="400" fill="url(#pitchPattern)" opacity="0.12"/>
   <rect width="600" height="400" fill="url(#pitchVignette)"/>
-
-  <rect x="40" y="40" width="520" height="320" fill="none" stroke="#fff" stroke-width="1.5" rx="4" opacity="0.45"/>
-  <line x1="300" y1="40" x2="300" y2="360" stroke="#fff" stroke-width="1" opacity="0.45"/>
-  <rect x="40" y="130" width="520" height="140" fill="none" stroke="#fff" stroke-width="1" opacity="0.35"/>
-  <circle cx="300" cy="200" r="45" fill="none" stroke="#fff" stroke-width="1" opacity="0.35"/>
-  <circle cx="300" cy="200" r="4" fill="#fff" opacity="0.35"/>
-  <rect x="40" y="140" width="100" height="120" fill="none" stroke="#fff" stroke-width="1" opacity="0.3"/>
-  <rect x="460" y="140" width="100" height="120" fill="none" stroke="#fff" stroke-width="1" opacity="0.3"/>
-  <rect x="40" y="175" width="50" height="50" fill="none" stroke="#fff" stroke-width="1" opacity="0.25"/>
-  <rect x="510" y="175" width="50" height="50" fill="none" stroke="#fff" stroke-width="1" opacity="0.25"/>
-  <rect x="35" y="180" width="8" height="40" fill="none" stroke="#fff" stroke-width="2" opacity="0.5"/>
-  <rect x="557" y="180" width="8" height="40" fill="none" stroke="#fff" stroke-width="2" opacity="0.5"/>
-
-  <!-- Event location: Messi corner from right -->
-  <circle cx="520" cy="180" r="6" fill="#66aaff" opacity="0.8"/>
-  <circle cx="520" cy="180" r="14" fill="none" stroke="#66aaff" stroke-width="1.5" opacity="0.5"/>
-
-  <!-- Messi corner taker -->
-  <circle cx="530" cy="170" r="14" fill="#0d1117" stroke="#66aaff" stroke-width="2"/>
-  <text x="530" y="166" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="7" font-weight="bold">Messi</text>
-  <text x="530" y="175" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="7">corner</text>
-
-  <!-- Inswinging corner -->
-  <path d="M 520 175 Q 480 120 460 150" fill="none" stroke="#66aaff" stroke-width="1.5" stroke-dasharray="4,3"/>
-  <polygon points="460,150 465,157 456,156" fill="#66aaff"/>
-
-  <!-- Crowded melee in 6-yard box -->
-  <rect x="440" y="160" width="30" height="30" fill="#ff6b6b" opacity="0.08"/>
-  <circle cx="455" cy="175" r="8" fill="none" stroke="#66aaff" stroke-width="1" opacity="0.5"/>
-  <text x="455" y="172" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="6">melee</text>
-
-  <!-- Mac Allister flicks down -->
-  <circle cx="465" cy="160" r="12" fill="#0d1117" stroke="#66aaff" stroke-width="1.5"/>
-  <text x="465" y="157" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="6" font-weight="bold">Mac A.</text>
-  <text x="465" y="165" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="6">flick</text>
-
-  <!-- Ball bounces -->
-  <circle cx="460" cy="175" r="4" fill="#fff"/>
-
-  <!-- L. Martínez half-volley -->
-  <circle cx="460" cy="185" r="15" fill="#0d1117" stroke="#66aaff" stroke-width="2.5"/>
-  <text x="460" y="181" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="8" font-weight="bold">L. Martínez</text>
-  <text x="460" y="191" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="7">half-volley</text>
-
-  <!-- Shot over Vozinha at near post -->
-  <path d="M 460 195 Q 445 190 440 185" fill="none" stroke="#66aaff" stroke-width="2"/>
-  <polygon points="440,185 445,192 436,191" fill="#66aaff"/>
-
-  <!-- Goal -->
-  <rect x="35" y="180" width="8" height="40" fill="none" stroke="#ff6b6b" stroke-width="2.5"/>
-  <text x="39" y="205" text-anchor="middle" fill="#ff6b6b" font-family="Arial, sans-serif" font-size="14" font-weight="bold">G</text>
-
-  <rect x="230" y="8" width="140" height="24" rx="12" fill="#000" opacity="0.6"/>
-  <text x="300" y="24" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="13" font-weight="bold">ARG 2-1 CPV</text>
-
-  <rect x="100" y="360" width="400" height="30" rx="6" fill="#000" opacity="0.6"/>
-  <text x="300" y="380" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">92' L. Martínez lashes half-volley from crowded corner melee</text>
-
-  <rect x="475" y="45" width="70" height="22" rx="11" fill="#000" opacity="0.6"/>
-  <text x="510" y="60" text-anchor="middle" fill="#66aaff" font-family="Arial, sans-serif" font-size="11" font-weight="bold">92' ET</text>
+  <rect x="35" y="45" width="530" height="310" fill="none" stroke="#ffffff" stroke-width="1.5" rx="3"/>
+  <line x1="300" y1="45" x2="300" y2="355" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+  <circle cx="300" cy="200" r="30" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+  <rect x="35" y="145" width="130" height="110" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <rect x="35" y="175" width="55" height="50" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <rect x="435" y="145" width="130" height="110" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <rect x="510" y="175" width="55" height="50" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <rect x="180" y="8" width="240" height="28" rx="14" fill="#000" opacity="0.8"/>
+  <text x="300" y="27" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="14" font-weight="bold">Argentina 2 - 1 Cape Verde</text>
+  <rect x="520" y="8" width="60" height="22" rx="11" fill="#000" opacity="0.7"/>
+  <text x="550" y="23" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="12" font-weight="bold">90+2'</text>
+  <circle cx="520" cy="180" r="8" fill="#22c55e" stroke="#ffffff" stroke-width="1.5" opacity="0.95"/>
+  <circle cx="520" cy="180" r="15" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.45"/>
+  <text x="520" y="167" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="8" font-weight="bold">Messi</text>
+  <path d="M 520 180 Q 500 160 480 165" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="5,3" opacity="0.6"/>
+  <polygon points="480,165 474,168 476,160" fill="#ffffff" opacity="0.6"/>
+  <circle cx="480" cy="165" r="6" fill="#22c55e" stroke="#ffffff" stroke-width="1.5" opacity="0.9"/>
+  <circle cx="480" cy="165" r="12" fill="none" stroke="#22c55e" stroke-width="1.5" opacity="0.4"/>
+  <text x="480" y="152" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="8" font-weight="bold">Mac Allister</text>
+  <path d="M 480 165 Q 470 160 460 155" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="3,2" opacity="0.5"/>
+  <polygon points="460,155 464,162 456,160" fill="#ffffff" opacity="0.5"/>
+  <circle cx="460" cy="155" r="6" fill="#22c55e" stroke="#ffffff" stroke-width="1.5" opacity="0.9"/>
+  <circle cx="460" cy="155" r="12" fill="none" stroke="#22c55e" stroke-width="1.5" opacity="0.4"/>
+  <text x="460" y="142" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="8" font-weight="bold">L. Martínez</text>
+  <path d="M 460 155 Q 420 170 380 180 Q 300 190 200 195 Q 120 198 55 200" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-dasharray="6,4" opacity="0.7"/>
+  <polygon points="55,200 62,203 59,196" fill="#22c55e" opacity="0.8"/>
+  <circle cx="55" cy="200" r="6" fill="#ff4444" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="55" y="202" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="8">⚽</text>
+  <rect x="100" y="370" width="400" height="22" rx="11" fill="#000" opacity="0.6"/>
+  <text x="300" y="384" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="10">Messi corner → Mac Allister flick → L. Martínez half-volley</text>
 </svg>

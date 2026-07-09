@@ -28,12 +28,12 @@
   <circle cx="380" cy="210" r="8" fill="#22c55e" stroke="#ffffff" stroke-width="1.5" opacity="0.95"/>
   <circle cx="380" cy="210" r="15" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.45"/>
   <text x="380" y="197" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="8" font-weight="bold">Berge</text>
-  <path d="M 380 210 Q 360 200 340 195 Q 320 185 310 175" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="5,3" opacity="0.6"/>
-  <polygon points="310,175 316,178 314,170" fill="#ffffff" opacity="0.6"/>
-  <circle cx="310" cy="175" r="6" fill="#22c55e" stroke="#ffffff" stroke-width="1.5" opacity="0.9"/>
-  <circle cx="310" cy="175" r="12" fill="none" stroke="#22c55e" stroke-width="1.5" opacity="0.4"/>
-  <text x="310" y="162" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="8" font-weight="bold">Haaland</text>
-  <path d="M 310 175 Q 280 160 250 150 Q 200 130 60 175" fill="none" stroke="#22c55e" stroke-width="3" stroke-dasharray="5,3" opacity="0.8"/>
+  <path d="M 380 210 Q 350 205 330 195 Q 300 185 210 180" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="5,3" opacity="0.6"/>
+  <polygon points="210,180 216,183 214,175" fill="#ffffff" opacity="0.6"/>
+  <circle cx="210" cy="180" r="6" fill="#22c55e" stroke="#ffffff" stroke-width="1.5" opacity="0.9"/>
+  <circle cx="210" cy="180" r="12" fill="none" stroke="#22c55e" stroke-width="1.5" opacity="0.4"/>
+  <text x="210" y="167" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="8" font-weight="bold">Haaland</text>
+  <path d="M 210 180 Q 180 175 150 170 Q 110 168 60 175" fill="none" stroke="#22c55e" stroke-width="3" stroke-dasharray="5,3" opacity="0.8"/>
   <polygon points="60,175 67,178 64,171" fill="#22c55e" opacity="0.8"/>
   <circle cx="60" cy="175" r="6" fill="#ff4444" stroke="#ffffff" stroke-width="1.5"/>
   <text x="60" y="177" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="8">⚽</text>

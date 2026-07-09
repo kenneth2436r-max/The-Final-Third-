@@ -27,11 +27,11 @@
   <text x="550" y="23" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="12" font-weight="bold">38'</text>
   <circle cx="300" cy="210" r="8" fill="#f97316" stroke="#ffffff" stroke-width="1.5" opacity="0.95"/>
   <text x="300" y="197" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="8" font-weight="bold">Kane</text>
-  <path d="M 300 210 Q 290 190 280 175 Q 270 160 260 155" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="5,3" opacity="0.6"/>
-  <polygon points="260,155 266,158 264,150" fill="#ffffff" opacity="0.6"/>
-  <circle cx="260" cy="155" r="6" fill="#f97316" stroke="#ffffff" stroke-width="1.5" opacity="0.9"/>
-  <text x="260" y="142" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="8" font-weight="bold">Bellingham</text>
-  <path d="M 260 155 Q 240 160 220 165 Q 180 170 60 170" fill="none" stroke="#f97316" stroke-width="3" stroke-dasharray="5,3" opacity="0.8"/>
+  <path d="M 300 210 Q 280 200 250 190 Q 230 180 210 170" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="5,3" opacity="0.6"/>
+  <polygon points="210,170 216,173 214,165" fill="#ffffff" opacity="0.6"/>
+  <circle cx="210" cy="170" r="6" fill="#f97316" stroke="#ffffff" stroke-width="1.5" opacity="0.9"/>
+  <text x="210" y="157" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="8" font-weight="bold">Bellingham</text>
+  <path d="M 210 170 Q 170 165 130 165 Q 90 165 60 170" fill="none" stroke="#f97316" stroke-width="3" stroke-dasharray="5,3" opacity="0.8"/>
   <polygon points="60,170 67,173 64,166" fill="#f97316" opacity="0.8"/>
   <circle cx="60" cy="170" r="6" fill="#ff4444" stroke="#ffffff" stroke-width="1.5"/>
   <text x="60" y="172" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="8">⚽</text>

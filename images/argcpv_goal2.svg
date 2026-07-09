@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
   <rect width="600" height="400" fill="#1a472a"/>
+  <rect width="600" height="400" fill="url(#pitchPattern)" opacity="0.12"/>
   <defs>
     <pattern id="pitchPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
       <rect width="20" height="20" fill="none"/>
@@ -13,65 +14,29 @@
   </defs>
   <rect width="600" height="400" fill="url(#pitchPattern)" opacity="0.12"/>
   <rect width="600" height="400" fill="url(#pitchVignette)"/>
-
-  <rect x="40" y="40" width="520" height="320" fill="none" stroke="#fff" stroke-width="1.5" rx="4" opacity="0.45"/>
-  <line x1="300" y1="40" x2="300" y2="360" stroke="#fff" stroke-width="1" opacity="0.45"/>
-  <rect x="40" y="130" width="520" height="140" fill="none" stroke="#fff" stroke-width="1" opacity="0.35"/>
-  <circle cx="300" cy="200" r="45" fill="none" stroke="#fff" stroke-width="1" opacity="0.35"/>
-  <circle cx="300" cy="200" r="4" fill="#fff" opacity="0.35"/>
-  <rect x="40" y="140" width="100" height="120" fill="none" stroke="#fff" stroke-width="1" opacity="0.3"/>
-  <rect x="460" y="140" width="100" height="120" fill="none" stroke="#fff" stroke-width="1" opacity="0.3"/>
-  <rect x="40" y="175" width="50" height="50" fill="none" stroke="#fff" stroke-width="1" opacity="0.25"/>
-  <rect x="510" y="175" width="50" height="50" fill="none" stroke="#fff" stroke-width="1" opacity="0.25"/>
-  <rect x="35" y="180" width="8" height="40" fill="none" stroke="#fff" stroke-width="2" opacity="0.5"/>
-  <rect x="557" y="180" width="8" height="40" fill="none" stroke="#fff" stroke-width="2" opacity="0.5"/>
-
-  <!-- Event location: Mendes counter down right flank -->
-  <circle cx="440" cy="240" r="6" fill="#22c55e" opacity="0.8"/>
-  <circle cx="440" cy="240" r="14" fill="none" stroke="#22c55e" stroke-width="1.5" opacity="0.5"/>
-
-  <!-- Mendes carries down right -->
-  <circle cx="440" cy="240" r="15" fill="#0d1117" stroke="#22c55e" stroke-width="2"/>
-  <text x="440" y="236" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="7" font-weight="bold">Mendes</text>
-  <text x="440" y="245" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="7">carries</text>
-
-  <!-- Mendes run arrow -->
-  <path d="M 440 255 Q 430 270 380 280" fill="none" stroke="#22c55e" stroke-width="1.5"/>
-  <polygon points="380,280 388,284 388,276" fill="#22c55e"/>
-
-  <!-- Low cross into box -->
-  <path d="M 380 280 Q 360 270 340 240" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-dasharray="4,3"/>
-  <polygon points="340,240 344,248 336,247" fill="#22c55e"/>
-  <circle cx="340" cy="240" r="5" fill="#fff"/>
-
-  <!-- Duarte late run and finish -->
-  <circle cx="330" cy="230" r="16" fill="#0d1117" stroke="#22c55e" stroke-width="2"/>
-  <text x="330" y="226" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="8" font-weight="bold">D. Duarte</text>
-  <text x="330" y="236" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="7">controls + shoots</text>
-
-  <!-- Shot through legs -->
-  <path d="M 325 240 Q 300 240 280 230" fill="none" stroke="#22c55e" stroke-width="2"/>
-  <polygon points="280,230 286,236 278,237" fill="#22c55e"/>
-
-  <!-- L. Martínez unsighted -->
-  <circle cx="310" cy="235" r="10" fill="#0d1117" stroke="#66aaff" stroke-width="1.5"/>
-  <text x="310" y="232" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="6">L. Mtz</text>
-  <text x="310" y="240" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="6">through legs</text>
-
-  <!-- Ball into goal -->
-  <path d="M 280 228 Q 260 220 80 200" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-dasharray="5,3"/>
-  <polygon points="80,200 88,204 88,196" fill="#22c55e"/>
-
-  <!-- Goal -->
-  <rect x="35" y="180" width="8" height="40" fill="none" stroke="#ff6b6b" stroke-width="2.5"/>
-  <text x="39" y="205" text-anchor="middle" fill="#ff6b6b" font-family="Arial, sans-serif" font-size="14" font-weight="bold">G</text>
-
-  <rect x="230" y="8" width="140" height="24" rx="12" fill="#000" opacity="0.6"/>
-  <text x="300" y="24" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="13" font-weight="bold">ARG 1-1 CPV</text>
-
-  <rect x="100" y="360" width="400" height="30" rx="6" fill="#000" opacity="0.6"/>
-  <text x="300" y="380" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">59' Duarte fires low through L. Martínez's legs after Mendes counter</text>
-
-  <rect x="490" y="45" width="55" height="22" rx="11" fill="#000" opacity="0.6"/>
-  <text x="517" y="60" text-anchor="middle" fill="#22c55e" font-family="Arial, sans-serif" font-size="12" font-weight="bold">59'</text>
+  <rect x="35" y="45" width="530" height="310" fill="none" stroke="#ffffff" stroke-width="1.5" rx="3"/>
+  <line x1="300" y1="45" x2="300" y2="355" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+  <circle cx="300" cy="200" r="30" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+  <rect x="35" y="145" width="130" height="110" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <rect x="35" y="175" width="55" height="50" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <rect x="435" y="145" width="130" height="110" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <rect x="510" y="175" width="55" height="50" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <rect x="180" y="8" width="240" height="28" rx="14" fill="#000" opacity="0.8"/>
+  <text x="300" y="27" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="14" font-weight="bold">Argentina 1 - 1 Cape Verde</text>
+  <rect x="520" y="8" width="60" height="22" rx="11" fill="#000" opacity="0.7"/>
+  <text x="550" y="23" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="12" font-weight="bold">59'</text>
+  <circle cx="440" cy="240" r="8" fill="#22c55e" stroke="#ffffff" stroke-width="1.5" opacity="0.95"/>
+  <circle cx="440" cy="240" r="15" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.45"/>
+  <text x="440" y="227" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="8" font-weight="bold">Mendes</text>
+  <path d="M 440 240 Q 410 245 380 240 Q 340 230 210 225" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="5,3" opacity="0.6"/>
+  <polygon points="210,225 216,228 214,220" fill="#ffffff" opacity="0.6"/>
+  <circle cx="210" cy="225" r="6" fill="#22c55e" stroke="#ffffff" stroke-width="1.5" opacity="0.9"/>
+  <circle cx="210" cy="225" r="12" fill="none" stroke="#22c55e" stroke-width="1.5" opacity="0.4"/>
+  <text x="210" y="212" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="8" font-weight="bold">D. Duarte</text>
+  <path d="M 210 225 Q 170 220 130 215 Q 90 210 55 195" fill="none" stroke="#22c55e" stroke-width="3" stroke-dasharray="5,3" opacity="0.8"/>
+  <polygon points="55,195 62,200 58,191" fill="#22c55e" opacity="0.8"/>
+  <circle cx="55" cy="195" r="6" fill="#ff4444" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="55" y="197" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="8">⚽</text>
+  <rect x="120" y="370" width="360" height="22" rx="11" fill="#000" opacity="0.6"/>
+  <text x="300" y="384" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="10">Duarte fires low through L. Martínez's legs after Mendes counter</text>
 </svg>

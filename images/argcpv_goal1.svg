@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
   <rect width="600" height="400" fill="#1a472a"/>
+  <rect width="600" height="400" fill="url(#pitchPattern)" opacity="0.12"/>
   <defs>
     <pattern id="pitchPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
       <rect width="20" height="20" fill="none"/>
@@ -13,55 +14,29 @@
   </defs>
   <rect width="600" height="400" fill="url(#pitchPattern)" opacity="0.12"/>
   <rect width="600" height="400" fill="url(#pitchVignette)"/>
-
-  <rect x="40" y="40" width="520" height="320" fill="none" stroke="#fff" stroke-width="1.5" rx="4" opacity="0.45"/>
-  <line x1="300" y1="40" x2="300" y2="360" stroke="#fff" stroke-width="1" opacity="0.45"/>
-  <rect x="40" y="130" width="520" height="140" fill="none" stroke="#fff" stroke-width="1" opacity="0.35"/>
-  <circle cx="300" cy="200" r="45" fill="none" stroke="#fff" stroke-width="1" opacity="0.35"/>
-  <circle cx="300" cy="200" r="4" fill="#fff" opacity="0.35"/>
-  <rect x="460" y="140" width="100" height="120" fill="none" stroke="#fff" stroke-width="1" opacity="0.3"/>
-  <rect x="510" y="175" width="50" height="50" fill="none" stroke="#fff" stroke-width="1" opacity="0.25"/>
-  <rect x="35" y="180" width="8" height="40" fill="none" stroke="#fff" stroke-width="2" opacity="0.5"/>
-  <rect x="557" y="180" width="8" height="40" fill="none" stroke="#fff" stroke-width="2" opacity="0.5"/>
-
-  <!-- Event location - Messi run into box from central area -->
-  <circle cx="480" cy="200" r="6" fill="#66aaff" opacity="0.8"/>
-  <circle cx="480" cy="200" r="14" fill="none" stroke="#66aaff" stroke-width="1.5" opacity="0.5"/>
-
-  <!-- L. Martínez long ball from midfield -->
-  <circle cx="280" cy="280" r="14" fill="#0d1117" stroke="#66aaff" stroke-width="2"/>
-  <text x="280" y="276" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="7" font-weight="bold">L. Martínez</text>
-  <text x="280" y="285" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="7">long ball</text>
-
-  <!-- Long ball trajectory -->
-  <path d="M 285 270 Q 350 180 470 190" fill="none" stroke="#66aaff" stroke-width="1.5" stroke-dasharray="6,4"/>
-  <polygon points="470,190 462,185 464,196" fill="#66aaff"/>
-  <circle cx="460" cy="192" r="5" fill="#fff"/>
-
-  <!-- Messi control and finish -->
-  <circle cx="490" cy="200" r="16" fill="#0d1117" stroke="#66aaff" stroke-width="2"/>
-  <text x="490" y="195" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="8" font-weight="bold">Messi</text>
-  <text x="490" y="205" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="7">control + finish</text>
-
-  <!-- Shot into roof of net -->
-  <path d="M 500 195 Q 520 185 560 185" fill="none" stroke="#66aaff" stroke-width="2"/>
-  <polygon points="560,185 552,180 553,190" fill="#66aaff"/>
-
-  <!-- Vozinha drawn out -->
-  <circle cx="545" cy="190" r="12" fill="#0d1117" stroke="#22c55e" stroke-width="1.5"/>
-  <text x="545" y="187" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="7" font-weight="bold">Vozinha</text>
-  <text x="545" y="196" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="6">drawn out</text>
-
-  <!-- Goal -->
-  <rect x="35" y="180" width="8" height="40" fill="none" stroke="#ff6b6b" stroke-width="2.5"/>
-  <text x="39" y="205" text-anchor="middle" fill="#ff6b6b" font-family="Arial, sans-serif" font-size="14" font-weight="bold">G</text>
-
-  <rect x="230" y="8" width="140" height="24" rx="12" fill="#000" opacity="0.6"/>
-  <text x="300" y="24" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="13" font-weight="bold">ARG 1-0 CPV</text>
-
-  <rect x="120" y="360" width="360" height="30" rx="6" fill="#000" opacity="0.6"/>
-  <text x="300" y="380" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">29' Messi controls L. Martínez's long ball and smashes into roof of net</text>
-
-  <rect x="490" y="45" width="55" height="22" rx="11" fill="#000" opacity="0.6"/>
-  <text x="517" y="60" text-anchor="middle" fill="#66aaff" font-family="Arial, sans-serif" font-size="12" font-weight="bold">29'</text>
+  <rect x="35" y="45" width="530" height="310" fill="none" stroke="#ffffff" stroke-width="1.5" rx="3"/>
+  <line x1="300" y1="45" x2="300" y2="355" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+  <circle cx="300" cy="200" r="30" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+  <rect x="35" y="145" width="130" height="110" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <rect x="35" y="175" width="55" height="50" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <rect x="435" y="145" width="130" height="110" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <rect x="510" y="175" width="55" height="50" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <rect x="200" y="8" width="200" height="28" rx="14" fill="#000" opacity="0.8"/>
+  <text x="300" y="27" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="14" font-weight="bold">Argentina 1 - 0 Cape Verde</text>
+  <rect x="520" y="8" width="60" height="22" rx="11" fill="#000" opacity="0.7"/>
+  <text x="550" y="23" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="12" font-weight="bold">29'</text>
+  <circle cx="280" cy="280" r="8" fill="#22c55e" stroke="#ffffff" stroke-width="1.5" opacity="0.95"/>
+  <circle cx="280" cy="280" r="15" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.45"/>
+  <text x="280" y="267" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="8" font-weight="bold">L. Martínez</text>
+  <path d="M 280 280 Q 320 240 370 220 Q 400 210 430 200" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="5,3" opacity="0.6"/>
+  <polygon points="430,200 424,203 426,195" fill="#ffffff" opacity="0.6"/>
+  <circle cx="430" cy="200" r="6" fill="#22c55e" stroke="#ffffff" stroke-width="1.5" opacity="0.9"/>
+  <circle cx="430" cy="200" r="12" fill="none" stroke="#22c55e" stroke-width="1.5" opacity="0.4"/>
+  <text x="430" y="187" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="8" font-weight="bold">Messi</text>
+  <path d="M 430 200 Q 460 195 530 190" fill="none" stroke="#22c55e" stroke-width="3" stroke-dasharray="5,3" opacity="0.8"/>
+  <polygon points="530,190 523,193 526,186" fill="#22c55e" opacity="0.8"/>
+  <circle cx="530" cy="190" r="6" fill="#ff4444" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="530" y="192" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="8">⚽</text>
+  <rect x="140" y="370" width="320" height="22" rx="11" fill="#000" opacity="0.6"/>
+  <text x="300" y="384" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="10">Messi controls Martínez long ball and smashes into roof of net</text>
 </svg>
