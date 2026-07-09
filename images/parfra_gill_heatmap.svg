@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 340" width="400" height="340">
+  <rect width="400" height="340" fill="#0d1117" rx="6"/>
+  <text x="200" y="26" text-anchor="middle" fill="#a78bfa" font-size="14" font-weight="700" font-family="Segoe UI,Arial,sans-serif">🔥 MOTM Spotlight: Orlando Gill</text>
+  <line x1="20" y1="38" x2="380" y2="38" stroke="#2a2f37" stroke-width="0.5"/>
+  <rect x="40" y="50" width="320" height="200" fill="none" stroke="#22c55e" stroke-width="0.8" stroke-opacity="0.3" rx="2"/>
+  <line x1="200" y1="50" x2="200" y2="250" stroke="#22c55e" stroke-width="0.8" stroke-opacity="0.3"/>
+  <circle cx="200" cy="150" r="20" fill="none" stroke="#22c55e" stroke-width="0.8" stroke-opacity="0.2"/>
+  <rect x="100" y="50" width="200" height="80" fill="none" stroke="#22c55e" stroke-width="0.8" stroke-opacity="0.3"/>
+  <rect x="100" y="170" width="200" height="80" fill="none" stroke="#22c55e" stroke-width="0.8" stroke-opacity="0.3"/>
+  <circle cx="200" cy="230" r="35" fill="#22c55e" opacity="0.18"/>
+  <circle cx="200" cy="220" r="28" fill="#22c55e" opacity="0.22"/>
+  <circle cx="200" cy="210" r="22" fill="#22c55e" opacity="0.3"/>
+  <circle cx="200" cy="200" r="16" fill="#22c55e" opacity="0.35"/>
+  <circle cx="200" cy="195" r="10" fill="#22c55e" opacity="0.5"/>
+  <circle cx="200" cy="192" r="5" fill="#22c55e" opacity="0.7"/>
+  <circle cx="185" cy="205" r="8" fill="#f59e0b" opacity="0.15"/>
+  <circle cx="215" cy="210" r="6" fill="#f59e0b" opacity="0.12"/>
+  <circle cx="200" cy="215" r="10" fill="#f59e0b" opacity="0.1"/>
+  <circle cx="200" cy="190" r="4" fill="#a78bfa"/>
+  <text x="200" y="183" text-anchor="middle" fill="#a78bfa" font-size="8" font-weight="700" font-family="Segoe UI,Arial,sans-serif">Gill</text>
+  <rect x="40" y="268" width="72" height="28" fill="#161b22" stroke="#2a2f37" stroke-width="1" rx="5"/>
+  <text x="76" y="278" text-anchor="middle" fill="#8b949e" font-size="9" font-family="Segoe UI,Arial,sans-serif">Saves</text>
+  <text x="76" y="290" text-anchor="middle" fill="#22c55e" font-size="14" font-weight="800" font-family="Segoe UI,Arial,sans-serif">4</text>
+  <rect x="122" y="268" width="72" height="28" fill="#161b22" stroke="#2a2f37" stroke-width="1" rx="5"/>
+  <text x="158" y="278" text-anchor="middle" fill="#8b949e" font-size="9" font-family="Segoe UI,Arial,sans-serif">Long passes</text>
+  <text x="158" y="290" text-anchor="middle" fill="#22c55e" font-size="14" font-weight="800" font-family="Segoe UI,Arial,sans-serif">12/18</text>
+  <rect x="204" y="268" width="72" height="28" fill="#161b22" stroke="#2a2f37" stroke-width="1" rx="5"/>
+  <text x="240" y="278" text-anchor="middle" fill="#8b949e" font-size="9" font-family="Segoe UI,Arial,sans-serif">Pens saved (vs GER)</text>
+  <text x="240" y="290" text-anchor="middle" fill="#22c55e" font-size="14" font-weight="800" font-family="Segoe UI,Arial,sans-serif">2</text>
+  <rect x="286" y="268" width="72" height="28" fill="#161b22" stroke="#2a2f37" stroke-width="1" rx="5"/>
+  <text x="322" y="278" text-anchor="middle" fill="#8b949e" font-size="9" font-family="Segoe UI,Arial,sans-serif">Performance</text>
+  <text x="322" y="290" text-anchor="middle" fill="#22c55e" font-size="14" font-weight="800" font-family="Segoe UI,Arial,sans-serif">Heroic</text>
+  <text x="200" y="326" text-anchor="middle" fill="#8b949e" font-size="9" font-family="Segoe UI,Arial,sans-serif">Illustrative reconstruction based on known event locations, not raw GPS tracking data</text>
+</svg>

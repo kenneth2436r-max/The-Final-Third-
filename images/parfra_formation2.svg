@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#1a472a"/>
+  <rect width="600" height="400" fill="url(#pitchPattern)" opacity="0.15"/>
+  <defs>
+    <pattern id="pitchPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="none"/>
+      <rect x="0" y="0" width="1" height="20" fill="#000" opacity="0.08"/>
+      <rect x="0" y="0" width="20" height="1" fill="#000" opacity="0.08"/>
+    </pattern>
+    <radialGradient id="pitchVignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.3"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#pitchVignette)"/>
+  <rect x="60" y="40" width="480" height="320" fill="none" stroke="#fff" stroke-width="1.5" rx="4" opacity="0.5"/>
+  <line x1="300" y1="40" x2="300" y2="360" stroke="#fff" stroke-width="1.5" opacity="0.5"/>
+  <rect x="60" y="140" width="480" height="120" fill="none" stroke="#fff" stroke-width="1" opacity="0.4"/>
+  <circle cx="300" cy="200" r="50" fill="none" stroke="#fff" stroke-width="1" opacity="0.4"/>
+  <circle cx="300" cy="200" r="4" fill="#fff" opacity="0.4"/>
+  <rect x="60" y="120" width="120" height="160" fill="none" stroke="#fff" stroke-width="1" opacity="0.35"/>
+  <rect x="420" y="120" width="120" height="160" fill="none" stroke="#fff" stroke-width="1" opacity="0.35"/>
+  <rect x="60" y="165" width="60" height="70" fill="none" stroke="#fff" stroke-width="1" opacity="0.3"/>
+  <rect x="480" y="165" width="60" height="70" fill="none" stroke="#fff" stroke-width="1" opacity="0.3"/>
+  <rect x="55" y="175" width="10" height="50" fill="none" stroke="#fff" stroke-width="2" opacity="0.6"/>
+  <rect x="535" y="175" width="10" height="50" fill="none" stroke="#fff" stroke-width="2" opacity="0.6"/>
+  <rect x="190" y="8" width="220" height="24" rx="12" fill="#000" opacity="0.6"/>
+  <text x="300" y="24" text-anchor="middle" fill="#f97316" font-family="Arial,sans-serif" font-size="14" font-weight="bold">France 4-2-3-1</text>
+  <line x1="130" y1="280" x2="200" y2="280" stroke="#e6edf3" stroke-width="1" opacity="0.25"/>
+  <line x1="200" y1="280" x2="300" y2="280" stroke="#e6edf3" stroke-width="1" opacity="0.25"/>
+  <line x1="300" y1="280" x2="400" y2="280" stroke="#e6edf3" stroke-width="1" opacity="0.25"/>
+  <line x1="400" y1="280" x2="470" y2="280" stroke="#e6edf3" stroke-width="1" opacity="0.25"/>
+  <line x1="220" y1="220" x2="300" y2="220" stroke="#e6edf3" stroke-width="1" opacity="0.25"/>
+  <line x1="300" y1="220" x2="380" y2="220" stroke="#e6edf3" stroke-width="1" opacity="0.25"/>
+  <line x1="160" y1="170" x2="300" y2="170" stroke="#e6edf3" stroke-width="1" opacity="0.25"/>
+  <line x1="300" y1="170" x2="440" y2="170" stroke="#e6edf3" stroke-width="1" opacity="0.25"/>
+  <circle cx="300" cy="330" r="22" fill="#0d1117" stroke="#f97316" stroke-width="2" opacity="0.9"/>
+  <text x="300" y="326" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="9" font-weight="bold" opacity="0.9">Maignan</text>
+  <text x="300" y="338" text-anchor="middle" fill="#8b949e" font-family="Arial,sans-serif" font-size="7" opacity="0.9">GK</text>
+  <circle cx="130" cy="280" r="22" fill="#0d1117" stroke="#f97316" stroke-width="2" opacity="0.9"/>
+  <text x="130" y="276" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="9" font-weight="bold" opacity="0.9">Hernandez</text>
+  <text x="130" y="288" text-anchor="middle" fill="#8b949e" font-family="Arial,sans-serif" font-size="7" opacity="0.9">LB</text>
+  <circle cx="210" cy="280" r="22" fill="#0d1117" stroke="#f97316" stroke-width="2" opacity="0.9"/>
+  <text x="210" y="276" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="8" font-weight="bold" opacity="0.9">Kounde</text>
+  <text x="210" y="288" text-anchor="middle" fill="#8b949e" font-family="Arial,sans-serif" font-size="7" opacity="0.9">CB</text>
+  <circle cx="300" cy="280" r="22" fill="#0d1117" stroke="#f97316" stroke-width="2" opacity="0.9"/>
+  <text x="300" y="276" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="9" font-weight="bold" opacity="0.9">Saliba</text>
+  <text x="300" y="288" text-anchor="middle" fill="#8b949e" font-family="Arial,sans-serif" font-size="7" opacity="0.9">CB</text>
+  <circle cx="390" cy="280" r="22" fill="#0d1117" stroke="#f97316" stroke-width="2" opacity="0.9"/>
+  <text x="390" y="276" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="9" font-weight="bold" opacity="0.9">Pavard</text>
+  <text x="390" y="288" text-anchor="middle" fill="#8b949e" font-family="Arial,sans-serif" font-size="7" opacity="0.9">RB</text>
+  <circle cx="470" cy="280" r="15" fill="none" stroke="#30363d" stroke-width="1" opacity="0.4"/>
+  <text x="470" y="284" text-anchor="middle" fill="#8b949e" font-family="Arial,sans-serif" font-size="9" opacity="0.9">DEF</text>
+  <circle cx="220" cy="220" r="22" fill="#0d1117" stroke="#f97316" stroke-width="2" opacity="0.9"/>
+  <text x="220" y="216" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="9" font-weight="bold" opacity="0.9">Tchouameni</text>
+  <text x="220" y="228" text-anchor="middle" fill="#8b949e" font-family="Arial,sans-serif" font-size="7" opacity="0.9">CDM</text>
+  <circle cx="380" cy="220" r="22" fill="#0d1117" stroke="#f97316" stroke-width="2" opacity="0.9"/>
+  <text x="380" y="216" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="9" font-weight="bold" opacity="0.9">Rabiot</text>
+  <text x="380" y="228" text-anchor="middle" fill="#8b949e" font-family="Arial,sans-serif" font-size="7" opacity="0.9">CM</text>
+  <circle cx="160" cy="170" r="22" fill="#0d1117" stroke="#f97316" stroke-width="2" opacity="0.9"/>
+  <text x="160" y="166" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="9" font-weight="bold" opacity="0.9">Barcola</text>
+  <text x="160" y="178" text-anchor="middle" fill="#8b949e" font-family="Arial,sans-serif" font-size="7" opacity="0.9">LW</text>
+  <circle cx="300" cy="170" r="22" fill="#0d1117" stroke="#f97316" stroke-width="2" opacity="0.9"/>
+  <text x="300" y="166" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="9" font-weight="bold" opacity="0.9">Olise</text>
+  <text x="300" y="178" text-anchor="middle" fill="#8b949e" font-family="Arial,sans-serif" font-size="7" opacity="0.9">CAM</text>
+  <circle cx="440" cy="170" r="22" fill="#0d1117" stroke="#f97316" stroke-width="2" opacity="0.9"/>
+  <text x="440" y="166" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="9" font-weight="bold" opacity="0.9">Dembele</text>
+  <text x="440" y="178" text-anchor="middle" fill="#8b949e" font-family="Arial,sans-serif" font-size="7" opacity="0.9">RW</text>
+  <circle cx="300" cy="130" r="22" fill="#0d1117" stroke="#f97316" stroke-width="2" opacity="0.9"/>
+  <text x="300" y="126" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="9" font-weight="bold" opacity="0.9">Mbappe</text>
+  <text x="300" y="138" text-anchor="middle" fill="#8b949e" font-family="Arial,sans-serif" font-size="7" opacity="0.9">ST (C)</text>
+  <polygon points="300,370 290,360 310,360" fill="#f97316" opacity="0.5"/>
+  <line x1="300" y1="365" x2="300" y2="380" stroke="#f97316" stroke-width="1" opacity="0.5"/>
+</svg>

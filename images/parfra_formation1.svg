@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#1a472a"/>
+  <rect width="600" height="400" fill="url(#pitchPattern)" opacity="0.15"/>
+  <defs>
+    <pattern id="pitchPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="none"/>
+      <rect x="0" y="0" width="1" height="20" fill="#000" opacity="0.08"/>
+      <rect x="0" y="0" width="20" height="1" fill="#000" opacity="0.08"/>
+    </pattern>
+    <radialGradient id="pitchVignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.3"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#pitchVignette)"/>
+  <rect x="60" y="40" width="480" height="320" fill="none" stroke="#fff" stroke-width="1.5" rx="4" opacity="0.5"/>
+  <line x1="300" y1="40" x2="300" y2="360" stroke="#fff" stroke-width="1.5" opacity="0.5"/>
+  <rect x="60" y="140" width="480" height="120" fill="none" stroke="#fff" stroke-width="1" opacity="0.4"/>
+  <circle cx="300" cy="200" r="50" fill="none" stroke="#fff" stroke-width="1" opacity="0.4"/>
+  <circle cx="300" cy="200" r="4" fill="#fff" opacity="0.4"/>
+  <rect x="60" y="120" width="120" height="160" fill="none" stroke="#fff" stroke-width="1" opacity="0.35"/>
+  <rect x="420" y="120" width="120" height="160" fill="none" stroke="#fff" stroke-width="1" opacity="0.35"/>
+  <rect x="60" y="165" width="60" height="70" fill="none" stroke="#fff" stroke-width="1" opacity="0.3"/>
+  <rect x="480" y="165" width="60" height="70" fill="none" stroke="#fff" stroke-width="1" opacity="0.3"/>
+  <rect x="55" y="175" width="10" height="50" fill="none" stroke="#fff" stroke-width="2" opacity="0.6"/>
+  <rect x="535" y="175" width="10" height="50" fill="none" stroke="#fff" stroke-width="2" opacity="0.6"/>
+  <rect x="210" y="8" width="180" height="24" rx="12" fill="#000" opacity="0.6"/>
+  <text x="300" y="24" text-anchor="middle" fill="#22c55e" font-family="Arial,sans-serif" font-size="14" font-weight="bold">Paraguay 5-4-1</text>
+  <line x1="130" y1="320" x2="200" y2="320" stroke="#e6edf3" stroke-width="1" opacity="0.25"/>
+  <line x1="200" y1="320" x2="300" y2="320" stroke="#e6edf3" stroke-width="1" opacity="0.25"/>
+  <line x1="300" y1="320" x2="400" y2="320" stroke="#e6edf3" stroke-width="1" opacity="0.25"/>
+  <line x1="400" y1="320" x2="470" y2="320" stroke="#e6edf3" stroke-width="1" opacity="0.25"/>
+  <line x1="220" y1="260" x2="300" y2="260" stroke="#e6edf3" stroke-width="1" opacity="0.25"/>
+  <line x1="300" y1="260" x2="380" y2="260" stroke="#e6edf3" stroke-width="1" opacity="0.25"/>
+  <line x1="300" y1="200" x2="300" y2="200" stroke="#e6edf3" stroke-width="1" opacity="0.25"/>
+  <line x1="160" y1="140" x2="440" y2="140" stroke="#e6edf3" stroke-width="1" opacity="0.25"/>
+  <circle cx="300" cy="370" r="22" fill="#0d1117" stroke="#22c55e" stroke-width="2" opacity="0.9"/>
+  <text x="300" y="366" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="9" font-weight="bold" opacity="0.9">Gill</text>
+  <text x="300" y="378" text-anchor="middle" fill="#8b949e" font-family="Arial,sans-serif" font-size="7" opacity="0.9">GK</text>
+  <circle cx="130" cy="320" r="22" fill="#0d1117" stroke="#22c55e" stroke-width="2" opacity="0.9"/>
+  <text x="130" y="316" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="8" font-weight="bold" opacity="0.9">Alonso</text>
+  <text x="130" y="328" text-anchor="middle" fill="#8b949e" font-family="Arial,sans-serif" font-size="7" opacity="0.9">LWB</text>
+  <circle cx="210" cy="320" r="22" fill="#0d1117" stroke="#22c55e" stroke-width="2" opacity="0.9"/>
+  <text x="210" y="316" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="9" font-weight="bold" opacity="0.9">Gomez</text>
+  <text x="210" y="328" text-anchor="middle" fill="#8b949e" font-family="Arial,sans-serif" font-size="7" opacity="0.9">CB</text>
+  <circle cx="300" cy="320" r="22" fill="#0d1117" stroke="#22c55e" stroke-width="2" opacity="0.9"/>
+  <text x="300" y="316" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="8" font-weight="bold" opacity="0.9">Balbuena</text>
+  <text x="300" y="328" text-anchor="middle" fill="#8b949e" font-family="Arial,sans-serif" font-size="7" opacity="0.9">CB (C)</text>
+  <circle cx="390" cy="320" r="22" fill="#0d1117" stroke="#22c55e" stroke-width="2" opacity="0.9"/>
+  <text x="390" y="316" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="8" font-weight="bold" opacity="0.9">Alderete</text>
+  <text x="390" y="328" text-anchor="middle" fill="#8b949e" font-family="Arial,sans-serif" font-size="7" opacity="0.9">CB</text>
+  <circle cx="470" cy="320" r="22" fill="#0d1117" stroke="#22c55e" stroke-width="2" opacity="0.9"/>
+  <text x="470" y="316" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="9" font-weight="bold" opacity="0.9">Espinoza</text>
+  <text x="470" y="328" text-anchor="middle" fill="#8b949e" font-family="Arial,sans-serif" font-size="7" opacity="0.9">RWB</text>
+  <circle cx="220" cy="260" r="22" fill="#0d1117" stroke="#22c55e" stroke-width="2" opacity="0.9"/>
+  <text x="220" y="256" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="9" font-weight="bold" opacity="0.9">Villalba</text>
+  <text x="220" y="268" text-anchor="middle" fill="#8b949e" font-family="Arial,sans-serif" font-size="7" opacity="0.9">CM</text>
+  <circle cx="300" cy="260" r="22" fill="#0d1117" stroke="#22c55e" stroke-width="2" opacity="0.9"/>
+  <text x="300" y="256" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="8" font-weight="bold" opacity="0.9">Galarza</text>
+  <text x="300" y="268" text-anchor="middle" fill="#8b949e" font-family="Arial,sans-serif" font-size="7" opacity="0.9">CDM</text>
+  <circle cx="380" cy="260" r="22" fill="#0d1117" stroke="#22c55e" stroke-width="2" opacity="0.9"/>
+  <text x="380" y="256" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="9" font-weight="bold" opacity="0.9">Bobadilla</text>
+  <text x="380" y="268" text-anchor="middle" fill="#8b949e" font-family="Arial,sans-serif" font-size="7" opacity="0.9">CM</text>
+  <circle cx="300" cy="200" r="22" fill="#0d1117" stroke="#22c55e" stroke-width="2" opacity="0.9"/>
+  <text x="300" y="196" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="8" font-weight="bold" opacity="0.9">Enciso</text>
+  <text x="300" y="208" text-anchor="middle" fill="#8b949e" font-family="Arial,sans-serif" font-size="7" opacity="0.9">CAM</text>
+  <circle cx="300" cy="140" r="22" fill="#0d1117" stroke="#22c55e" stroke-width="2" opacity="0.9"/>
+  <text x="300" y="136" text-anchor="middle" fill="#e6edf3" font-family="Arial,sans-serif" font-size="9" font-weight="bold" opacity="0.9">Sanabria</text>
+  <text x="300" y="148" text-anchor="middle" fill="#8b949e" font-family="Arial,sans-serif" font-size="7" opacity="0.9">ST</text>
+  <polygon points="300,390 290,380 310,380" fill="#22c55e" opacity="0.5"/>
+  <line x1="300" y1="385" x2="300" y2="395" stroke="#22c55e" stroke-width="1" opacity="0.5"/>
+</svg>

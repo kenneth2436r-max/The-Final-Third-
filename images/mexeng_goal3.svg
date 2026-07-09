@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#1a472a"/>
+  <rect width="600" height="400" fill="url(#pitchPattern)" opacity="0.12"/>
+  <defs>
+    <pattern id="pitchPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="none"/>
+      <rect x="0" y="0" width="1" height="20" fill="#000" opacity="0.08"/>
+      <rect x="0" y="0" width="20" height="1" fill="#000" opacity="0.08"/>
+    </pattern>
+    <radialGradient id="pitchVignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.35"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#pitchPattern)" opacity="0.12"/>
+  <rect width="600" height="400" fill="url(#pitchVignette)"/>
+  <rect x="35" y="45" width="530" height="310" fill="none" stroke="#ffffff" stroke-width="1.5" rx="3"/>
+  <line x1="300" y1="45" x2="300" y2="355" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+  <circle cx="300" cy="200" r="30" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+  <rect x="35" y="145" width="130" height="110" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <rect x="35" y="175" width="55" height="50" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <rect x="435" y="145" width="130" height="110" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <rect x="510" y="175" width="55" height="50" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <rect x="180" y="8" width="240" height="28" rx="14" fill="#000" opacity="0.8"/>
+  <text x="300" y="27" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="14" font-weight="bold">Mexico 1 - 2 England</text>
+  <rect x="520" y="8" width="60" height="22" rx="11" fill="#000" opacity="0.7"/>
+  <text x="550" y="23" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="12" font-weight="bold">42'</text>
+  <circle cx="380" cy="200" r="8" fill="#22c55e" stroke="#ffffff" stroke-width="1.5" opacity="0.95"/>
+  <text x="380" y="187" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="8" font-weight="bold">Chavez</text>
+  <path d="M 380 200 Q 370 190 350 185 Q 330 180 320 175" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="5,3" opacity="0.6"/>
+  <polygon points="320,175 326,178 324,170" fill="#ffffff" opacity="0.6"/>
+  <circle cx="320" cy="175" r="6" fill="#22c55e" stroke="#ffffff" stroke-width="1.5" opacity="0.9"/>
+  <text x="320" y="162" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="8" font-weight="bold">Quinones</text>
+  <path d="M 320 175 Q 310 170 300 170 Q 280 175 260 170 Q 240 160 220 165" fill="none" stroke="#22c55e" stroke-width="3" stroke-dasharray="5,3" opacity="0.8"/>
+  <polygon points="220,165 227,168 224,161" fill="#22c55e" opacity="0.8"/>
+  <circle cx="60" cy="175" r="6" fill="#ff4444" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="60" y="177" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="8">⚽</text>
+  <rect x="140" y="370" width="320" height="22" rx="11" fill="#000" opacity="0.6"/>
+  <text x="300" y="384" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="10">Quinones curls into far corner — Azteca erupts</text>
+</svg>
